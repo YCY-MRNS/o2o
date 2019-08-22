@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="o2o:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f15008ce-8351-422f-8cfa-4dd154c58d3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/HeadLineService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/impl/HeadLineServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/frontend/FrontendPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/frontend/MainPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/frontend/ShopListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/frontendshoplist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/frontshoplist.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ShoppingWithSSMAndSpringBoot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/O2O.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shopping.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/java/com/ycy/shopping/dao/HeadLineDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/java/com/ycy/shopping/dao/HeadLineDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/java/com/ycy/shopping/dao/ShopCategoryDaoTes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/java/com/ycy/shopping/dao/ShopCategoryDaoTes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/java/com/ycy/shopping/dao/ShopDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/java/com/ycy/shopping/dao/ShopDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/entity/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/entity/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/ShopCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/ShopCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/impl/ShopServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/util/CodeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/util/CodeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ProductManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ProductManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/img/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/Shop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/impl/ShopServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/impl/ShopServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/CodeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/CodeUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ProductManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ProductManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ShopAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ShopAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ShopManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ShopManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ShopCategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ShopCategoryDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ShopDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/ProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/ProductDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/HeadLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/HeadLine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/Shop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/ProductCategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/ProductCategoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/ShopServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/ShopServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/CodeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/CodeUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ProductManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ProductManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ShopAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ShopAdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ShopManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ShopManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/mapper/ProducCategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/mapper/ProducCategoryDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/mapper/ProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/mapper/ProductDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/mapper/ShopCategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/mapper/ShopCategoryDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/mapper/ShopDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/mapper/ShopDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/productoperation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/productoperation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ShopCategoryDaoTes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ShopCategoryDaoTes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ShopDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ShopDaoTest.class" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="shopping" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="spring-beans.schema" />
+        <option value="Gradle Kotlin DSL Settings" />
+        <option value="mapper" />
+        <option value="Jsp File" />
+        <option value="JavaScript File" />
+        <option value="xml" />
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="CHANGYUE &lt;34939635+ycy-mrns@users.noreply.github.com&gt;" />
+        <option value="ycy &lt;604028466@qq.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Og8VSUmqW947eMFEZe1FFEKu7A" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>SQL</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SqlNoDataSourceInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Administrator/IdeaProjects/shopping/src/main/webapp/resources/js/shop/shoplistnew.js&#10;shopsetest&#9;FILE&#9;file://C:/Users/Administrator/IdeaProjects/shopping/src/Test/java/com/ycy/shopping/service/ShopServiceTest.java&#10;service&#9;FILE&#9;file://C:/Users/Administrator/IdeaProjects/shopping/src/main/java/com/ycy/shopping/service/ShopService.java&#10;test&#9;FILE&#9;file://C:/Users/Administrator/IdeaProjects/shopping/src/Test/java/com/ycy/shopping/dao/ShopDaoTest.java" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554908997707" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="D:/projectdev/img/upload" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.31839082" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ycy.shopping.emums" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ycy.shopping.service" />
+      <recent name="com.ycy.shopping" />
+      <recent name="com.ycy.shopping.dao" />
+      <recent name="com.ycy.shopping.entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\java\com\ycy\shopping\util" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\webapp\resources\img" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\webapp\resources" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\webapp\resources\js\commons" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\webapp\WEB-INF\html\shop" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ycy.shopping.exceptions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\webapp" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\resources\mapper" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\java" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\java\com\ycy\shopping\entity" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\java\com\ycy\shopping\dao" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.T9">
+    <configuration name="MBGTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ycy.shopping.util.MBGTest" />
+      <module name="O2O" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ycy.shopping.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeadLineDaoTest.testSelectAllHeadLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="O2O" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ycy.shopping.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ycy.shopping.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.ycy.shopping.dao.HeadLineDaoTest" />
+      <option name="METHOD_NAME" value="testSelectAllHeadLine" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopCategoryDaoTes.queryShopCategoryDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="O2O" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ycy.shopping.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ycy.shopping.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.ycy.shopping.dao.ShopCategoryDaoTes" />
+      <option name="METHOD_NAME" value="queryShopCategoryDaoTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopDaoTest.queryShopList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="o2o" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ycy.shopping.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ycy.shopping.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.ycy.shopping.dao.ShopDaoTest" />
+      <option name="METHOD_NAME" value="queryShopList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="O2O" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="O2O" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="T9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="apache-tomcat-9.0.22" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="o2o:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/shopping" />
+          </settings>
+        </artifact>
+        <file path="D:/projectdev/img/upload">
+          <settings>
+            <option name="CONTEXT_PATH" value="/upload" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_shopping" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51143" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="o2o:war exploded" />
+          <artifact name="o2o" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="frontendshoplist.html" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="apache-tomcat-9.0.22" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/html/frontend/frontendshoplist.html" />
+      <deployment>
+        <artifact name="o2o:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/o2o_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="frontendshoplist_html_o2o" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="o2o:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MBGTest" />
+      <item itemvalue="JUnit.HeadLineDaoTest.testSelectAllHeadLine" />
+      <item itemvalue="JUnit.ShopCategoryDaoTes.queryShopCategoryDaoTest" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Tomcat Server.T9" />
+      <item itemvalue="JUnit.ShopDaoTest.queryShopList" />
+      <item itemvalue="Tomcat Server.frontendshoplist.html" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Tomcat Server.frontendshoplist.html" />
+        <item itemvalue="JUnit.ShopDaoTest.queryShopList" />
+        <item itemvalue="JUnit.ShopCategoryDaoTes.queryShopCategoryDaoTest" />
+        <item itemvalue="JUnit.HeadLineDaoTest.testSelectAllHeadLine" />
+        <item itemvalue="Application.MBGTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f15008ce-8351-422f-8cfa-4dd154c58d3f" name="Default Changelist" comment="" />
+      <created>1551616243192</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551616243192</updated>
+      <workItem from="1551616247560" duration="8929000" />
+      <workItem from="1551626168657" duration="912000" />
+      <workItem from="1551699238435" duration="127000" />
+      <workItem from="1551871007733" duration="6978000" />
+      <workItem from="1551883874254" duration="3852000" />
+      <workItem from="1551930863258" duration="20000" />
+      <workItem from="1552300951227" duration="169000" />
+      <workItem from="1552395390899" duration="2631000" />
+      <workItem from="1552406883239" duration="6536000" />
+      <workItem from="1552443911503" duration="35000" />
+      <workItem from="1552488127276" duration="2019000" />
+      <workItem from="1552521906538" duration="25000" />
+      <workItem from="1552572580323" duration="8042000" />
+      <workItem from="1552627534248" duration="307000" />
+      <workItem from="1552738454946" duration="50000" />
+      <workItem from="1552818625877" duration="1402000" />
+      <workItem from="1552820197932" duration="5234000" />
+      <workItem from="1552826872789" duration="9420000" />
+      <workItem from="1552883196628" duration="17966000" />
+      <workItem from="1552992861484" duration="51000" />
+      <workItem from="1552993796169" duration="3381000" />
+      <workItem from="1553007644872" duration="4265000" />
+      <workItem from="1553047745256" duration="44000" />
+      <workItem from="1553069289820" duration="22000" />
+      <workItem from="1553070402752" duration="3132000" />
+      <workItem from="1553137504494" duration="1779000" />
+      <workItem from="1553144869380" duration="1302000" />
+      <workItem from="1553165685354" duration="4487000" />
+      <workItem from="1553406909324" duration="153000" />
+      <workItem from="1553419225381" duration="128000" />
+      <workItem from="1553421914145" duration="14159000" />
+      <workItem from="1553510028658" duration="16744000" />
+      <workItem from="1553611929384" duration="23000" />
+      <workItem from="1553700492906" duration="790000" />
+      <workItem from="1553701598852" duration="16000" />
+      <workItem from="1553701748360" duration="219000" />
+      <workItem from="1553747541971" duration="156000" />
+      <workItem from="1554281631234" duration="23345000" />
+      <workItem from="1554345671847" duration="91000" />
+      <workItem from="1554377434222" duration="689000" />
+      <workItem from="1554386475227" duration="962000" />
+      <workItem from="1554387583732" duration="4068000" />
+      <workItem from="1554640824125" duration="136000" />
+      <workItem from="1554726989493" duration="12901000" />
+      <workItem from="1554783821283" duration="280000" />
+      <workItem from="1554804101078" duration="9563000" />
+      <workItem from="1554879885823" duration="2616000" />
+      <workItem from="1554883067501" duration="24192000" />
+      <workItem from="1563505277450" duration="4730000" />
+      <workItem from="1563512231420" duration="6187000" />
+      <workItem from="1563519375617" duration="13225000" />
+      <workItem from="1564039817862" duration="210000" />
+      <workItem from="1564040776778" duration="2860000" />
+      <workItem from="1564386753117" duration="319000" />
+      <workItem from="1564387910900" duration="19260000" />
+      <workItem from="1564449649892" duration="29521000" />
+      <workItem from="1564584695585" duration="3260000" />
+      <workItem from="1564634629762" duration="32171000" />
+      <workItem from="1564742613201" duration="3404000" />
+      <workItem from="1565182728389" duration="366000" />
+      <workItem from="1565183359899" duration="2596000" />
+      <workItem from="1566305800663" duration="7021000" />
+      <workItem from="1566352743198" duration="44612000" />
+    </task>
+    <task id="LOCAL-00001" summary="2019-3-24">
+      <created>1553427996204</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553427996204</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2019-3-24">
+      <created>1564413488522</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564413488522</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2019-8-2">
+      <created>1564677031897</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564677031897</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="2019-3-21" />
+    <MESSAGE value="2019-3-24" />
+    <MESSAGE value="2019-8-2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-8-2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/util/CodeUtil.java</url>
+          <line>14</line>
+          <properties class="com.ycy.shopping.util.CodeUtil" method="checkVerityCode">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Test/java/com/ycy/shopping/service/ShopServiceTest.java</url>
+          <line>37</line>
+          <properties class="com.ycy.shopping.service.ShopServiceTest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopManagementController.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopManagementController.java</url>
+          <line>251</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopManagementController.java</url>
+          <line>163</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/impl/ShopServiceImpl.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/impl/ProductServiceImpl.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ProductManagementController.java</url>
+          <line>168</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

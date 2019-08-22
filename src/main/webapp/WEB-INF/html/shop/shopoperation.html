@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../resources/css/bootstrap.css">
+    <link rel="stylesheet" href="../resources/css/shop/index.css">
+    <script src="../resources/js/commons/jQuery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<div class="all-wrap">
+
+    <div class="p0m0 navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">后台管理系统</div>
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+
+            <div class="navbar-right navbar-text">欢迎你，<a href="#" id="user-name"></a></div>
+        </div>
+    </div>
+
+
+    <div class="col-md-10">
+
+        <div class="panel panel-default m10">
+            <div class="panel-heading">商店信息</div>
+
+            <form action="" class="m10">
+                <div class="form-group">
+                    <label>商铺名称</label>
+                    <div class="item-input">
+                        <input class="form-control" type="text" id="shop-name" placeholder="商铺名称">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>商铺分类</label>
+                    <select class="form-control" id="shop-category">
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>所属区域</label>
+                    <select class="form-control" id="area">
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>详细地址</label>
+                    <input class="form-control" type="text" id="shop-addr" placeholder="详细地址">
+                </div>
+                <div class="form-group">
+                    <label>联系电话</label>
+                    <input class="form-control" type="text" id="shop-phone" placeholder="联系电话">
+                </div>
+                <div class="form-group">
+                    <label>简介</label>
+                    <textarea class="form-control" id="shop-desc" placeholder="简介"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>缩略图</label>
+                    <input class="form-control-file" type="file" id="shop-img" placeholder="缩略图">
+                </div>
+                <div class="form-group form-inline">
+                    <div>验证码:</div>
+                    <input class="form-control" type="text" id="j_captcha" name="verifyCode" placeholder="验证码">
+                    <div class="item-input">
+                        <img id="captcha_img" type="text" alt="点击更换" title="点击更换"
+                             onclick="changeVerityCode(this)"
+                             src="../Kaptcha">
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-danger">返回</a>
+                <a href="#" class="btn btn-success" id="submit">提交</a>
+
+            </form>
+
+        </div>
+</div>
+
+<script type="text/javascript" src="../resources/js/commons/common.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../resources/js/shop/shopoperation.js" charset="UTF-8"></script>
+
+</div>
+</body>
+</html>

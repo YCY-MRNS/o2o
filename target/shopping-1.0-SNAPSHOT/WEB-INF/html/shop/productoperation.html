@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../resources/css/bootstrap.css">
+    <script src="../resources/js/commons/jQuery.min.js"></script>
+    <title>商品</title>
+</head>
+<body>
+
+<div class="all-wrap">
+
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">后台管理系统</div>
+                <div class="navbar-right navbar-text">欢迎你，<a href="#" id="user-name"></a></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">商店信息</div>
+
+            <form action="" class="container">
+                <div class="form-group">
+                    <label>商品名称</label>
+                    <div class="item-input">
+                        <input class="form-control" type="text" id="product-name" placeholder="商品名称">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>目录</label>
+                    <select class="form-control" id="product-category">
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>优先级</label>
+                    <input class="form-control" type="text" id="priority" placeholder="优先级">
+                </div>
+
+                <div class="form-group">
+                    <label>原价</label>
+                    <input class="form-control" type="number" id="normal-price" placeholder="可选">
+                </div>
+                <div class="form-group">
+                    <label>现价</label>
+                    <input class="form-control" type="number" id="promotion-price" placeholder="可选">
+                </div>
+
+                <div class="form-group small-img-div">
+                    <label>缩略图</label>
+                    <input class="form-control-file" type="file" id="small-img" placeholder="缩略图">
+                </div>
+                <div class="form-group detail-img-div">
+                    <label>详情图片</label>
+                    <input class="form-control-file detail-img" type="file" id="detail-img">
+                </div>
+
+                <div class="form-group">
+                    <label>商品描述</label>
+                    <textarea class="form-control" id="product-desc" placeholder="商品描述"></textarea>
+                </div>
+
+                <div class="form-group form-inline">
+                    <div>验证码:</div>
+                    <input class="form-control" type="text" id="j_captcha" name="verifyCode" placeholder="验证码">
+                    <div class="item-input">
+                        <img id="captcha_img" type="text" alt="点击更换" title="点击更换"
+                             onclick="changeVerityCode(this)"
+                             src="../Kaptcha">
+                    </div>
+                </div>
+
+                <div class="form-btn">
+                    <a href="/shopping/shopadmin/getproductlist" class="btn btn-danger">返回商品管理</a>
+                    <a href="#" class="btn btn-success" id="submit">提交</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../resources/js/commons/common.js" charset="UTF-8"></script>
+<script type="text/javascript" src="../resources/js/shop/productoperation.js" charset="UTF-8"></script>
+
+</body>
+</html>
