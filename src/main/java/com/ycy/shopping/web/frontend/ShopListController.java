@@ -37,7 +37,6 @@ public class ShopListController {
     @Autowired
     ShopCategoryService shopCategoryService;
 
-
     @GetMapping("/listshopspageinfo")
     @ResponseBody
     public Map<String, Object> listShopsPageInfo(HttpServletRequest request) {

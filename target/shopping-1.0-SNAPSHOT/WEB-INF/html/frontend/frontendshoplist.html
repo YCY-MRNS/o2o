@@ -8,14 +8,16 @@
     <title>商铺列表</title>
     <link rel="stylesheet" href="../resources/css/bootstrap.css">
     <link rel="stylesheet" href="../resources/css/shop/frontshoplist.css">
-
+    <link href="https://cdn.bootcss.com/font-awesome/5.10.0-12/css/all.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="navbar">
 
-    <h4 style="text-align: center ;color: #ffffff">商铺列表</h4>
-
+    <div class="top-nav">
+        <i class="fas fa-chevron-left" onclick="window.location.href='/shopping/'"></i>
+        <h4>商铺列表</h4>
+    </div>
     <div class="search-box">
         <form>
             <input type="text" id="search-input" placeholder="输入关键字">
@@ -28,12 +30,28 @@
         </ul>
     </div>
 
-    <div class="area-box">
-        <label for="checkbox-area" id="checkbox-label">筛选</label><input type="checkbox" value="" id="checkbox-area">
-        <ul id="area-list">
+</div>
 
-        </ul>
+<div class="choice-warp">
+
+    <label for="checkbox-area" id="checkbox-label">筛选
+        <i class="fas fa-filter" style="font-size: 10px;"></i></label>
+    <input type="checkbox" value="" id="checkbox-area">
+
+    <div class="condition-box">
+        <div class="area-box">
+            <p class="condition-title">区域选择：</p>
+            <ul id="area-list">
+
+            </ul>
+        </div>
+
+        <div class="btn-box">
+            <a class="btn-cancel" href="">取消</a>
+            <a class="btn-submit" href="">确定</a>
+        </div>
     </div>
+
 
 </div>
 
@@ -112,7 +130,7 @@
 
                     $.map(data.shopList.shopList, function (item, index) {
                         shopHtml +=
-                            '<div class="shop-box" data-id="' + item.shopId + '">' +
+                            '<div class="shop-box" data-shop-id="' + item.shopId + '">' +
                             '        <div class="login-box">' +
                             '            <img src="' + item.shopImg + '" alt="">' +
                             '        </div>' +
@@ -176,13 +194,13 @@
             $("#content-warp").empty();
             $("#checkbox-label").click();
             pageIndex = 1;
-
-            console.info("parentId" + parentId);
-            console.info("shopCategoryId" + shopCategoryId);
-
             showShop(pageSize, pageIndex);
         });
 
+        $(".shop-box").on("click", function () {
+            var shopId = $(this).dataset.shopId;
+            window.location.href = "/shopping/frontend/shopdetail?shopId=" + shopId;
+        })
 
     });
 </script>

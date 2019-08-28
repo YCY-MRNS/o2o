@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="O2O" />
         <module name="o2o" />
+        <module name="O2O" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
