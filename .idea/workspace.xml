@@ -7,33 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f15008ce-8351-422f-8cfa-4dd154c58d3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/frontend/ShopDetailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/shopdetail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/clear.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/shopdetial.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopping.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/frontend/ShopListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/frontend/ShopListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ShopCategoryDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/frontendshoplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/frontendshoplist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/frontshoplist.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/frontshoplist.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/shoplist.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/shoplist.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/frontend/ShopListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/frontend/ShopListController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ShopAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ShopAdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ShopCategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ShopCategoryDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/frontend/ShopListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/frontend/ShopListController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ShopAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ShopAdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/mapper/ShopCategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/mapper/ShopCategoryDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/frontend/frontendshoplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/frontend/frontendshoplist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/css/shop/frontshoplist.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/css/shop/frontshoplist.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/css/shop/shoplist.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/css/shop/shoplist.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -518,6 +493,7 @@
       <workItem from="1566305800663" duration="7021000" />
       <workItem from="1566352743198" duration="65020000" />
       <workItem from="1566529683086" duration="5019000" />
+      <workItem from="1566973948235" duration="557000" />
     </task>
     <task id="LOCAL-00001" summary="2019-3-24">
       <created>1553427996204</created>
