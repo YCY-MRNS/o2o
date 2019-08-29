@@ -68,8 +68,8 @@
 <script>
     $(function () {
 
-        var pageSize = 999;
         var pageIndex = 1;
+        var pageSize = 999;
         var shopName = "";
         var shopCategoryId = "";
         var areaId = "";
@@ -195,10 +195,10 @@
             $("#checkbox-label").click();
             pageIndex = 1;
             showShop(pageSize, pageIndex);
-        });
+        })
 
-        $(".shop-box").on("click", function () {
-            var shopId = $(this).dataset.shopId;
+        $(document).on("click", ".shop-box", function (e) {
+            var shopId = $(this).data("shop-id");
             window.location.href = "/shopping/frontend/shopdetail?shopId=" + shopId;
         })
 

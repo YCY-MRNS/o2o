@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/frontend")
 public class FrontendPageController {
 
-
     /**
      * 前端商铺列表
      */
@@ -29,6 +28,5 @@ public class FrontendPageController {
     public String shopDetail() {
         return "frontend/shopdetail";
     }
-
 
 }

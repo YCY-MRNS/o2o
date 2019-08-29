@@ -22,7 +22,7 @@ public class HeadLineDaoTest extends BaseTest {
 
         List<HeadLine> headLines = headLineMapper.selectAllHeadLine(new HeadLine());
 
-        headLines.forEach(headLine -> System.out.println("headLine = " + headLine));
+     //   headLines.forEach(headLine -> System.out.println("headLine = " + headLine));
 
     }
 }

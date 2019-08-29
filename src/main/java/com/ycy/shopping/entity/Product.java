@@ -23,7 +23,7 @@ public class Product implements Serializable {
     private Date lastEditTime;
     private Integer enableStatus;
 
-    private List<ProductImg>  productImgList;
+    private List<ProductImg> productImgList;
     private ProductCategory productCategory;
     private Shop shop;
 

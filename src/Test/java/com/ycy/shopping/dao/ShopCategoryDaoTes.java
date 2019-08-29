@@ -20,7 +20,7 @@ public class ShopCategoryDaoTes extends BaseTest {
     @Test
     public void queryShopCategoryDaoTest() {
         List<ShopCategory> shopCategories = shopCategoryDao.queryShopCategory(null);
-        shopCategories.forEach(System.out::println);
+      //  shopCategories.forEach(System.out::println);
     }
 
 }

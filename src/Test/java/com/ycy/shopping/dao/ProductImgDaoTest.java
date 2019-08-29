@@ -54,9 +54,9 @@ public class ProductImgDaoTest extends BaseTest {
 
         List<ProductImg> productImgs = productImgDao.queryProductImgList(16L);
 
-        productImgs.forEach(productImg -> {
-            System.out.println("productImg = " + productImg);
-        });
+//        productImgs.forEach(productImg -> {
+//            System.out.println("productImg = " + productImg);
+//        });
 
     }
 

@@ -16,18 +16,46 @@
 <body>
 
 <div class="navbar">
-
     <div class="top-nav">
-        <i class="fas fa-chevron-left" onclick="window.location.href='/shopping/'"></i>
-        <h4>商铺列表</h4>
+        <i class="fas fa-chevron-left" onclick="window.location.href='/shopping/frontend/shoplist'"></i>
+        <h4 class="shop-title"></h4>
     </div>
-
 </div>
 
 <div class="shop-warp">
 
 
 </div>
+
+
+<script src="../resources/js/commons/jQuery.min.js"></script>
+<script src="../resources/js/commons/common.js"></script>
+<script src="../resources/js/bootstrap.js"></script>
+
+
+<script>
+
+    $(function () {
+
+        var shopId = getQueryString("shopId");
+        var shopInfoUrl = "/shopping/frontend/shopdetailpageinfo?shopId=" + shopId;
+
+        function showShopInfo(shop) {
+            $(".shop-title").text(shop.shopName);
+            $(".navbar").css({backgroundImage: url(shop.shopImg)});
+            
+        }
+
+        $.getJSON(shopInfoUrl, function (data) {
+            console.info(data);
+            showShopInfo(data.shop);
+        })
+
+    });
+
+
+</script>
+
 
 </body>
 </html>
