@@ -36,7 +36,6 @@ public class ProductServiceImpl implements ProductService {
     @Autowired
     private ProductImgDao productImgDao;
 
-
     /**
      * 添加商品
      *
@@ -106,9 +105,12 @@ public class ProductServiceImpl implements ProductService {
                 if (p.getImgAddr() != null) {
                     ImageUtil.deleteImgFileOrPath(p.getImgAddr());
                 }
-                addThumbnail(product, thumbnail);
+                try {
+                    addThumbnail(product, thumbnail);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
-
 
             //如果存在商品详情图，则将原来删除 在添加新的图片
             if (productImgList.size() > 0) {
@@ -148,7 +150,6 @@ public class ProductServiceImpl implements ProductService {
 
     }
 
-
     /**
      * 通过商品id 查询商品信息
      *
@@ -171,7 +172,6 @@ public class ProductServiceImpl implements ProductService {
         return productDao.queryAllProduct(shopId);
     }
 
-
     /**
      * 查询商品全部信息（分页）
      *
@@ -190,7 +190,6 @@ public class ProductServiceImpl implements ProductService {
         execution.setCount(count);
         return execution;
     }
-
 
     /**
      * 批量处理图片 并添加图片
@@ -221,7 +220,6 @@ public class ProductServiceImpl implements ProductService {
         }
 
     }
-
 
     /**
      * 添加product收略图

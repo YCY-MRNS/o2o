@@ -53,15 +53,15 @@
     justify-content: center;
 }
 
-.navbar {
+.nav-bar {
     padding: 10px;
 }
 
-.navbar .search-box {
+.nav-bar .search-box {
     padding: 10px 0;
 }
 
-.navbar .search-box input {
+.nav-bar .search-box input {
     width: 100%;
     outline: none;
     text-align: center;

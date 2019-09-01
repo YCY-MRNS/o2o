@@ -131,5 +131,4 @@ public class ShopDetailController {
         return conditionProduct;
     }
 
-
 }

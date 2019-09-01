@@ -14,7 +14,7 @@
 
 <div class="all-wrap">
 
-    <div class="navbar navbar-default">
+    <div class="nav-bar navbar-default">
         <div class="container">
             <div class="navbar-header">
                 <div class="navbar-brand">商铺后台管理系统</div>
@@ -38,7 +38,9 @@
 
         <div class="panel panel-default m10">
 
-            <div class="panel-heading">商品</div>
+            <div class="panel-heading">商品
+                <a class="btn btn-primary btn-sm" id="product-add">+</a>
+            </div>
 
             <table class="table table-striped">
                 <thead>
@@ -140,6 +142,16 @@
 <script type="text/javascript" src="../resources/js/commons/common.js" charset="UTF-8"></script>
 <script type="text/javascript" src="../resources/js/shop/productlist.js" charset="UTF-8"></script>
 <script type="text/javascript" src="../resources/js/shop/productoperation.js" charset="UTF-8"></script>
+
+<script>
+    $(function () {
+
+        $("#product-add").click(function () {
+            $("#product-edit").modal();
+        })
+
+    })
+</script>
 
 </body>
 </html>

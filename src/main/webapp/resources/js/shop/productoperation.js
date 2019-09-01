@@ -24,7 +24,6 @@ $(function () {
             $.getJSON(infoUrl, function (data) {
                 if (data.success) {
 
-                    console.info(data);
                     var product = data.product;
                     $('#product-name').val(product.productName);
                     $('#product-desc').val(product.productDesc);
@@ -34,12 +33,16 @@ $(function () {
 
                     var optionHtml = "";
                     var optionArr = data.productCategoryList;
-                    var optionSelected = product.productCategory.productCategoryId;
+
 
                     optionArr.map(function (value, index) {
 
-                        var isSelected = optionSelected === value.productCategoryId ? 'selected' : '';
+                        /* if (product.productCategory.productCategoryId !== 'null' || product.productCategory.productCategoryId !== '') {
+                                     var optionSelected = product.productCategory.productCategoryId;
+                                     var isSelected = optionSelected === value.productCategoryId ? 'selected' : '';
+                                 }*/
 
+                        var isSelected = '';
                         optionHtml += '<option ' + isSelected + ' data-value="' + value.productCategoryId + '">'
                             + value.productCategoryName + '</option>';
 
@@ -96,9 +99,6 @@ $(function () {
 
             $('.detail-img').map(
                 function (value, index) {
-
-                    console.log("v" + value);
-                    console.log("i" + index);
 
                     if ($('.detail-img')[value].files.length > 0) {
                         formData.append("productImg" + value,

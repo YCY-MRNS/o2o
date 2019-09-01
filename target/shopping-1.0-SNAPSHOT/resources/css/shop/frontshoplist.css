@@ -4,25 +4,25 @@
     margin: 0;
 }
 
-.navbar {
+.nav-bar {
     background-image: linear-gradient(90deg, #0af, #0085ff);
     width: 100%;
     padding: 0 10px;
     margin-bottom: 5px !important;
 }
 
-.navbar .top-nav {
+.nav-bar .top-nav {
     display: flex;
     align-items: center;
 }
 
-.navbar .top-nav h4 {
+.nav-bar .top-nav h4 {
     text-align: center;
     color: #ffffff;
     width: 100%;
 }
 
-.navbar .top-nav i {
+.nav-bar .top-nav i {
     color: #ffffff;
 }
 
@@ -206,6 +206,8 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     vertical-align: middle;
+    width: 6rem;
+    width: 60vw;
 }
 
 .content-warp .shop-info .shop-name {

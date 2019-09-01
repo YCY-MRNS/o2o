@@ -13,44 +13,85 @@
 </head>
 <body>
 
-<div class="navbar">
+<div class="nav-bar">
     <div class="top-nav">
         <i class="fas fa-chevron-left" onclick="window.location.href='/shopping/frontend/shoplist'"></i>
-        <h4 class="shop-title"></h4>
+        <img src="" alt="" class="shop-img">
+    </div>
+    <div class="top-shop-info text-center">
+        <h2 class="shop-title"></h2>
+        <span class="shop-desc"></span>
     </div>
 </div>
 
-<div class="shop-warp">
+<div class="proc-warp">
+    <div class="show-proc-list" id="show-proc-list">
+        <dl class="proc-box">
+            <dt class="heading"></dt>
 
-
+        </dl>
+    </div>
 </div>
-
 
 <script src="../resources/js/commons/jQuery.min.js"></script>
 <script src="../resources/js/commons/common.js"></script>
 <script src="../resources/js/bootstrap.js"></script>
-
-
 <script>
 
     $(function () {
 
+        var pageIndex = 1;
+        var pageSize = 999;
         var shopId = getQueryString("shopId");
-        var shopInfoUrl = "/shopping/frontend/shopdetailpageinfo?shopId=" + shopId;
+        var getShopInfoUrl = "/shopping/frontend/shopdetailpageinfo?shopId=" + shopId;
+        var getProductInfoUrl = "/shopping/frontend/getproductbyshop";
 
         function showShopInfo(shop) {
             $(".shop-title").text(shop.shopName);
-            $(".navbar").css({backgroundImage: url(shop.shopImg)});
-
+            /*$(".navbar").css("backgroundImage", "https://cube.elemecdn.com/4/dc/54c609f…png.png?x-oss-process=image/format,webp/resize,w_750");*/
+            $(".shop-desc").text(shop.shopDesc);
+            $(".shop-img").attr("src", shop.shopImg);
         }
 
-        $.getJSON(shopInfoUrl, function (data) {
-            console.info(data);
-            showShopInfo(data.shop);
+        /**
+         * 展示该商铺下面的商品
+         */
+        function showProduct() {
+            var getProcInfo = getProductInfoUrl + "?shopId=" + shopId + "&pageIndex=" + pageIndex + "&pageSize=" + pageSize;
+            $.getJSON(getProcInfo, function (data) {
+
+                var tempHtml = '';
+                if (data.success) {
+                    $.map(data.productList, function (products, index) {
+                        tempHtml += '<dd class="proc-content">' +
+                            '    <div class="proc-root">' +
+                            '        <img class="proc-img"' +
+                            '             src="' + products.imgAddr + '"' +
+                            '             alt="' + products.productDesc + '">' +
+                            '        <section class="proc-info">' +
+                            '            <p class="proc-name">' + products.productName + '</p>' +
+                            '            <p class="proc-desc">' + products.productDesc + '</p>' +
+                            '            <p class="proc-price"><span>' + products.normalPrice + '</span></p>' +
+                            '        </section>' +
+                            '    </div>' +
+                            '</dd> ';
+                    });
+                }
+
+                $(".proc-box").html(tempHtml);
+
+            })
+        }
+
+        $.getJSON(getShopInfoUrl, function (data) {
+
+            if (data.success) {
+                showShopInfo(data.shop);
+                showProduct();
+            }
         })
 
     });
-
 
 </script>
 

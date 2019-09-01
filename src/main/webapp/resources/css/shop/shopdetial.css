@@ -1,20 +1,130 @@
 /*顶部 nav bar*/
-.navbar {
+
+.nav-bar .top-nav {
     padding: 10px;
-    height: 100px;
- /* background-image: url("");*/
+    height: 80px;
+    position: relative;
+    left: 0;
+    right: 0;
+    background-image: url("https://cube.elemecdn.com/4/dc/54c609f337a01d65d15199e5165a9png.png?x-oss-process=image/format,webp/resize,w_750");
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.navbar .top-nav {
+.fa-chevron-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.top-nav::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(0deg, hsla(0, 0%, 100%, 0), rgba(0, 0, 0, .5));
+}
+
+.top-nav .shop-img {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    margin-left: -45px;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+}
+
+.top-shop-info .shop-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.top-shop-info .shop-desc {
+    color: #666;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    /* font-weight: 700; */
+    overflow: hidden;
+    white-space: nowrap;
+    width: 4rem;
+    width: 40vw;
+    text-overflow: ellipsis;
+}
+
+.top-shop-info {
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/*商品*/
+.proc-warp {
+    margin: 120px 10px;
+}
+
+.proc-content {
+    margin-bottom: 10px;
+}
+
+.proc-root {
     display: flex;
     align-items: center;
 }
 
-.navbar .top-nav .shop-title {
-    flex: 1;
-    text-align: center;
-    /* color: #ffffff;*/
+.proc-root .proc-img {
+    width: 100%;
+    border-radius: .053333rem;
+    border-radius: .533333vw;
+    width: 2.533333rem;
+    width: 25.333333vw;
+    height: 2.533333rem;
+    height: 25.333333vw;
+    -webkit-flex: none;
+    flex: none;
+    margin-right: .266667rem;
+    margin-right: 2.666667vw;
+    position: relative;
 }
+
+.proc-root .proc-info {
+    flex: 1;
+}
+
+
+.proc-root .proc-info .proc-desc {
+    margin: .173333rem 0 !important;
+    margin: 1.733333vw 0 !important;
+    color: #999;
+    font-size: .266667rem;
+    line-height: 1;
+    min-height: 1em;
+}
+
+.proc-root .proc-info .proc-price {
+    color: rgb(255, 83, 57);
+}
+
+.proc-root .proc-info .proc-name {
+    font-weight: 700;
+    overflow: hidden;
+    font-size: .4rem;
+    white-space: nowrap;
+    width: 4rem;
+    width: 40vw;
+    text-overflow: ellipsis;
+}
+
 
 
 

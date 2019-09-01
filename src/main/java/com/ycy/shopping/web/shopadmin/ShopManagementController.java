@@ -243,8 +243,8 @@ public class ShopManagementController {
 
     /**
      * 修改商铺信息
- */
-    @RequestMapping(value = "/modifyshop", method = RequestMethod.POST)
+     */
+    @RequestMapping(value = "/updateShop", method = RequestMethod.POST)
     @ResponseBody
     private Map<String, Object> modifyShop(HttpServletRequest request) {
 
