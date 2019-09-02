@@ -39,7 +39,8 @@
         <div class="panel panel-default m10">
 
             <div class="panel-heading">商品
-                <a class="btn btn-primary btn-sm" id="product-add">+</a>
+                <a class="btn btn-primary btn-sm product-add-btn" data-toggle="modal" data-target="#product-edit"
+                   id="product-add-btn">+</a>
             </div>
 
             <table class="table table-striped">
@@ -143,15 +144,6 @@
 <script type="text/javascript" src="../resources/js/shop/productlist.js" charset="UTF-8"></script>
 <script type="text/javascript" src="../resources/js/shop/productoperation.js" charset="UTF-8"></script>
 
-<script>
-    $(function () {
-
-        $("#product-add").click(function () {
-            $("#product-edit").modal();
-        })
-
-    })
-</script>
 
 </body>
 </html>

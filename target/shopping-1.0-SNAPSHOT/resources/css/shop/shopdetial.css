@@ -1,5 +1,4 @@
 /*顶部 nav bar*/
-
 .nav-bar .top-nav {
     padding: 10px;
     height: 80px;
@@ -12,13 +11,25 @@
     background-repeat: no-repeat;
 }
 
-.fa-chevron-left {
-    position: absolute;
+.fas {
     top: 10px;
-    left: 10px;
-    z-index: 2;
+    position: absolute;
     color: #ffffff;
+    z-index: 2;
 }
+
+.fa-share {
+    right: 10px;
+}
+
+.fa-search {
+    right: 40px;
+}
+
+.fa-chevron-left {
+    left: 10px;
+}
+
 
 .top-nav::before {
     content: "";
@@ -70,7 +81,8 @@
 
 /*商品*/
 .proc-warp {
-    margin: 120px 10px;
+    margin: 120px auto;
+    height: 100%;
 }
 
 .proc-content {
@@ -83,17 +95,12 @@
 }
 
 .proc-root .proc-img {
-    width: 100%;
-    border-radius: .053333rem;
-    border-radius: .533333vw;
-    width: 2.533333rem;
-    width: 25.333333vw;
-    height: 2.533333rem;
-    height: 25.333333vw;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
     -webkit-flex: none;
     flex: none;
-    margin-right: .266667rem;
-    margin-right: 2.666667vw;
+    margin-right: 5px;
     position: relative;
 }
 
@@ -101,29 +108,61 @@
     flex: 1;
 }
 
-
 .proc-root .proc-info .proc-desc {
-    margin: .173333rem 0 !important;
-    margin: 1.733333vw 0 !important;
+    margin: 20px 0 !important;
     color: #999;
-    font-size: .266667rem;
+    font-size: 12px;
     line-height: 1;
-    min-height: 1em;
 }
 
-.proc-root .proc-info .proc-price {
+.proc-root .proc-info .proc-price s {
+    font-size: 10px;
+    color: #999;
+    margin-left: 10px;
+}
+
+.proc-root .proc-info .proc-price span {
     color: rgb(255, 83, 57);
 }
 
 .proc-root .proc-info .proc-name {
     font-weight: 700;
     overflow: hidden;
-    font-size: .4rem;
+    font-size: 14px;
     white-space: nowrap;
-    width: 4rem;
-    width: 40vw;
+    width: 140px;
     text-overflow: ellipsis;
 }
+
+.proc-warp .show-proc-list .show-category-list li a {
+    color: #666666;
+}
+
+.proc-warp .show-proc-list .show-category-list li {
+    padding: 10px;
+}
+
+.proc-warp .show-proc-list .show-category-list {
+    font-size: 16px;
+    height: 100%;
+    color: #666;
+    width: 100px;
+    background: #f8f8f8;
+    margin-right: 10px;
+}
+
+.proc-warp .show-proc-list .proc-box {
+    flex: 1;
+}
+
+.proc-warp .show-proc-list {
+    display: flex;
+}
+
+
+
+
+
 
 
 

@@ -122,6 +122,7 @@ public class ShopDetailController {
         if (!StringUtils.isEmpty(productName)) {
             conditionProduct.setProductName(productName);
         }
+
         if (productCategoryId != -1L) {
             ProductCategory productCategory = new ProductCategory();
             productCategory.setProductCategoryId(productCategoryId);

@@ -29,4 +29,9 @@ public class FrontendPageController {
         return "frontend/shopdetail";
     }
 
+    @RequestMapping("productsearch")
+    public String productSearch() {
+        return "frontend/productsearch";
+    }
+
 }

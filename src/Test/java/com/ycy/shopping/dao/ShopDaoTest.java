@@ -43,7 +43,7 @@ public class ShopDaoTest extends BaseTest {
 
         System.out.println("shop = " + shop);
 
-       // shops.forEach(System.out::println);
+        shops.forEach(System.out::println);
 
         int i = shopDao.queryShopCount(shop);
         System.out.println(shops.size());

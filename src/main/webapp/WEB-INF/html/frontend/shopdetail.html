@@ -16,6 +16,8 @@
 <div class="nav-bar">
     <div class="top-nav">
         <i class="fas fa-chevron-left" onclick="window.location.href='/shopping/frontend/shoplist'"></i>
+        <i class="fas fa-search"></i>
+        <i class="fas fa-share"></i>
         <img src="" alt="" class="shop-img">
     </div>
     <div class="top-shop-info text-center">
@@ -26,9 +28,11 @@
 
 <div class="proc-warp">
     <div class="show-proc-list" id="show-proc-list">
+        <ul class="show-category-list">
+        </ul>
+
         <dl class="proc-box">
             <dt class="heading"></dt>
-
         </dl>
     </div>
 </div>
@@ -36,12 +40,15 @@
 <script src="../resources/js/commons/jQuery.min.js"></script>
 <script src="../resources/js/commons/common.js"></script>
 <script src="../resources/js/bootstrap.js"></script>
+
 <script>
 
     $(function () {
 
         var pageIndex = 1;
         var pageSize = 999;
+        var productCategoryId = '';
+        var productCategoryName = '';
         var shopId = getQueryString("shopId");
         var getShopInfoUrl = "/shopping/frontend/shopdetailpageinfo?shopId=" + shopId;
         var getProductInfoUrl = "/shopping/frontend/getproductbyshop";
@@ -57,12 +64,26 @@
          * 展示该商铺下面的商品
          */
         function showProduct() {
-            var getProcInfo = getProductInfoUrl + "?shopId=" + shopId + "&pageIndex=" + pageIndex + "&pageSize=" + pageSize;
+
+            var getProcInfo = getProductInfoUrl + "?shopId=" + shopId + "&pageIndex=" + pageIndex + "&pageSize=" + pageSize + "&productCategoryName=" + productCategoryName + "&productCategoryId=" + productCategoryId;
+
+            $(".proc-box").html("");
+
             $.getJSON(getProcInfo, function (data) {
+
+                console.info(data);
 
                 var tempHtml = '';
                 if (data.success) {
+
+                    /*data.productList.sort(function (a, b) {
+                        if (a.productCategory.productCategoryId > b.productCategory.productCategoryId) return -1;
+                        if (a.productCategory.productCategoryId < b.productCategory.productCategoryId) return 1;
+                        return 0;
+                    });*/
+
                     $.map(data.productList, function (products, index) {
+
                         tempHtml += '<dd class="proc-content">' +
                             '    <div class="proc-root">' +
                             '        <img class="proc-img"' +
@@ -71,7 +92,7 @@
                             '        <section class="proc-info">' +
                             '            <p class="proc-name">' + products.productName + '</p>' +
                             '            <p class="proc-desc">' + products.productDesc + '</p>' +
-                            '            <p class="proc-price"><span>' + products.normalPrice + '</span></p>' +
+                            '            <p class="proc-price"><span>￥' + products.promotionPrice + '</span><s>' + products.normalPrice + '</s></p>' +
                             '        </section>' +
                             '    </div>' +
                             '</dd> ';
@@ -83,12 +104,31 @@
             })
         }
 
-        $.getJSON(getShopInfoUrl, function (data) {
+        function showCategory(category) {
+            var tempCategoryHtml = '<li><a class="product-category" href="#" data-category-id="">全部</a></li>';
+            category.map(function (item, index) {
+                tempCategoryHtml += '<li><a  class="product-category" href="#" data-category-id="' + item.productCategoryId + '">' + item.productCategoryName + '</a></li>';
+            });
+            $(".show-category-list").html(tempCategoryHtml);
+        }
 
+        $.getJSON(getShopInfoUrl, function (data) {
             if (data.success) {
+                console.info(data);
                 showShopInfo(data.shop);
+                showCategory(data.productCategoryList);
                 showProduct();
             }
+        });
+
+
+        $(document).on("click", ".product-category", function () {
+            productCategoryId = $(this).data("categoryId");
+            showProduct();
+        });
+
+        $(".fa-search").click(function () {
+            window.location.href = "/shopping/frontend/productsearch?shopId=" + shopId;
         })
 
     });

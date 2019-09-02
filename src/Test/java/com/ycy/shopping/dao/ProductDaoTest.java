@@ -9,6 +9,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @program: shopping
@@ -54,6 +55,7 @@ public class ProductDaoTest extends BaseTest {
     public void testUpdateProductCategoryIdToNull() {
         productDao.updateProductCategoryToNull(11L);
     }
+
     @Test
     public void testUpdateProduct() {
         Shop shop = new Shop();
@@ -72,6 +74,17 @@ public class ProductDaoTest extends BaseTest {
         product.setShop(shop);
         product.setProductCategory(productCategory);
         int i = productDao.updateProduct(product);
+    }
+
+    @Test
+    public void testQueryForList() {
+        Product product = new Product();
+        Shop shop = new Shop();
+        shop.setShopId(19L);
+        product.setShop(shop);
+
+        List<Product> productList = productDao.queryProductList(product, 1, 99);
+        productList.forEach(System.out::println);
     }
 
 }

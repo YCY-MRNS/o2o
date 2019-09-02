@@ -7,70 +7,150 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f15008ce-8351-422f-8cfa-4dd154c58d3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/productsearch.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/util/ImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/java/com/ycy/shopping/dao/ProductDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/java/com/ycy/shopping/dao/ProductDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/java/com/ycy/shopping/dao/ShopDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/java/com/ycy/shopping/dao/ShopDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/frontend/FrontendPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/frontend/FrontendPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/frontend/ShopDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/frontend/ShopDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ProductManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ProductManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopAdminPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/frontendshoplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/frontendshoplist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/shopdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/shopdetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productcategorymanagement.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productcategorymanagement.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productlist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productoperation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productoperation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopmanagement.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopmanagement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopoperation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopoperation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/frontshoplist.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/frontshoplist.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/shopdetial.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/shop/shopdetial.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/productoperation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/productoperation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/AreaDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/AreaDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/HeadLineMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/HeadLineMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/ProductCategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/ProductCategoryDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/ProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/ProductDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/ProductImgDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/ProductImgDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/ProductImgDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/ProductImgDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/ShopCategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/ShopCategoryDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/ShopDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dao/ShopDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dto/ImageHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dto/ImageHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dto/ProductCategoryExecution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dto/ProductCategoryExecution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dto/ProductExecution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dto/ProductExecution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dto/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dto/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dto/ShopExecution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/dto/ShopExecution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/emums/ProductCategoryStateEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/emums/ProductCategoryStateEnum.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/emums/ProductStateEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/emums/ProductStateEnum.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/emums/ShopStateEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/emums/ShopStateEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/Area.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/HeadLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/HeadLine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/LocalAuth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/LocalAuth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/PersonInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/PersonInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/ProductCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/ProductCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/ProductImg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/ProductImg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/Shop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/ShopCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/ShopCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/WechatAuth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/entity/WechatAuth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/exceptions/ProductCategoryOperationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/exceptions/ProductCategoryOperationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/exceptions/ProductOperationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/exceptions/ProductOperationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/exceptions/ShopOperationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/exceptions/ShopOperationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/AreaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/AreaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/HeadLineService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/HeadLineService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/ProductCategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/ProductCategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/ShopCategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/ShopCategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/ShopService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/ShopService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/impl/AreaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/impl/AreaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/impl/HeadLineServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/impl/HeadLineServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/impl/ProductCategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/impl/ProductCategoryServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/impl/ShopCategoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/impl/ShopCategoryImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/impl/ShopServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/service/impl/ShopServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/CodeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/CodeUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/HttpServletRequestUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/HttpServletRequestUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/ImageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/ImageUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/MBGTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/MBGTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/PageCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/PageCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/PathUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/PathUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/frontend/FrontendPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/frontend/FrontendPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/frontend/MainPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/frontend/MainPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/frontend/ShopDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/frontend/ShopDetailController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/frontend/ShopListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/frontend/ShopListController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ProductCategoryManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ProductCategoryManagementController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ProductManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ProductManagementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ShopAdminController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ShopManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ShopManagementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/superadmin/AreaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/superadmin/AreaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ProductDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/AreaDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/AreaDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/HeadLineMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/HeadLineMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/ProductCategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/ProductCategoryDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/ProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/ProductDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/ProductImgDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/ProductImgDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/ProductImgDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/ProductImgDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/ShopCategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/ShopCategoryDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/ShopDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dao/ShopDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dto/ImageHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dto/ImageHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dto/ProductCategoryExecution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dto/ProductCategoryExecution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dto/ProductExecution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dto/ProductExecution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dto/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dto/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dto/ShopExecution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/dto/ShopExecution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/emums/ProductCategoryStateEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/emums/ProductCategoryStateEnum.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/emums/ProductStateEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/emums/ProductStateEnum.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/emums/ShopStateEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/emums/ShopStateEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/Area.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/HeadLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/HeadLine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/LocalAuth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/LocalAuth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/PersonInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/PersonInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/ProductCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/ProductCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/ProductImg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/ProductImg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/Shop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/ShopCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/ShopCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/WechatAuth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/entity/WechatAuth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/exceptions/ProductCategoryOperationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/exceptions/ProductCategoryOperationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/exceptions/ProductOperationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/exceptions/ProductOperationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/exceptions/ShopOperationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/exceptions/ShopOperationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/AreaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/AreaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/HeadLineService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/HeadLineService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/ProductCategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/ProductCategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/ShopCategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/ShopCategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/ShopService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/ShopService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/AreaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/AreaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/HeadLineServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/HeadLineServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/ProductCategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/ProductCategoryServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/ShopCategoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/ShopCategoryImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/ShopServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/service/impl/ShopServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/CodeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/CodeUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/HttpServletRequestUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/HttpServletRequestUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/ImageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/ImageUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/MBGTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/MBGTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/PageCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/PageCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/PathUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/PathUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/frontend/FrontendPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/frontend/FrontendPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/frontend/MainPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/frontend/MainPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/frontend/ShopDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/frontend/ShopDetailController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/frontend/ShopListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/frontend/ShopListController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ProductCategoryManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ProductCategoryManagementController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ProductManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ProductManagementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ShopAdminController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ShopManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ShopManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/superadmin/AreaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/superadmin/AreaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/mapper/ProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/mapper/ProductDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/frontend/frontendshoplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/frontend/frontendshoplist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/frontend/shopdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/frontend/shopdetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/productcategorymanagement.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/productcategorymanagement.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/productlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/productlist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/productoperation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/productoperation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/shoplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/shoplist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/shopmanagement.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/shopmanagement.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/shopoperation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/shopoperation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/css/shop/frontshoplist.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/css/shop/frontshoplist.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/css/shop/shopdetial.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/css/shop/shopdetial.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/js/shop/productoperation.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/js/shop/productoperation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/BaseTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/AreaDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/AreaDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/HeadLineDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/HeadLineDaoTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ProductCategoryDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ProductCategoryDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ProductDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ProductDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ProductImgDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ProductImgDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ShopCategoryDaoTes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ShopCategoryDaoTes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ShopDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ShopDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/service/AreaServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/service/AreaServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/service/ProduceServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/service/ProduceServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/service/ShopServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/service/ShopServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,8 +193,8 @@
         <option value="xml" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -183,7 +263,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31839082" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -229,6 +309,22 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.T9">
+    <configuration name="ProductDaoTest.testQueryForList" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
+      <module name="o2o" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ycy.shopping.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ycy.shopping.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.ycy.shopping.dao.ProductDaoTest" />
+      <option name="METHOD_NAME" value="testQueryForList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ImageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ycy.shopping.util.ImageUtil" />
       <module name="o2o" />
@@ -242,8 +338,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeadLineDaoTest.testSelectAllHeadLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="O2O" />
+    <configuration name="ProductDaoTest.testQueryForList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="o2o" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ycy.shopping.dao.*" />
@@ -251,24 +347,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ycy.shopping.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.ycy.shopping.dao.HeadLineDaoTest" />
-      <option name="METHOD_NAME" value="testSelectAllHeadLine" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShopCategoryDaoTes.queryShopCategoryDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="O2O" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ycy.shopping.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ycy.shopping.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.ycy.shopping.dao.ShopCategoryDaoTes" />
-      <option name="METHOD_NAME" value="queryShopCategoryDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ycy.shopping.dao.ProductDaoTest" />
+      <option name="METHOD_NAME" value="testQueryForList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -465,21 +545,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.HeadLineDaoTest.testSelectAllHeadLine" />
-      <item itemvalue="JUnit.ShopCategoryDaoTes.queryShopCategoryDaoTest" />
+      <item itemvalue="Application.ImageUtil" />
       <item itemvalue="JUnit.ShopDaoTest.queryShopList" />
       <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="Tomcat Server.T9" />
       <item itemvalue="Tomcat Server.frontendshoplist.html" />
-      <item itemvalue="Application.ImageUtil" />
+      <item itemvalue="JUnit.ProductDaoTest.testQueryForList" />
+      <item itemvalue="Android JUnit.ProductDaoTest.testQueryForList" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Android JUnit.ProductDaoTest.testQueryForList" />
+        <item itemvalue="JUnit.ProductDaoTest.testQueryForList" />
         <item itemvalue="Application.ImageUtil" />
         <item itemvalue="Tomcat Server.frontendshoplist.html" />
         <item itemvalue="JUnit.ShopDaoTest.queryShopList" />
-        <item itemvalue="JUnit.ShopCategoryDaoTes.queryShopCategoryDaoTest" />
-        <item itemvalue="JUnit.HeadLineDaoTest.testSelectAllHeadLine" />
       </list>
     </recent_temporary>
   </component>
@@ -572,7 +652,8 @@
       <workItem from="1567058669822" duration="19231000" />
       <workItem from="1567308484738" duration="945000" />
       <workItem from="1567315312557" duration="1850000" />
-      <workItem from="1567320368808" duration="24854000" />
+      <workItem from="1567320368808" duration="24968000" />
+      <workItem from="1567385526745" duration="24362000" />
     </task>
     <task id="LOCAL-00001" summary="2019-3-24">
       <created>1553427996204</created>
@@ -602,7 +683,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566974628933</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2019/9/1">
+      <created>1567351825476</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1567351825476</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -652,7 +740,8 @@
     <MESSAGE value="2019-3-24" />
     <MESSAGE value="2019-8-2" />
     <MESSAGE value="2019/8/27" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019/8/27" />
+    <MESSAGE value="2019/9/1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019/9/1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -750,85 +839,12 @@
           <line>260</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ProductManagementController.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>o2o:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.31839082" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>o2o</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.31839082" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: c3p0:c3p0:0.9.1.2</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.31839082" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
