@@ -130,12 +130,13 @@
 <script type="text/javascript" src="../resources/js/commons/common.js" charset="UTF-8"></script>
 <script src="../resources/js/shop/shoplist.js"></script>
 
+<script src="../resources/js/shop/shopedit.js"></script>
+
 <script>
 
     var shopInfoUrl = '/shopping/shopadmin/getshopbyid?shopId=';
-    var editShopUrl = '/shopping/shopadmin/updateShop';
+    var editShopUrl = '/shopping/shopadmin/modifyshop';
     var saveCurrentShop = '/shopping/shopadmin/getshopmanagementinfo';
-
 
     $(document).on("click", ".btn-more", function () {
         var shopId = $(this).data("id");

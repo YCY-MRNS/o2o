@@ -15,4 +15,5 @@ $(function () {
             $('#shopInfo').attr('href', '/shopping/shopadmin/shopoperation?shopId=' + shopId);
         }
     });
+
 });
