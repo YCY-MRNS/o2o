@@ -16,12 +16,12 @@ public class ShopAdminController {
 
     @RequestMapping(value = "/shopoperation")
     public String shopOperation() {
-        return "shop/shopoperation";
+        return "backstage/shopoperation";
     }
 
     @RequestMapping(value = "/shoplist")
     public String shopList() {
-        return "shop/shoplist";
+        return "backstage/index";
     }
 
     @RequestMapping(value = "/shopmanagement")
@@ -31,20 +31,18 @@ public class ShopAdminController {
 
     @RequestMapping(value = "/productcategorymanagement", method = RequestMethod.GET)
     public String productCategoryManagement() {
-        return "shop/productcategorymanagement";
+        return "backstage/productcategory";
     }
 
-    /**
-     * 商品操作 跳转到商品页面 进行添加和编辑操作
-     */
     @RequestMapping(value = "/productoperation")
     public String productOperation() {
-        return "shop/productoperation";
+        return "backstage/productoperation";
     }
 
     @RequestMapping(value = "/productlist")
-    public String productlist() {
-        return "shop/productlist";
+    public String productList() {
+        return "backstage/productlist";
     }
+
 }
 

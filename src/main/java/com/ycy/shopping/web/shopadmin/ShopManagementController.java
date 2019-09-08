@@ -15,6 +15,7 @@ import com.ycy.shopping.util.CodeUtil;
 import com.ycy.shopping.util.HttpServletRequestUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -35,6 +36,7 @@ import java.util.Map;
  * @author: ChangYue
  * @create: 2019-03-17 20:16
  */
+@CrossOrigin
 @Controller
 @RequestMapping(value = "/shopadmin")
 public class ShopManagementController {

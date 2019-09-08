@@ -6,6 +6,10 @@
 
     <mvc:annotation-driven/>
 
+    <mvc:resources mapping="/resources/assets/js/**" location="/resources/assets/js/"/>
+
+    <mvc:resources mapping="/resources/assets/css/**" location="/resources/assets/css/"/>
+
     <mvc:default-servlet-handler/>
 
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">

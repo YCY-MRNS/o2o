@@ -32,6 +32,7 @@ import java.util.Map;
  * @author: ChangYue
  * @create: 2019-04-10 19:18
  */
+@CrossOrigin
 @RequestMapping(value = "/shopadmin")
 @Controller
 public class ProductManagementController {
@@ -55,8 +56,12 @@ public class ProductManagementController {
 
         int pageIndex = HttpServletRequestUtil.getInt(request, "pageIndex");
         int pageSize = HttpServletRequestUtil.getInt(request, "pageSize");
+        Long shopId = HttpServletRequestUtil.getLong(request, "shopId");
 
         Shop currentShop = (Shop) request.getSession().getAttribute("currentShop");
+        if (shopId > -1L) {
+            currentShop.setShopId(shopId);
+        }
 
         if ((pageIndex > -1) && (pageSize >= -1) && (currentShop != null) && (currentShop.getShopId() != null)) {
             long productCategoryId = HttpServletRequestUtil.getLong(request, "productCategoryId");

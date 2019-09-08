@@ -18,7 +18,6 @@ $(function () {
             getCategory();
             productPostUrl = '/shopping/shopadmin/addproduct';
         }
-
         function getInfo(id) {
 
             $.getJSON(infoUrl, function (data) {

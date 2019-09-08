@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="../resources/css/clear.css">
     <link rel="stylesheet" href="../resources/css/shop/shopdetial.css">
     <link href="https://cdn.bootcss.com/font-awesome/5.10.0-12/css/all.css" rel="stylesheet">
-
-
 </head>
 <body>
 
@@ -43,7 +41,7 @@
         function showShopInfo(shop) {
             $(".shop-title").text(shop.shopName);
             $(".navbar").css({backgroundImage: url(shop.shopImg)});
-            
+
         }
 
         $.getJSON(shopInfoUrl, function (data) {
