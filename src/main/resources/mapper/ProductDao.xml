@@ -28,7 +28,7 @@
         </association>
     </resultMap>
 
-    <select id="queryProductList" resultType="com.ycy.shopping.entity.Product" parameterType="Long">
+    <select id="queryProductList" resultMap="productMap" parameterType="Long">
         select product_id,
         product_name,
         img_addr,

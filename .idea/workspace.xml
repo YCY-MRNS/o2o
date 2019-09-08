@@ -7,6 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f15008ce-8351-422f-8cfa-4dd154c58d3f" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/interceptor/CrossInterceptor.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/backstage/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/backstage/productcategory.html" afterDir="false" />
@@ -187,8 +188,34 @@
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/js/shop/productoperation.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/js/shop/productoperation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/AreaDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/AreaDaoTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ProductCategoryDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/ProductCategoryDaoTest.class" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopedit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/java/com/ycy/shopping/dao/HeadLineDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/java/com/ycy/shopping/dao/HeadLineDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/dao/HeadLineMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/dao/HeadLineMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/util/PathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/util/PathUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/commons/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/commons/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopmanagerment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopmanagerment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/PathUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/util/PathUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ShopManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ycy/shopping/web/shopadmin/ShopManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/PathUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/util/PathUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ShopManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/ycy/shopping/web/shopadmin/ShopManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/shoplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/shop/shoplist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/js/commons/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/js/commons/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/js/shop/shopmanagerment.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/js/shop/shopmanagerment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/HeadLineDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ycy/shopping/dao/HeadLineDaoTest.class" afterDir="false" />
+>>>>>>> origin/master
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,6 +245,7 @@
   <component name="FavoritesManager">
     <favorites_list name="shopping" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
@@ -231,6 +259,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> origin/master
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -238,16 +268,26 @@
         <option value="spring-beans.schema" />
         <option value="Gradle Kotlin DSL Settings" />
         <option value="mapper" />
+<<<<<<< HEAD
         <option value="Jsp File" />
         <option value="xml" />
         <option value="Interface" />
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="Class" />
+=======
+        <option value="xml" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Jsp File" />
+>>>>>>> origin/master
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="FindInProjectRecents">
     <findStrings>
       <find>tb_shop</find>
@@ -270,6 +310,8 @@
       <replace>品</replace>
     </replaceStrings>
   </component>
+=======
+>>>>>>> origin/master
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -280,6 +322,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -320,6 +363,8 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> origin/master
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -336,14 +381,9 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="541" />
-    <option name="y" value="61" />
-    <option name="width" value="1400" />
-    <option name="height" value="965" />
   </component>
   <component name="ProjectId" id="1Og8VSUmqW947eMFEZe1FFEKu7A" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -366,6 +406,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -503,6 +544,8 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
+=======
+>>>>>>> origin/master
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -513,15 +556,19 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567967424336" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="E:/projectdev/img/upload" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+<<<<<<< HEAD
     <property name="project.structure.last.edited" value="Libraries" />
+=======
+    <property name="project.structure.last.edited" value="Project" />
+>>>>>>> origin/master
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31839082" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -538,17 +585,34 @@
       <recent name="com.ycy.shopping.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\javaweb\o2o\src\main\webapp\resources\assets\js\shop" />
       <recent name="C:\javaweb\o2o\src\main\webapp\WEB-INF\html\backstage" />
       <recent name="C:\javaweb\o2o\src\main\webapp\resources" />
       <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\java\com\ycy\shopping\util" />
       <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\webapp\resources\img" />
+=======
+      <recent name="D:\TrainProject\o2o\src\main\webapp\resources" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\java\com\ycy\shopping\util" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\webapp\resources\img" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\webapp\resources" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\webapp\resources\js\commons" />
+>>>>>>> origin/master
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ycy.shopping.exceptions" />
     </key>
+<<<<<<< HEAD
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.ycy.shopping.emums" />
+=======
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\TrainProject\o2o\src\main\resources" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\webapp" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\resources\mapper" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\java" />
+      <recent name="D:\TrainProject\ShoppingWithSSMAndSpringBoot\src\main\java\com\ycy\shopping\entity" />
+>>>>>>> origin/master
     </key>
   </component>
   <component name="RunDashboard">
@@ -564,8 +628,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.T9">
+<<<<<<< HEAD
     <configuration name="HeadLineDaoTest.testSelectAllHeadLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="O2O" />
+=======
+    <configuration name="ProductDaoTest.testQueryForList" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
+      <module name="o2o" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ycy.shopping.dao.*" />
@@ -573,15 +641,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ycy.shopping.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.ycy.shopping.dao.HeadLineDaoTest" />
-      <option name="METHOD_NAME" value="testSelectAllHeadLine" />
+      <option name="MAIN_CLASS_NAME" value="com.ycy.shopping.dao.ProductDaoTest" />
+      <option name="METHOD_NAME" value="testQueryForList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShopCategoryDaoTes.queryShopCategoryDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="O2O" />
+    <configuration name="ImageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ycy.shopping.util.ImageUtil" />
+      <module name="o2o" />
+>>>>>>> origin/master
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ycy.shopping.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductDaoTest.testQueryForList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="o2o" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ycy.shopping.dao.*" />
@@ -589,8 +671,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ycy.shopping.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.ycy.shopping.dao.ShopCategoryDaoTes" />
-      <option name="METHOD_NAME" value="queryShopCategoryDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ycy.shopping.dao.ProductDaoTest" />
+      <option name="METHOD_NAME" value="testQueryForList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -666,7 +748,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.72" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="T9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="apache-tomcat-9.0.22" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
@@ -677,7 +759,7 @@
             <option name="CONTEXT_PATH" value="/shopping" />
           </settings>
         </artifact>
-        <file path="E:/projectdev/img/upload">
+        <file path="D:/projectdev/img/upload">
           <settings>
             <option name="CONTEXT_PATH" value="/upload" />
           </settings>
@@ -826,9 +908,15 @@
       </method>
     </configuration>
     <list>
+<<<<<<< HEAD
       <item itemvalue="JUnit.HeadLineDaoTest.testSelectAllHeadLine" />
       <item itemvalue="JUnit.ShopCategoryDaoTes.queryShopCategoryDaoTest" />
+=======
+      <item itemvalue="Android JUnit.ProductDaoTest.testQueryForList" />
+      <item itemvalue="Application.ImageUtil" />
+>>>>>>> origin/master
       <item itemvalue="JUnit.ShopDaoTest.queryShopList" />
+      <item itemvalue="JUnit.ProductDaoTest.testQueryForList" />
       <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="Tomcat Server.T9" />
       <item itemvalue="Tomcat Server.frontendshoplist.html" />
@@ -836,13 +924,31 @@
     </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Tomcat Server.shopdetail.html" />
         <item itemvalue="Tomcat Server.frontendshoplist.html" />
         <item itemvalue="JUnit.ShopDaoTest.queryShopList" />
         <item itemvalue="JUnit.ShopCategoryDaoTes.queryShopCategoryDaoTest" />
         <item itemvalue="JUnit.HeadLineDaoTest.testSelectAllHeadLine" />
+=======
+        <item itemvalue="Android JUnit.ProductDaoTest.testQueryForList" />
+        <item itemvalue="JUnit.ProductDaoTest.testQueryForList" />
+        <item itemvalue="Application.ImageUtil" />
+        <item itemvalue="Tomcat Server.frontendshoplist.html" />
+        <item itemvalue="JUnit.ShopDaoTest.queryShopList" />
+>>>>>>> origin/master
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -920,9 +1026,26 @@
       <workItem from="1566529683086" duration="5019000" />
       <workItem from="1566973948235" duration="1359000" />
       <workItem from="1567057557614" duration="1056000" />
+<<<<<<< HEAD
       <workItem from="1567058669822" duration="19447000" />
       <workItem from="1567938273824" duration="463000" />
       <workItem from="1567948697540" duration="18225000" />
+=======
+      <workItem from="1567058669822" duration="19231000" />
+      <workItem from="1567308484738" duration="945000" />
+      <workItem from="1567315312557" duration="1850000" />
+      <workItem from="1567320368808" duration="24968000" />
+      <workItem from="1567385526745" duration="25183000" />
+      <workItem from="1567477111508" duration="1676000" />
+      <workItem from="1567520731388" duration="541000" />
+      <workItem from="1567580924360" duration="166000" />
+      <workItem from="1567591327502" duration="5298000" />
+      <workItem from="1567662352692" duration="11000" />
+      <workItem from="1567663879107" duration="4138000" />
+      <workItem from="1567779599250" duration="1531000" />
+      <workItem from="1567786882380" duration="6880000" />
+      <workItem from="1567822674164" duration="14198000" />
+>>>>>>> origin/master
     </task>
     <task id="LOCAL-00001" summary="2019-3-24">
       <created>1553427996204</created>
@@ -952,6 +1075,7 @@
       <option name="project" value="LOCAL" />
       <updated>1566974628933</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00005" summary="2019/8/29">
       <created>1567087093942</created>
       <option name="number" value="00005" />
@@ -965,6 +1089,32 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="39191000" />
   </component>
+=======
+    <task id="LOCAL-00005" summary="2019/9/1">
+      <created>1567351825476</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1567351825476</updated>
+    </task>
+    <task id="LOCAL-00006" summary="2019/9/2">
+      <created>1567416322765</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567416322765</updated>
+    </task>
+    <task id="LOCAL-00007" summary="2019/9/2">
+      <created>1567416476718</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1567416476718</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+>>>>>>> origin/master
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -974,6 +1124,7 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
+<<<<<<< HEAD
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
     <editor active="true" />
@@ -1050,6 +1201,8 @@
       <window_info anchor="right" id="Database" order="8" />
     </layout-to-restore>
   </component>
+=======
+>>>>>>> origin/master
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -1059,12 +1212,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -1094,21 +1241,19 @@
     <MESSAGE value="2019-3-24" />
     <MESSAGE value="2019-8-2" />
     <MESSAGE value="2019/8/27" />
+<<<<<<< HEAD
     <MESSAGE value="2019/8/29" />
     <option name="LAST_COMMIT_MESSAGE" value="2019/8/29" />
+=======
+    <MESSAGE value="2019/9/1" />
+    <MESSAGE value="2019/9/2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019/9/2" />
+>>>>>>> origin/master
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/util/CodeUtil.java</url>
-          <line>14</line>
-          <properties class="com.ycy.shopping.util.CodeUtil" method="checkVerityCode">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/Test/java/com/ycy/shopping/service/ShopServiceTest.java</url>
           <line>37</line>
           <properties class="com.ycy.shopping.service.ShopServiceTest">
@@ -1116,14 +1261,34 @@
           </properties>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Test/java/com/ycy/shopping/dao/ProductDaoTest.java</url>
+          <line>48</line>
+          <properties class="com.ycy.shopping.dao.ProductDaoTest" method="testQueryProductById">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/util/CodeUtil.java</url>
+          <line>14</line>
+          <properties class="com.ycy.shopping.util.CodeUtil" method="checkVerityCode">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopManagementController.java</url>
           <line>114</line>
+<<<<<<< HEAD
           <properties />
+=======
+>>>>>>> origin/master
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopManagementController.java</url>
+<<<<<<< HEAD
           <line>253</line>
           <properties />
           <option name="timeStamp" value="8" />
@@ -1132,25 +1297,91 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopManagementController.java</url>
           <line>165</line>
           <properties />
+=======
+          <line>165</line>
+>>>>>>> origin/master
           <option name="timeStamp" value="20" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/impl/ShopServiceImpl.java</url>
           <line>100</line>
-          <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ProductManagementController.java</url>
+          <line>168</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ProductManagementController.java</url>
+          <line>274</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ProductManagementController.java</url>
+          <line>303</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ProductManagementController.java</url>
+          <line>325</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/impl/ProductServiceImpl.java</url>
-          <line>121</line>
-          <properties />
-          <option name="timeStamp" value="33" />
+          <line>60</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/impl/ProductServiceImpl.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/impl/ProductServiceImpl.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/impl/ProductServiceImpl.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/service/impl/ProductServiceImpl.java</url>
+          <line>228</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/util/ImageUtil.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/util/ImageUtil.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/util/ImageUtil.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ProductManagementController.java</url>
+<<<<<<< HEAD
           <line>173</line>
           <properties />
           <option name="timeStamp" value="34" />
+=======
+          <line>129</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ShopManagementController.java</url>
+          <line>256</line>
+          <option name="timeStamp" value="64" />
+>>>>>>> origin/master
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/shopadmin/ProductManagementController.java</url>
@@ -1167,6 +1398,7 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ycy/shopping/web/frontend/ShopDetailController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1760,4 +1992,6 @@
       </state>
     </states>
   </component>
+=======
+>>>>>>> origin/master
 </project>

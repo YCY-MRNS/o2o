@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div class="navbar">
+<div class="nav-bar">
 
     <div class="top-nav">
         <i class="fas fa-chevron-left" onclick="window.location.href='/shopping/'"></i>
@@ -195,7 +195,7 @@
             $("#checkbox-label").click();
             pageIndex = 1;
             showShop(pageSize, pageIndex);
-        })
+        });
 
         $(document).on("click", ".shop-box", function (e) {
             var shopId = $(this).data("shop-id");

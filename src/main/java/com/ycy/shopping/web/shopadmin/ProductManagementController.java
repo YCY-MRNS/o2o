@@ -239,7 +239,6 @@ public class ProductManagementController {
         }
 
         return modelMap;
-
     }
 
     /**

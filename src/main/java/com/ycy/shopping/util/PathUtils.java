@@ -6,6 +6,8 @@ package com.ycy.shopping.util;
  * @author: ChangYue
  * @create: 2019-03-14 22:43
  */
+
+/*<Context docBase="/Users/baidu/work/image/upload" path="/unload" />*/
 public class PathUtils {
     private static String separator = System.getProperty("file.separator");
 
@@ -15,7 +17,7 @@ public class PathUtils {
         if (os.toLowerCase().startsWith("win")) {
             basePath = "D:/projectdev/img/";
         } else {
-            basePath = "/home/image";
+            basePath = "/Users/baidu/work/image";
         }
         basePath = basePath.replace("/", separator);
         return basePath;
@@ -24,7 +26,6 @@ public class PathUtils {
     public static String getShopImagePath(long shopId) {
         String imagePath = "/upload/item/shop/" + shopId + "/";
         return imagePath.replace("/", separator);
-
     }
 
 }

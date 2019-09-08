@@ -1,9 +1,9 @@
 package com.ycy.shopping.dao;
 
-import com.ycy.shopping.entity.HeadLine;
-import org.apache.ibatis.annotations.Param;
+        import com.ycy.shopping.entity.HeadLine;
+        import org.apache.ibatis.annotations.Param;
 
-import java.util.List;
+        import java.util.List;
 
 public interface HeadLineMapper {
     int deleteByPrimaryKey(Integer lineId);

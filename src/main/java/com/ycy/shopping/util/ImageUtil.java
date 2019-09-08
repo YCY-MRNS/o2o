@@ -29,18 +29,16 @@ public class ImageUtil {
         makeDirPath(targetAddr);
         String relativeAddr = targetAddr + realFileName + extension;
         File dest = new File(PathUtils.getImgBasePath() + relativeAddr);
-
         try {
             Thumbnails.of(thumbnail.getImage()).size(200, 200)
-                    .watermark(Positions.BOTTOM_CENTER, ImageIO.read(new File(baseFile + "/watermark.png")), 0.25f)
-                    .outputQuality(.8f)
+                    .outputQuality(.9f)
                     .toFile(dest);
         } catch (IOException e) {
             e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         return relativeAddr;
     }
-
 
     public static String generateNormalImg(ImageHolder thumbnail, String targetAddr) throws IOException {
         String realFileName = getRandomFileName();
@@ -89,7 +87,7 @@ public class ImageUtil {
     }
 
     public static void main(String[] args) throws IOException {
-        Thumbnails.of(new File("src/main/resources/unsplash.jpg"))
+        Thumbnails.of(new File("src/main/resources/1.jpeg"))
                 .size(1200, 1200)
                 .watermark(Positions.BOTTOM_CENTER, ImageIO.read(new File(baseFile + "/unsplash.jpg")), .25f)
                 .outputQuality(.8f)

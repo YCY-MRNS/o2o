@@ -15,7 +15,7 @@
 
 <div class="all-wrap">
 
-    <div class="navbar navbar-default">
+    <div class="nav-bar navbar-default">
         <div class="container">
             <div class="navbar-header">
                 <div class="navbar-brand">商铺后台管理系统</div>
@@ -40,7 +40,7 @@
         <div class="panel panel-default m10">
 
             <div class="panel-heading">
-                商店<a class="btn btn-primary btn-sm" href="/shopping/shopadmin/shopoperation">+</a>
+                商店<a class="btn btn-primary btn-sm " href="/shopping/shopadmin/shopoperation">+</a>
             </div>
 
             <table class="table table-striped">
@@ -130,12 +130,13 @@
 <script type="text/javascript" src="../resources/js/commons/common.js" charset="UTF-8"></script>
 <script src="../resources/js/shop/shoplist.js"></script>
 
+<script src="../resources/js/shop/shopedit.js"></script>
+
 <script>
 
     var shopInfoUrl = '/shopping/shopadmin/getshopbyid?shopId=';
     var editShopUrl = '/shopping/shopadmin/modifyshop';
     var saveCurrentShop = '/shopping/shopadmin/getshopmanagementinfo';
-
 
     $(document).on("click", ".btn-more", function () {
         var shopId = $(this).data("id");
@@ -213,6 +214,7 @@
             alert("请输入验证码！");
             return;
         }
+
         formData.append("verifyCodeActual", verifyCodeActual);
 
         console.info(shop);

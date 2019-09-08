@@ -49,7 +49,7 @@ public class ShopManagementController {
 
     @Autowired
     private AreaService areaService;
-
+    
     /**
      * 进行商铺管理前需要获得商铺信息
      */
@@ -245,7 +245,7 @@ public class ShopManagementController {
 
     /**
      * 修改商铺信息
- */
+     */
     @RequestMapping(value = "/modifyshop", method = RequestMethod.POST)
     @ResponseBody
     private Map<String, Object> modifyShop(HttpServletRequest request) {
