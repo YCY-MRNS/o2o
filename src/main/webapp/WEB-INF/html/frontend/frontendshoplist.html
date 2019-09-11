@@ -15,9 +15,10 @@
 <div class="nav-bar">
 
     <div class="top-nav">
-        <i class="fas fa-chevron-left" onclick="window.location.href='/shopping/'"></i>
+        <i class="fas fa-chevron-left" onclick="window.location.href='/o2o/'"></i>
         <h4>商铺列表</h4>
     </div>
+
     <div class="search-box">
         <form>
             <input type="text" id="search-input" placeholder="输入关键字">
@@ -75,8 +76,8 @@
         var areaId = "";
         var parentId = getQueryString("parentId");
 
-        var shopList = "/shopping/frontend/listshops";
-        var baseInfo = "/shopping/frontend/listshopspageinfo?parentId=" + parentId;
+        var shopList = "/o2o/frontend/listshops";
+        var baseInfo = "/o2o/frontend/listshopspageinfo?parentId=" + parentId;
 
 
         /**
@@ -199,7 +200,7 @@
 
         $(document).on("click", ".shop-box", function (e) {
             var shopId = $(this).data("shop-id");
-            window.location.href = "/shopping/frontend/shopdetail?shopId=" + shopId;
+            window.location.href = "/o2o/frontend/shopdetail?shopId=" + shopId;
         })
 
     });

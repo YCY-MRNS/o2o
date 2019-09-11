@@ -2,10 +2,10 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.apache.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.ycy.shopping.dao.ProductDao">
+<mapper namespace="com.changyue.o2o.dao.ProductDao">
 
 
-    <resultMap id="productMap" type="com.ycy.shopping.entity.Product">
+    <resultMap id="productMap" type="com.changyue.o2o.entity.Product">
         <id column="product_id" property="productId"/>
         <result column="product_name" property="productName"/>
         <result column="img_addr" property="imgAddr"/>
@@ -17,11 +17,11 @@
         <result column="last_edit_time" property="lastEditTime"/>
         <result column="enable_status" property="enableStatus"/>
         <association property="productCategory" column="product_category_id"
-                     javaType="com.ycy.shopping.entity.ProductCategory">
+                     javaType="com.changyue.o2o.entity.ProductCategory">
             <id column="product_category_id" property="productCategoryId"/>
             <result column="product_category_name" property="productCategoryName"/>
         </association>
-        <association property="shop" javaType="com.ycy.shopping.entity.Shop" column="shop_id">
+        <association property="shop" javaType="com.changyue.o2o.entity.Shop" column="shop_id">
             <id column="shop_id" property="shopId"/>
             <result column="shop_name" property="shopName"/>
             <result column="owner_id" property="ownerId"/>
@@ -122,7 +122,7 @@
 
     </select>
 
-    <insert id="insertProduct" parameterType="com.ycy.shopping.entity.Product" useGeneratedKeys="true"
+    <insert id="insertProduct" parameterType="com.changyue.o2o.entity.Product" useGeneratedKeys="true"
             keyProperty="productId" keyColumn="product_id">
 
         insert into tb_product (product_name,
@@ -150,7 +150,7 @@
 
     </insert>
 
-    <update id="updateProduct" parameterType="com.ycy.shopping.entity.Product" useGeneratedKeys="true"
+    <update id="updateProduct" parameterType="com.changyue.o2o.entity.Product" useGeneratedKeys="true"
             keyProperty="product_id">
 
         update tb_product

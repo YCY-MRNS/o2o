@@ -15,7 +15,7 @@
 
 <div class="nav-bar">
     <div class="top-nav">
-        <i class="fas fa-chevron-left" onclick="window.location.href='/shopping/frontend/shoplist'"></i>
+        <i class="fas fa-chevron-left" onclick="window.location.href='/o2o/frontend/shoplist'"></i>
         <i class="fas fa-search"></i>
         <i class="fas fa-share"></i>
         <img src="" alt="" class="shop-img">
@@ -50,8 +50,8 @@
         var productCategoryId = '';
         var productCategoryName = '';
         var shopId = getQueryString("shopId");
-        var getShopInfoUrl = "/shopping/frontend/shopdetailpageinfo?shopId=" + shopId;
-        var getProductInfoUrl = "/shopping/frontend/getproductbyshop";
+        var getShopInfoUrl = "/o2o/frontend/shopdetailpageinfo?shopId=" + shopId;
+        var getProductInfoUrl = "/o2o/frontend/getproductbyshop";
 
         function showShopInfo(shop) {
             $(".shop-title").text(shop.shopName);
@@ -128,7 +128,7 @@
         });
 
         $(".fa-search").click(function () {
-            window.location.href = "/shopping/frontend/productsearch?shopId=" + shopId;
+            window.location.href = "/o2o/frontend/productsearch?shopId=" + shopId;
         })
 
     });

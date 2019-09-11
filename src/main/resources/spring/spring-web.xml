@@ -24,6 +24,6 @@
         <property name="maxInMemorySize" value="20971520"/>
     </bean>
 
-    <context:component-scan base-package="com.ycy.shopping.web"/>
+    <context:component-scan base-package="com.changyue.o2o.web"/>
 
 </beans>

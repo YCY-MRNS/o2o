@@ -17,7 +17,7 @@
             <property value="false" name="forceBigDecimals"/>
         </javaTypeResolver>
         <!-- 指定javabean 生成的位置 -->
-        <javaModelGenerator targetProject=".\src\main\java" targetPackage="com.ycy.shopping.entity">
+        <javaModelGenerator targetProject=".\src\main\java" targetPackage="com.ycy.o2o.entity">
             <property value="true" name="enableSubPackages"/>
             <property value="true" name="trimStrings"/>
         </javaModelGenerator>
@@ -26,7 +26,7 @@
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!--指定dao生成的位置-->
-        <javaClientGenerator targetProject=".\src\main\java" targetPackage="com.ycy.shopping.dao" type="XMLMAPPER">
+        <javaClientGenerator targetProject=".\src\main\java" targetPackage="com.ycy.o2o.dao" type="XMLMAPPER">
             <property value="true" name="enableSubPackages"/>
         </javaClientGenerator>
         <!--指定表-->

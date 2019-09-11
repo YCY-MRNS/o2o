@@ -3,9 +3,9 @@ $(function () {
     var pageIndex = 1;
     var pageSize = 990;
     var shopId = getQueryString("shopId");
-    var productPostUrl = 'http://localhost:8080/shopping/shopadmin/modifyproduct';
-    var productInfo = "http://localhost:8080/shopping/shopadmin/getproductlistbyshop";
-    var saveCurrentShop = 'http://localhost:8080/shopping/shopadmin/getshopmanagementinfo';
+    var productPostUrl = 'http://localhost:8080/o2o/shopadmin/modifyproduct';
+    var productInfo = "http://localhost:8080/o2o/shopadmin/getproductlistbyshop";
+    var saveCurrentShop = 'http://localhost:8080/o2o/shopadmin/getshopmanagementinfo';
 
 
     transferCurrentShop(shopId);
@@ -106,11 +106,11 @@ $(function () {
     });
 
     $(document).on("click", ".product-edit-btn", function () {
-        window.location.href = "/shopping/shopadmin/productoperation?productId=" + $(this).data("id");
+        window.location.href = "/o2o/shopadmin/productoperation?productId=" + $(this).data("id");
     });
 
     $("#btn-add-product").click(function () {
-        window.location.href = "/shopping/shopadmin/productoperation";
+        window.location.href = "/o2o/shopadmin/productoperation";
     });
 
 });

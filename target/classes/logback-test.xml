@@ -77,7 +77,7 @@ scanPeriod 扫描的周期
         </filter>
     </appender>
 
-    <logger name="com.ycy.shopping" level="${log.level}" additivity="true">
+    <logger name="com.ycy.o2o" level="${log.level}" additivity="true">
         <appender ref="debugAppender"/>
         <appender ref="infoAppender"/>
         <appender ref="errorAppender"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.ycy.shopping.dao.HeadLineMapper">
-    <resultMap id="BaseResultMap" type="com.ycy.shopping.entity.HeadLine">
+<mapper namespace="com.changyue.o2o.dao.HeadLineMapper">
+    <resultMap id="BaseResultMap" type="com.changyue.o2o.entity.HeadLine">
         <id column="line_id" jdbcType="INTEGER" property="lineId"/>
         <result column="line_name" jdbcType="VARCHAR" property="lineName"/>
         <result column="line_link" jdbcType="VARCHAR" property="lineLink"/>
@@ -16,7 +16,7 @@
         line_id, line_name, line_link, line_img, priority, enable_status, create_time, last_edit_time
     </sql>
 
-    <select id="selectAllHeadLine" resultType="com.ycy.shopping.entity.HeadLine">
+    <select id="selectAllHeadLine" resultType="com.changyue.o2o.entity.HeadLine">
         select
         <include refid="Base_Column_List"/>
         from tb_head_line
@@ -41,7 +41,7 @@
         where line_id = #{lineId,jdbcType=INTEGER}
     </delete>
 
-    <insert id="insert" parameterType="com.ycy.shopping.entity.HeadLine">
+    <insert id="insert" parameterType="com.changyue.o2o.entity.HeadLine">
         insert into tb_head_line (line_id, line_name, line_link,
                                   line_img, priority, enable_status,
                                   create_time, last_edit_time)
@@ -50,7 +50,7 @@
                 #{createTime,jdbcType=TIMESTAMP}, #{lastEditTime,jdbcType=TIMESTAMP})
     </insert>
 
-    <insert id="insertSelective" parameterType="com.ycy.shopping.entity.HeadLine">
+    <insert id="insertSelective" parameterType="com.changyue.o2o.entity.HeadLine">
         insert into tb_head_line
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="lineId != null">
@@ -106,7 +106,7 @@
         </trim>
     </insert>
 
-    <update id="updateByPrimaryKeySelective" parameterType="com.ycy.shopping.entity.HeadLine">
+    <update id="updateByPrimaryKeySelective" parameterType="com.changyue.o2o.entity.HeadLine">
         update tb_head_line
         <set>
             <if test="lineName != null">
@@ -134,7 +134,7 @@
         where line_id = #{lineId,jdbcType=INTEGER}
     </update>
 
-    <update id="updateByPrimaryKey" parameterType="com.ycy.shopping.entity.HeadLine">
+    <update id="updateByPrimaryKey" parameterType="com.changyue.o2o.entity.HeadLine">
         update tb_head_line
         set line_name      = #{lineName,jdbcType=VARCHAR},
             line_link      = #{lineLink,jdbcType=VARCHAR},

@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.apache.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.ycy.shopping.dao.ProductCategoryDao">
+<mapper namespace="com.changyue.o2o.dao.ProductCategoryDao">
 
-    <select id="queryProductCategoryList" resultType="com.ycy.shopping.entity.ProductCategory" parameterType="Long">
+    <select id="queryProductCategoryList" resultType="com.changyue.o2o.entity.ProductCategory" parameterType="Long">
         select *
         from tb_product_category
         where shop_id = #{shopId}

@@ -1,7 +1,7 @@
 
 
 function changeVerityCode(img) {
-    img.src = "http://localhost:8080/shopping/Kaptcha?" + Math.floor(Math.random() * 100);
+    img.src = "/o2o/Kaptcha?" + Math.floor(Math.random() * 100);
 }
 
 function getQueryString(name) {

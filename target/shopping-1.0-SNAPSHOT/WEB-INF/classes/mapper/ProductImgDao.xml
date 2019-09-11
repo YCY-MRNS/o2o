@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.apache.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.ycy.shopping.dao.ProductImgDao">
+<mapper namespace="com.changyue.o2o.dao.ProductImgDao">
 
     <insert id="batchInsertProductImg" parameterType="java.util.List">
         insert into
@@ -20,7 +20,7 @@
         </foreach>
     </insert>
 
-    <select id="queryProductImgList" parameterType="Long" resultType="com.ycy.shopping.entity.ProductImg">
+    <select id="queryProductImgList" parameterType="Long" resultType="com.changyue.o2o.entity.ProductImg">
         select *
         from tb_product_img
         where product_id = #{productId}

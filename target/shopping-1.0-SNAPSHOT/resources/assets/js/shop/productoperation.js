@@ -1,12 +1,12 @@
 $(function () {
     var productId = getQueryString("productId");
-    var categoryUrl = '/shopping/shopadmin/getproductcategorylist';
-    var productPostUrl = '/shopping/shopadmin/modifyproduct';
-    var productInfo = "/shopping/shopadmin/productlist";
+    var categoryUrl = '/o2o/shopadmin/getproductcategorylist';
+    var productPostUrl = '/o2o/shopadmin/modifyproduct';
+    var productInfo = "/o2o/shopadmin/productlist";
 
     var isEdit = false;
 
-    var infoUrl = "/shopping/shopadmin/getproductbyid?productId=" + productId;
+    var infoUrl = "/o2o/shopadmin/getproductbyid?productId=" + productId;
 
     if (productId) {
 
@@ -28,7 +28,7 @@ $(function () {
         $("#submit").text("注册");
 
         getCategory();
-        productPostUrl = '/shopping/shopadmin/addproduct';
+        productPostUrl = '/o2o/shopadmin/addproduct';
     }
 
     function getInfo(id) {

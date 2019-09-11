@@ -1,10 +1,10 @@
 $(function () {
     var shopId = getQueryString("shopId");
-    var listUrl = '/shopping/shopadmin/getproductcategorylist';
-    var addUrl = '/shopping/shopadmin/addproductcategorys';
-    var deleteUrl = '/shopping/shopadmin/removeproductcategory';
+    var listUrl = '/o2o/shopadmin/getproductcategorylist';
+    var addUrl = '/o2o/shopadmin/addproductcategorys';
+    var deleteUrl = '/o2o/shopadmin/removeproductcategory';
 
-    var saveCurrentShop = '/shopping/shopadmin/getshopmanagementinfo';
+    var saveCurrentShop = '/o2o/shopadmin/getshopmanagementinfo';
 
     transferCurrentShop(shopId);
 
@@ -34,11 +34,9 @@ $(function () {
 
     function getlist() {
 
-        console.info(listUrl);
+        $('.product-category-table-body').empty();
 
         $.getJSON(listUrl, function (data) {
-
-            console.info(data);
 
             if (data.success) {
                 var dataList = data.data;
@@ -60,18 +58,17 @@ $(function () {
     }
 
     $('#btn-add-product-category').click(function () {
-
         var tempHtml = '<tr class="temp">' +
-            '<th class="row">#</th>' +
-            '<th><input type="text" class="category"></th>\n' +
-            '<th><input  type="number" class="priority"></th>\n' +
-            '<th><a href="#" class="btn btn-danger delete">删除</a></th>\n' +
-            '</tr>\n';
-        $('.category-wrap').append(tempHtml);
+            '<th class="row"></th>' +
+            '<th><input type="text" class="category"></th>' +
+            '<th><input  type="number" class="priority"></th>' +
+            '<th><a href="#" class="btn btn-danger delete">删除</a></th>' +
+            '</tr>';
+
+        $('.product-category-table-body').append(tempHtml);
     });
 
     $('#btn-save-product-category').click(function () {
-        console.info("test!");
         var temp = $('.temp');
         var productCategoryList = [];
         temp.map(function (value, index) {
@@ -132,7 +129,7 @@ $(function () {
 
     });
 
-    $('.category-wrap').on("click", '.temp .delete', function (e) {
+    $('.product-category-table-body').on("click", '.temp .delete', function (e) {
         console.log($(this).parent().parent());
         $(this).parent().parent().remove();
     });

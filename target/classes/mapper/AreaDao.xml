@@ -3,9 +3,9 @@
         PUBLIC "-//mybatis.apache.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.ycy.shopping.dao.AreaDao">
+<mapper namespace="com.changyue.o2o.dao.AreaDao">
 
-    <select id="queryAll" resultType="com.ycy.shopping.entity.Area">
+    <select id="queryAll" resultType="com.changyue.o2o.entity.Area">
         SELECT *
         from tb_area
         order by priority desc

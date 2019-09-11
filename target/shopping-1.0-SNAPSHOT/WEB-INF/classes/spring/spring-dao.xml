@@ -5,7 +5,17 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-<!--配置mybatis-->
+    <!--读取jdbc配置文件解密重要字段-->
+    <bean class="com.changyue.o2o.util.EncryptPropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:jdbc.properties</value>
+            </list>
+        </property>
+        <property name="fileEncoding" value="UTF-8"/>
+    </bean>
+
+    <!--配置mybatis-->
     <context:property-placeholder location="classpath:jdbc.properties"/>
 
     <!--连接数据库连接池-->
@@ -15,25 +25,25 @@
         <property name="driverClass" value="${jdbc.driver}"/>
         <property name="jdbcUrl" value="${jdbc.url}"/>
         <property name="acquireIncrement" value="5"/>
-        <property name="initialPoolSize" value="10" />
-        <property name="minPoolSize" value="10" />
-        <property name="maxPoolSize" value="50" />
-        <property name="maxStatements" value="20" />
-        <property name="maxStatementsPerConnection" value="5" />
+        <property name="initialPoolSize" value="10"/>
+        <property name="minPoolSize" value="10"/>
+        <property name="maxPoolSize" value="50"/>
+        <property name="maxStatements" value="20"/>
+        <property name="maxStatementsPerConnection" value="5"/>
     </bean>
 
     <!--配置sqlSessionFactory-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
-        <property name="typeAliasesPackage" value="com.ycy.shopping.entity"/>
+        <property name="typeAliasesPackage" value="com.changyue.o2o.entity"/>
         <property name="mapperLocations" value="classpath:mapper/*.xml"/>
     </bean>
 
     <!--配置Dao接口包 动态实现Dao接口-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
-        <property name="basePackage" value="com.ycy.shopping.dao"/>
+        <property name="basePackage" value="com.changyue.o2o.dao"/>
     </bean>
 
 
