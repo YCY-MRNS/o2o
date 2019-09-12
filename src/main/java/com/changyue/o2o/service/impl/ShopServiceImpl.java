@@ -63,6 +63,13 @@ public class ShopServiceImpl implements ShopService {
     }
 
 
+    /**
+     * 修改商铺信息
+     *
+     * @param shop      商铺
+     * @param thumbnail 缩略图
+     * @return 商铺异常包装类
+     */
     @Override
     public ShopExecution modifyShop(Shop shop, ImageHolder thumbnail) {
 

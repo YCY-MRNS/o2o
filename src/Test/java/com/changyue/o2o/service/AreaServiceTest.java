@@ -19,9 +19,14 @@ public class AreaServiceTest extends BaseTest {
     @Autowired
     private AreaService areaService;
 
+    @Autowired
+    private CacheService cacheService;
+
     @Test
     public void getAreaList() {
         List<Area> areaList = areaService.getAreaList();
-        Assert.assertEquals("西苑",areaList.get(0).getAreaName());
+        Assert.assertEquals("和园一号", areaList.get(0).getAreaName());
+        cacheService.removeFromCache(areaService.AREA_LIST_KEY);
+        areaService.getAreaList();
     }
 }

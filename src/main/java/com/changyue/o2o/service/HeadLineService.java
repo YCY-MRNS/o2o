@@ -6,8 +6,13 @@ import java.util.List;
 
 public interface HeadLineService {
 
+    public static final String HAED_LINE_KEK = "headLineKey";
+
     /**
-     * 按照条件返回指定的头条列表
+     * 获得HeadLine的list并存放在redis中
+     *
+     * @param headLine 携带条件headline
+     * @return headlines 满足条件的headline的list
      */
     List<HeadLine> getHeadLineList(HeadLine headLine);
 

@@ -1,5 +1,6 @@
 package com.changyue.o2o.service.impl;
 
+import com.changyue.o2o.cache.JedisUtil;
 import com.changyue.o2o.exceptions.ProductCategoryOperationException;
 import com.changyue.o2o.exceptions.ProductOperationException;
 import com.changyue.o2o.dao.ProductCategoryDao;
@@ -8,6 +9,8 @@ import com.changyue.o2o.dto.ProductCategoryExecution;
 import com.changyue.o2o.emums.ProductCategoryStateEnum;
 import com.changyue.o2o.entity.ProductCategory;
 import com.changyue.o2o.service.ProductCategoryService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,6 +31,8 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
 
     @Autowired
     private ProductDao productDao;
+
+
 
     /**
      * 获得商品类别集合
@@ -51,7 +56,7 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
     @Transactional
     public ProductCategoryExecution batchAddProductCategory(List<ProductCategory> productCategories) throws ProductCategoryOperationException {
         if (productCategories != null && productCategories.size() > 0) {
-         
+
             try {
                 int effectNum = productCategoryDao.batchInsertProductCategory(productCategories);
                 if (effectNum <= 0) {

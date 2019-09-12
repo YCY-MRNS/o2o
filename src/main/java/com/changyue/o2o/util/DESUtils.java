@@ -65,8 +65,8 @@ public class DESUtils {
     }
 
     public static void main(String[] args) {
-        System.out.println(getEncryptString("root"));
-        System.out.println(getEncryptString(""));
+        System.out.println(getEncryptString("work"));
+        System.out.println(getEncryptString("YUANchangyue05_"));
 
     }
 
