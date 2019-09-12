@@ -7,41 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8b85d4f-a13c-4f72-adfa-07a633482a7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/cache/JedisPoolWriper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/cache/JedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/exceptions/AreaOperationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/exceptions/HeadLineOperationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/exceptions/ShopCategoryOpereationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/CacheService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/CacheServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/redis.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-redis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/java/com/changyue/o2o/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/java/com/changyue/o2o/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/java/com/changyue/o2o/service/AreaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/java/com/changyue/o2o/service/AreaServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dao/ShopDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dao/ShopDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/interceptor/CrossInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/AreaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/AreaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/HeadLineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/HeadLineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/ShopCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/ShopCategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/AreaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/AreaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/HeadLineServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/HeadLineServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ProductCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ProductCategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopCategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopCategoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/util/DESUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/util/DESUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/util/weixin/SignUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/util/weixin/SignUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/js/shop/shopoperation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/js/shop/shopoperation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/frontend/frontendshoplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/frontend/frontendshoplist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/assets/js/shop/shopoperation.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/assets/js/shop/shopoperation.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -285,7 +253,7 @@
       <workItem from="1568098140763" duration="7932000" />
       <workItem from="1568187378755" duration="15675000" />
       <workItem from="1568209976436" duration="4195000" />
-      <workItem from="1568255478907" duration="4760000" />
+      <workItem from="1568255478907" duration="5375000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;2019/9/11&quot;">
       <created>1568189147195</created>
@@ -294,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568189147195</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="&quot;2019/9/12&quot;">
+      <created>1568272670215</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568272670215</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +290,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;2019/9/11&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;2019/9/11&quot;" />
+    <MESSAGE value="&quot;2019/9/12&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;2019/9/12&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -329,6 +305,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopServiceImpl.java</url>
           <line>75</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopServiceImpl.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -120,11 +120,11 @@ $(function () {
         shop.shopAddr = $('#shop-addr').val();
 
         shop.shopCategory = {
-            shopCategoryId: shopId ? $('#shop-category option:checked').attr('id') : $('#shop-category option:checked').data('id')
+            shopCategoryId: shopId ? $('#shop-category option:checked').data('id') : $('#shop-category option:checked').attr('id')
         };
 
         shop.area = {
-            areaId: shopId ? $('#area option:checked').attr('id') : $('#shop-category option:checked').data('id')
+            areaId: shopId ? $('#area option:checked').data('id') : $('#area option:checked').attr('id')
         };
 
         var shopImg = $('#shop-img')[0].files[0];
@@ -160,8 +160,10 @@ $(function () {
                 }
             }
         })
+
     });
 
     judgeOperation(shopId);
-})
+});
+
 
