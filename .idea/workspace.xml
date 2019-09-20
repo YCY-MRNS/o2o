@@ -6,22 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b85d4f-a13c-4f72-adfa-07a633482a7d" name="Default Changelist" comment="&quot;2019/9/20&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dto/UserAccessToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/util/weixin/MyX509TrustManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/util/weixin/WechatUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/weichat/WechatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/weichat/WechatLoginController.java" afterDir="false" />
+    <list default="true" id="f8b85d4f-a13c-4f72-adfa-07a633482a7d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/util/weixin/SignUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/util/weixin/SignUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/weichat/WeiXinController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/js/shop/getproductlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/js/shop/getproductlist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/js/shop/getshoplist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/js/shop/getshoplist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/assets/js/shop/getproductlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/assets/js/shop/getproductlist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/assets/js/shop/getshoplist.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/assets/js/shop/getshoplist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/frontend/FrontendPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/frontend/FrontendPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/weichat/WechatLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/weichat/WechatLoginController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -312,7 +300,7 @@
       <workItem from="1568704272405" duration="519000" />
       <workItem from="1568706508312" duration="22453000" />
       <workItem from="1568795604149" duration="6059000" />
-      <workItem from="1568978862070" duration="6698000" />
+      <workItem from="1568978862070" duration="11063000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;2019/9/11&quot;">
       <created>1568189147195</created>
@@ -342,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568979754576</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="&quot;2019/9/20&quot;">
+      <created>1568985682498</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1568985682498</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -19,7 +19,7 @@ import java.io.IOException;
  * 获取关注公众号之后的微信用户信息的接口，如果在微信浏览器里访问
  * https://open.weixin.qq.com/connect/oauth2/authorize?appid=
  * wx44de284a108c4d05&redirect_uri=
- * http://changyue.club/o2o/wechatlogin/logincheck&role_type=1&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect
+ * http://www.changyue.club/o2o/wechatlogin/logincheck&role_type=1&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect
  * 则这里将会获取到code,之后再可以通过code获取到access_token 进而获取到用户信息
  * @author: YuanChangYue
  * @create: 2019-09-20 20:43
@@ -65,7 +65,7 @@ public class WechatLoginController {
         // ======todo end======
         if (user != null) {
             // 获取到微信验证的信息后返回到指定的路由（需要自己设定）
-            return "frontend/index";
+                return "/";
         } else {
             return null;
         }
