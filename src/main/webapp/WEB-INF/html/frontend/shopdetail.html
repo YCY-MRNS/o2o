@@ -71,18 +71,13 @@
 
             $.getJSON(getProcInfo, function (data) {
 
+                console.info(getProcInfo);
                 console.info(data);
 
                 var tempHtml = '';
                 if (data.success) {
 
-                    /*data.productList.sort(function (a, b) {
-                        if (a.productCategory.productCategoryId > b.productCategory.productCategoryId) return -1;
-                        if (a.productCategory.productCategoryId < b.productCategory.productCategoryId) return 1;
-                        return 0;
-                    });*/
-
-                    $.map(data.productList, function (products, index) {
+                    $.map(data.productPageInfo.list, function (products, index) {
 
                         tempHtml += '<dd class="proc-content">' +
                             '    <div class="proc-root">' +

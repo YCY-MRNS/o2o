@@ -1,15 +1,16 @@
 package com.changyue.o2o.service.impl;
 
-import com.changyue.o2o.exceptions.ShopOperationException;
 import com.changyue.o2o.dao.ShopDao;
 import com.changyue.o2o.dto.ImageHolder;
 import com.changyue.o2o.dto.ShopExecution;
 import com.changyue.o2o.emums.ShopStateEnum;
 import com.changyue.o2o.entity.Shop;
+import com.changyue.o2o.exceptions.ShopOperationException;
 import com.changyue.o2o.service.ShopService;
 import com.changyue.o2o.util.ImageUtil;
-import com.changyue.o2o.util.PageCalculator;
 import com.changyue.o2o.util.PathUtils;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -41,16 +42,25 @@ public class ShopServiceImpl implements ShopService {
     @Override
     public ShopExecution getShopList(Shop shopCondition, int pageIndex, int pageSize) {
 
-        int rowIndex = PageCalculator.calculator(pageIndex, pageSize);
+        //int rowIndex = PageCalculator.calculator(pageIndex, pageSize);
 
-        List<Shop> shopList = shopDao.queryShopList(shopCondition, rowIndex, pageSize);
-        int shopCount = shopDao.queryShopCount(shopCondition);
+        //List<Shop> shopList = shopDao.queryShopList(shopCondition, pageIndex, pageSize);
+
+        // 分页操作
+        PageHelper.startPage(pageIndex, pageSize);
+
+        List<Shop> shopList = shopDao.queryShopListByAll(shopCondition);
+
+        PageInfo<Shop> shopPageInfo = new PageInfo<>(shopList, 5);
+
+        //总数
+        // int shopCount = shopDao.queryShopCount(shopCondition);
 
         ShopExecution shopExecution = new ShopExecution();
 
         if (shopList != null) {
-            shopExecution.setShopList(shopList);
-            shopExecution.setCount(shopCount);
+            shopExecution.setShopPageInfo(shopPageInfo);
+            // shopExecution.setCount(shopCount);
         } else {
             shopExecution.setState(ShopStateEnum.INNER_ERROR.getState());
         }

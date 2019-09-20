@@ -5,6 +5,8 @@ import com.changyue.o2o.entity.Area;
 import com.changyue.o2o.entity.PersonInfo;
 import com.changyue.o2o.entity.Shop;
 import com.changyue.o2o.entity.ShopCategory;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -22,6 +24,31 @@ import java.util.List;
 public class ShopDaoTest extends BaseTest {
     @Autowired
     private ShopDao shopDao;
+
+
+    @Test
+    public void queryShopListByPageHelper() {
+        Shop shop = new Shop();
+
+        PersonInfo owner = new PersonInfo();
+        owner.setUserId(8L);
+        shop.setOwner(owner);
+
+        PageHelper.startPage(2, 3);
+
+        List<Shop> shops = shopDao.queryShopListByAll(shop);
+
+        //shops.forEach(System.out::println);
+
+        PageInfo<Shop> page = new PageInfo<Shop>(shops);
+
+        page.getList().forEach(s -> {
+            System.out.println(s);
+            System.out.println();
+        });
+
+
+    }
 
     @Test
     public void queryShopList() {

@@ -72,7 +72,6 @@ public class ProductCategoryManagementController {
                 modelMap.put("errMsg", e.getMessage());
                 return modelMap;
             }
-
         } else {
             modelMap.put("errMsg", "至少输入一个商品类别");
             modelMap.put("success", false);

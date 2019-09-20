@@ -2,8 +2,10 @@ package com.changyue.o2o.service;
 
 import com.changyue.o2o.BaseTest;
 import com.changyue.o2o.dto.ShopExecution;
+import com.changyue.o2o.entity.PersonInfo;
 import com.changyue.o2o.entity.Shop;
 import com.changyue.o2o.entity.ShopCategory;
+import com.github.pagehelper.PageInfo;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -23,14 +25,17 @@ public class ShopServiceTest extends BaseTest {
     @Test
     public void testGetShopList() {
         Shop shop = new Shop();
-        ShopCategory shopCategory = new ShopCategory();
-        shopCategory.setShopCategoryId(1L);
-        shop.setShopCategory(shopCategory);
+        PersonInfo owner = new PersonInfo();
+        owner.setUserId(8L);
+        shop.setOwner(owner);
+
         ShopExecution shopList = shopService.getShopList(shop, 1, 2);
 
-        System.out.println(shopList.getShopList().size());
-        System.out.println(shopList.getCount());
-
+        PageInfo<Shop> shopPageInfo = shopList.getShopPageInfo();
+        shopPageInfo.getList().forEach(page -> {
+            System.out.println(page);
+            System.out.println();
+        });
 
     }
 

@@ -1,7 +1,7 @@
 $(function () {
 
     var pageIndex = 1;
-    var pageSize = 990;
+    var pageSize = 8;
     var shopId = getQueryString("shopId");
     var productPostUrl = 'http://localhost:8080/o2o/shopadmin/modifyproduct';
     var productInfo = "http://localhost:8080/o2o/shopadmin/getproductlistbyshop";
@@ -40,38 +40,53 @@ $(function () {
 
         var getProductListInfoUrl = productInfo + "?pageIndex=" + pageIndex + "&pageSize=" + pageSize;
 
-        console.info(getProductListInfoUrl);
-
         $.getJSON(getProductListInfoUrl, function (data) {
-
-            console.info(data);
-            var productsHtml = "";
-
-            $.map(data.productList, function (value, index) {
-
-                var textOp = "下架";
-                var status = 0;
-                if (value.enableStatus === 0) {
-                    textOp = "上架";
-                    status = 1;
-                } else {
-                    status = 0;
-                }
-                productsHtml += '<tr>'
-                    + '<th scope="row">' + (index + 1) + '</th>'
-                    + '<td>' + value.productName + '</td>'
-                    + '<td>' + value.priority + '</td>'
-                    + '<td>' +
-                    '<a href="#" class="btn btn-primary btn-sm product-edit-btn" data-toggle="modal" data-target="#product-edit" data-id="' + value.productId + '">编辑</a>&nbsp;' +
-                    '<a href="" class="btn btn-danger btn-sm product-status-btn" data-status="' + status + '" data-id="' + value.productId + '">' + textOp + '</a>&nbsp;' +
-                    '<a href="" class="btn btn-info btn-sm">预览</a>&nbsp;' + '</td>'
-                    + '</tr>';
-            });
-
-            $(".product-table-body").html(productsHtml);
-
+            handList(data);
         });
+
     }
+
+    function handList(data) {
+        $(".product-table-body").empty();
+
+        var productsHtml = "";
+        $.map(data.productPageInfo.list, function (value, index) {
+
+            var textOp = "下架";
+            var status = 0;
+            if (value.enableStatus === 0) {
+                textOp = "上架";
+                status = 1;
+            } else {
+                status = 0;
+            }
+            productsHtml += '<tr>'
+                + '<th scope="row">' + (index + 1) + '</th>'
+                + '<td>' + value.productName + '</td>'
+                + '<td>' + value.priority + '</td>'
+                + '<td>' +
+                '<a href="#" class="btn btn-primary btn-sm product-edit-btn" data-toggle="modal" data-target="#product-edit" data-id="' + value.productId + '">编辑</a>&nbsp;' +
+                '<a href="" class="btn btn-danger btn-sm product-status-btn" data-status="' + status + '" data-id="' + value.productId + '">' + textOp + '</a>&nbsp;' +
+                '<a href="" class="btn btn-info btn-sm">预览</a>&nbsp;' + '</td>'
+                + '</tr>';
+        });
+        $(".product-table-body").html(productsHtml);
+
+        handleUser(data.user);
+        showPagination(data.productPageInfo);
+    }
+
+    $(document).on("click", ".page-item", function () {
+        pageIndex = $(this).data("id");
+        $.ajax({
+            url: productInfo + "?pageIndex=" + pageIndex + "&pageSize=" + pageSize,
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                handList(data);
+            }
+        })
+    });
 
     /**
      * 监听商品上下架功能

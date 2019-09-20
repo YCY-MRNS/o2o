@@ -50,6 +50,14 @@ public interface ProductDao {
      */
     List<Product> queryProductList(@Param("productCondition") Product productCondition, @Param("rowIndex") Integer rowIndex, @Param("pageSize") Integer pageSize);
 
+    /**
+     * 查询商品的分页数据
+     *
+     * @param productCondition 商品
+     * @return 全部的商品
+     */
+    List<Product> queryProductListByPageHelper(@Param("productCondition") Product productCondition);
+
 
     /**
      * 查询商铺下有多少商品
@@ -60,6 +68,7 @@ public interface ProductDao {
 
     /**
      * 删除商品的类别的时候需要更新商品的类别为空
+     *
      * @param productCategoryId 商品类别id
      */
     int updateProductCategoryToNull(long productCategoryId);

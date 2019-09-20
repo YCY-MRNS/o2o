@@ -1,12 +1,14 @@
 package com.changyue.o2o.service;
 
 import com.changyue.o2o.BaseTest;
+import com.changyue.o2o.dao.ProductDao;
 import com.changyue.o2o.dto.ImageHolder;
 import com.changyue.o2o.dto.ProductExecution;
 import com.changyue.o2o.emums.ProductStateEnum;
 import com.changyue.o2o.entity.Product;
 import com.changyue.o2o.entity.ProductCategory;
 import com.changyue.o2o.entity.Shop;
+import com.github.pagehelper.PageInfo;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +18,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @program: shopping
@@ -26,6 +29,10 @@ import java.util.Date;
 public class ProduceServiceTest extends BaseTest {
     @Autowired
     private ProductService productService;
+
+    @Autowired
+    private ProductDao productDao;
+
 
     @Test
     public void testAddProduct() throws IOException {
@@ -102,6 +109,28 @@ public class ProduceServiceTest extends BaseTest {
 
         System.out.println("productExecution = " + productExecution);
 
+
+    }
+
+    @Test
+    public void testQueryProductList() {
+
+        Product product = new Product();
+        Shop shop = new Shop();
+        shop.setShopId(19L);
+        product.setShop(shop);
+
+        ProductExecution productList = productService.getProductList(product, 0, 1);
+        PageInfo<Product> productPageInfo = productList.getProductPageInfo();
+
+        System.out.println(productPageInfo);
+        productPageInfo.getList().forEach(product1 -> {
+            System.out.println(product1);
+            System.out.println();
+        });
+
+/*        List<Product> products = productDao.queryProductListByPageHelper(product);
+        products.forEach(System.out::println);*/
 
     }
 }

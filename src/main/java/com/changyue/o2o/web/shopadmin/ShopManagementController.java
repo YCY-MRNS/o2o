@@ -49,7 +49,7 @@ public class ShopManagementController {
 
     @Autowired
     private AreaService areaService;
-    
+
     /**
      * 进行商铺管理前需要获得商铺信息
      */
@@ -84,25 +84,31 @@ public class ShopManagementController {
     @RequestMapping(value = "/getshoplist", method = RequestMethod.GET)
     @ResponseBody
     public Map<String, Object> getShopList(HttpServletRequest request) {
+
         Map<String, Object> modelMap = new HashMap<>();
+
+        //TODO
+        //用户
         PersonInfo user = new PersonInfo();
         user.setUserId(8L);
         user.setName("test");
         request.getSession().setAttribute("user", user);
         user = (PersonInfo) request.getSession().getAttribute("user");
+
+        int pageIndex = HttpServletRequestUtil.getInt(request, "pageIndex");
+        int pageSize = HttpServletRequestUtil.getInt(request, "pageSize");
+
         try {
             Shop shopCondition = new Shop();
             shopCondition.setOwner(user);
-            ShopExecution se = shopService.getShopList(shopCondition, 0, 100);
-            modelMap.put("count", se.getCount());
-            modelMap.put("shopList", se.getShopList());
+            ShopExecution se = shopService.getShopList(shopCondition, pageIndex, pageSize);
+            modelMap.put("shopPageInfo", se.getShopPageInfo());
             modelMap.put("user", user);
             modelMap.put("success", true);
         } catch (Exception e) {
             modelMap.put("success", false);
             modelMap.put("errMsg", e.getMessage());
         }
-
         return modelMap;
     }
 

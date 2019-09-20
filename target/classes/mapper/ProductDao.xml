@@ -4,7 +4,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.changyue.o2o.dao.ProductDao">
 
-
     <resultMap id="productMap" type="com.changyue.o2o.entity.Product">
         <id column="product_id" property="productId"/>
         <result column="product_name" property="productName"/>
@@ -59,6 +58,36 @@
         order by
         priority DESC
         limit #{rowIndex},#{pageSize};
+    </select>
+
+    <select id="queryProductListByPageHelper" resultMap="productMap" parameterType="Long">
+        select product_id,
+        product_name,
+        img_addr,
+        product_desc,
+        normal_price,
+        promotion_price,
+        create_time,
+        enable_status,
+        priority,
+        last_edit_time,
+        shop_id,
+        product_category_id
+        from tb_product
+        <where>
+            <if test="productCondition.shop !=null and productCondition.shop.shopId!=null">
+                and shop_id = #{productCondition.shop.shopId}
+            </if>
+            <if test="productCondition.productCategory!=null and productCondition.productCategory.productCategoryId!=null">
+                and product_category_id = #{productCondition.productCategory.productCategoryId}
+            </if>
+            <if test="productCondition.productName!=null">
+                and product_name like '%${productCondition.productName}%'
+            </if>
+            <if test="productCondition.enableStatus!=null">
+                and enable_status=#{productCondition.enableStatus}
+            </if>
+        </where>
     </select>
 
     <select id="queryProductCount" resultType="int">

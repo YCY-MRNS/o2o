@@ -111,9 +111,8 @@ public class ShopListController {
             Shop shop = compactShopSearchCondition(parentId, shopCategoryId, areaId, shopName);
 
             //查询商铺列表
-            ShopExecution shopList = shopService.getShopList(shop, pageIndex, pageSize);
-            modelMap.put("shopList", shopList);
-            modelMap.put("count", shopList.getCount());
+            ShopExecution se = shopService.getShopList(shop, pageIndex, pageSize);
+            modelMap.put("shopPageInfo", se.getShopPageInfo());
             modelMap.put("success", true);
 
         } else {

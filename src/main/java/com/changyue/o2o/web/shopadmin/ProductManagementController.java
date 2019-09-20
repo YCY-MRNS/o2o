@@ -1,6 +1,7 @@
 package com.changyue.o2o.web.shopadmin;
 
 import com.changyue.o2o.emums.ProductStateEnum;
+import com.changyue.o2o.entity.PersonInfo;
 import com.changyue.o2o.entity.Product;
 import com.changyue.o2o.entity.ProductCategory;
 import com.changyue.o2o.entity.Shop;
@@ -58,19 +59,32 @@ public class ProductManagementController {
         int pageSize = HttpServletRequestUtil.getInt(request, "pageSize");
         Long shopId = HttpServletRequestUtil.getLong(request, "shopId");
 
+
+        PersonInfo user = new PersonInfo();
+        user.setUserId(8L);
+        user.setName("test");
+        request.getSession().setAttribute("user", user);
+        user = (PersonInfo) request.getSession().getAttribute("user");
+
+
         Shop currentShop = (Shop) request.getSession().getAttribute("currentShop");
         if (shopId > -1L) {
             currentShop.setShopId(shopId);
         }
 
         if ((pageIndex > -1) && (pageSize >= -1) && (currentShop != null) && (currentShop.getShopId() != null)) {
+
             long productCategoryId = HttpServletRequestUtil.getLong(request, "productCategoryId");
             String productName = HttpServletRequestUtil.getString(request, "productName");
+
+            //整合product条件
             Product productCondition = compactProductCondition(currentShop.getShopId(), productCategoryId, productName);
             ProductExecution pe = productService.getProductList(productCondition, pageIndex, pageSize);
-            modelMap.put("productList", pe.getProductList());
-            modelMap.put("count", pe.getCount());
+
+            modelMap.put("productPageInfo", pe.getProductPageInfo());
+            modelMap.put("user", user);
             modelMap.put("success", true);
+
         } else {
             modelMap.put("success", false);
             modelMap.put("errMsg", "pageSize or pageSize or ShopId is empty");
@@ -100,7 +114,6 @@ public class ProductManagementController {
      */
     @GetMapping("/getproductlist")
     @ResponseBody
-
     public Map<String, Object> getProductList(HttpServletRequest request) {
         Map<String, Object> modelMap = new HashMap<>();
 

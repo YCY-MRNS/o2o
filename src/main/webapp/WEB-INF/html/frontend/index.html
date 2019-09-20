@@ -8,14 +8,46 @@
     <title>首页</title>
     <link rel="stylesheet" href="resources/css/bootstrap.css">
     <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/clear.css">
     <link href="https://cdn.bootcss.com/font-awesome/5.10.0-12/css/all.css" rel="stylesheet">
 </head>
+
+<style>
+    .shop-card {
+        margin: 10px;
+        height: 190px;
+        padding: 8px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    }
+
+    .shop-card .list-img {
+        display: flex;
+    }
+
+    .shop-card .list-img li {
+        padding-right: 8px;
+    }
+
+    .shop-card .shop-name {
+        color: #333;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .shop-card .shop-description {
+        color: #666;
+        font-size: 12px;
+    }
+
+</style>
+
 <body>
 
 <div class="nav-bar">
 
     <!--<h4 style="text-align: center ;color: #0085ff">首页</h4>-->
-        
+
     <div class="search-box">
         <input type="text" id="search-input" placeholder="搜索"
                onclick="window.location.href='/o2o/frontend/shoplist'">
@@ -51,16 +83,39 @@
 
 </div>
 
-<div class="shop-category-wrap container">
-    <div class="row container center-block" id="index-category">
+<div class="shop-warp">
 
+    <div class="shop-category-wrap container">
+        <div class="row container center-block" id="index-category">
+
+        </div>
     </div>
+
+    <div class="shop-list-warp">
+        <!--  <section class="shop-card">
+              <p class="shop-name">原一日式拉面(解放碑店)</p>
+              <p class="shop-description">月售2787单</p>
+              <p class="shop-info">月售2787单</p>
+              <ul class="list-img">
+                  <li><img
+                          src="https://cube.elemecdn.com/2/ff/442a38bf56edea173c0dfa9b8e5fdjpeg.jpeg?x-oss-process=image/format,webp/resize,w_130,h_130,m_fixed"
+                          class="img-thumbnail"></li>
+                  <li><img
+                          src="https://cube.elemecdn.com/2/ff/442a38bf56edea173c0dfa9b8e5fdjpeg.jpeg?x-oss-process=image/format,webp/resize,w_130,h_130,m_fixed"
+                          class="img-thumbnail"></li>
+                  <li><img
+                          src="https://cube.elemecdn.com/2/ff/442a38bf56edea173c0dfa9b8e5fdjpeg.jpeg?x-oss-process=image/format,webp/resize,w_130,h_130,m_fixed"
+                          class="img-thumbnail"></li>
+              </ul>
+          </section>-->
+    </div>
+
 </div>
 
-<div class="footer nav-bar navbar-fixed-bottom navbar-default">
+<!--<div class="footer nav-bar navbar-fixed-bottom navbar-default">
     <div class="col-md-6 col-xs-6 text-center"><a href="#" class="navbar-link">主页</a></div>
     <div class="col-md-6 col-xs-6 text-center"><a href="#" class="navbar-link">个人中心</a></div>
-</div>
+</div>-->
 
 <script src="resources/js/commons/jQuery.min.js"></script>
 <script src="resources/js/bootstrap.js"></script>
@@ -68,8 +123,42 @@
 
 <script>
     $(function () {
-
+        var pageIndex = 1;
+        var pageSize = 99;
+        var shopList = "/o2o/frontend/listshops";
         var headLine = "/o2o/frontend/listmainpageinfo";
+
+        function showShopList() {
+            var shopListUrl = shopList + "?pageIndex=" + pageIndex + "&pageSize=" + pageSize;
+            $.getJSON(shopListUrl, function (data) {
+                console.info(data);
+
+                var shopCardHtml = "";
+
+                data.shopPageInfo.list.map(function (item, index) {
+                    shopCardHtml += '<section class="shop-card">' +
+                        '            <p class="shop-name">' + item.shopName + '</p>' +
+                        '            <p class="shop-description">' + item.shopDesc + '</p>' +
+                        '            <ul class="list-img">' +
+                        '                <li><img' +
+                        '                        src="https://cube.elemecdn.com/2/ff/442a38bf56edea173c0dfa9b8e5fdjpeg.jpeg?x-oss-process=image/format,webp/resize,w_130,h_130,m_fixed"' +
+                        '                        class="img-thumbnail"></li>' +
+                        '                <li><img' +
+                        '                        src="https://cube.elemecdn.com/2/ff/442a38bf56edea173c0dfa9b8e5fdjpeg.jpeg?x-oss-process=image/format,webp/resize,w_130,h_130,m_fixed"' +
+                        '                        class="img-thumbnail"></li>' +
+                        '                <li><img' +
+                        '                        src="https://cube.elemecdn.com/2/ff/442a38bf56edea173c0dfa9b8e5fdjpeg.jpeg?x-oss-process=image/format,webp/resize,w_130,h_130,m_fixed"' +
+                        '                        class="img-thumbnail"></li>' +
+                        '            </ul>' +
+                        '        </section>';
+                });
+
+                $(".shop-list-warp").html(shopCardHtml);
+
+            })
+        }
+
+        showShopList();
 
         $.getJSON(headLine, function (data) {
             if (data.success) {

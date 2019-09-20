@@ -30,6 +30,13 @@ public interface ShopDao {
                              @Param("rowIndex") int rowIndex, @Param("pageSize") int pageSize);
 
     /**
+     * 分页 交给pageHelper
+     *
+     * @return
+     */
+    List<Shop> queryShopListByAll(@Param("shopCondition") Shop shopCondition);
+
+    /**
      * 通过商铺的id查询
      *
      * @param

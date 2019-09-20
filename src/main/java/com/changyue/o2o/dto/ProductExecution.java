@@ -2,6 +2,7 @@ package com.changyue.o2o.dto;
 
 import com.changyue.o2o.emums.ProductStateEnum;
 import com.changyue.o2o.entity.Product;
+import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
@@ -23,6 +24,8 @@ public class ProductExecution {
 
     private List<Product> productList;
 
+    private PageInfo<Product> productPageInfo;
+
     public ProductExecution() {
 
     }
@@ -42,6 +45,20 @@ public class ProductExecution {
         this.state = stateEnum.getState();
         this.stateInfo = stateEnum.getStateInfo();
         this.productList = productList;
+    }
+
+    public ProductExecution(ProductStateEnum stateEnum, PageInfo<Product> productPageInfo) {
+        this.state = stateEnum.getState();
+        this.stateInfo = stateEnum.getStateInfo();
+        this.productPageInfo = productPageInfo;
+    }
+
+    public PageInfo<Product> getProductPageInfo() {
+        return productPageInfo;
+    }
+
+    public void setProductPageInfo(PageInfo<Product> productPageInfo) {
+        this.productPageInfo = productPageInfo;
     }
 
     public int getState() {

@@ -1,31 +1,44 @@
 $(function () {
 
+    var pageIndex = 1;
+    var pageSize = 8;
+    var getShopList = "http://localhost:8080/o2o/shopadmin/getshoplist";
+
     getList();
 
-    function getList(e) {
+    function getList() {
         $.ajax({
-            url: "http://localhost:8080/o2o/shopadmin/getshoplist",
+            url: getShopList + "?pageIndex=" + pageIndex + "&pageSize=" + pageSize,
             type: "get",
             dataType: "json",
             success: function (data) {
                 console.info(data);
                 if (data.success) {
-                    console.info(data);
-                    handleList(data.shopList);
+                    handleList(data.shopPageInfo);
                     handleUser(data.user);
                 }
             }
         });
     }
 
-    function handleUser(data) {
-        $("#user-name").text(data.name);
-    }
+    $(document).on("click", ".page-item", function () {
+        pageIndex = $(this).data("id");
+        $.ajax({
+            url: getShopList + "?pageIndex=" + pageIndex + "&pageSize=" + pageSize,
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                handleList(data.shopPageInfo);
+                handleUser(data.user);
+            }
+        })
+    });
 
     function handleList(data) {
+        $('.shop-table-body').empty();
         var html = "";
-
-        data.map(function (value, index) {
+        var shopList = data.list;
+        shopList.map(function (value, index) {
             var number = index + 1;
             html += '<tr>'
                 + '<th >' + number + '</th>'
@@ -36,7 +49,7 @@ $(function () {
         });
 
         $('.shop-table-body').html(html);
-
+        showPagination(data);
     }
 
     function shopStatus(status) {
@@ -62,4 +75,5 @@ $(function () {
             return "";
         }
     }
+
 });

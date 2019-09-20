@@ -73,7 +73,7 @@
                 var tempHtml = '';
 
                 if (data.success) {
-                    $.map(data.productList, function (products, index) {
+                    $.map(data.productPageInfo.list, function (products, index) {
 
                         tempHtml += '<dd class="proc-content">' +
                             '    <div class="proc-root">' +

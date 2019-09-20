@@ -89,6 +89,7 @@
                 if (data.success) {
 
                     console.info(data);
+                    console.info(baseInfo);
 
                     var areHtml = "";
                     var categoryHtml = "";
@@ -125,11 +126,12 @@
             $.getJSON(shopListUrl, function (data) {
                 if (data.success) {
 
-                    console.info(data.shopList.shopList);
+                    console.info(shopListUrl);
+                    console.info(data);
 
                     var shopHtml = "";
 
-                    $.map(data.shopList.shopList, function (item, index) {
+                    $.map(data.shopPageInfo.list, function (item, index) {
                         shopHtml +=
                             '<div class="shop-box" data-shop-id="' + item.shopId + '">' +
                             '        <div class="login-box">' +

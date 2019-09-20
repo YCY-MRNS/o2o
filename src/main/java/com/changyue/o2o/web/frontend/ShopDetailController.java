@@ -78,7 +78,7 @@ public class ShopDetailController {
      * @param request 请求域 接收前端传递过来的值
      * @return 查询结果
      */
-    @GetMapping("getproductbyshop")
+    @GetMapping("/getproductbyshop")
     @ResponseBody
     public Map<String, Object> getProductByShop(HttpServletRequest request) {
         Map<String, Object> modelMap = new HashMap<>();
@@ -94,8 +94,7 @@ public class ShopDetailController {
             Product product = compactProductCondition(shopId, productName, productCategoryId);
 
             ProductExecution pe = productService.getProductList(product, pageIndex, pageSize);
-            modelMap.put("productList", pe.getProductList());
-            modelMap.put("count", pe.getCount());
+            modelMap.put("productPageInfo", pe.getProductPageInfo());
             modelMap.put("success", true);
 
         } else {

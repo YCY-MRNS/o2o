@@ -1,6 +1,5 @@
 package com.changyue.o2o.service.impl;
 
-import com.changyue.o2o.exceptions.ProductOperationException;
 import com.changyue.o2o.dao.ProductDao;
 import com.changyue.o2o.dao.ProductImgDao;
 import com.changyue.o2o.dto.ImageHolder;
@@ -8,10 +7,13 @@ import com.changyue.o2o.dto.ProductExecution;
 import com.changyue.o2o.emums.ProductStateEnum;
 import com.changyue.o2o.entity.Product;
 import com.changyue.o2o.entity.ProductImg;
+import com.changyue.o2o.exceptions.ProductOperationException;
 import com.changyue.o2o.service.ProductService;
 import com.changyue.o2o.util.ImageUtil;
 import com.changyue.o2o.util.PageCalculator;
 import com.changyue.o2o.util.PathUtils;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -182,13 +184,20 @@ public class ProductServiceImpl implements ProductService {
      */
     @Override
     public ProductExecution getProductList(Product productCondition, Integer pageIndex, Integer pageSize) {
-        int rowIndex = PageCalculator.calculator(pageIndex, pageSize);
-        List<Product> productList = productDao.queryProductList(productCondition, rowIndex, pageSize);
-        int count = productDao.queryProductCount(productCondition);
-        ProductExecution execution = new ProductExecution();
-        execution.setProductList(productList);
-        execution.setCount(count);
-        return execution;
+
+        //int rowIndex = PageCalculator.calculator(pageIndex, pageSize);
+        //int count = productDao.queryProductCount(productCondition);
+        //List<Product> productList = productDao.queryProductList(productCondition, 1, 999);
+
+        // 分页
+        PageHelper.startPage(pageIndex, pageSize);
+        List<Product> productList = productDao.queryProductListByPageHelper(productCondition);
+        PageInfo<Product> productPageInfo = new PageInfo<Product>(productList);
+
+        ProductExecution productExecution = new ProductExecution();
+        productExecution.setProductPageInfo(productPageInfo);
+
+        return productExecution;
     }
 
     /**

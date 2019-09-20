@@ -2,6 +2,8 @@ package com.changyue.o2o.dto;
 
 import com.changyue.o2o.emums.ShopStateEnum;
 import com.changyue.o2o.entity.Shop;
+import com.changyue.o2o.exceptions.ShopOperationException;
+import com.github.pagehelper.PageInfo;
 
 import java.util.List;
 
@@ -17,6 +19,7 @@ public class ShopExecution {
     private int count;
     private Shop shop;
     private List<Shop> shopList;
+    private PageInfo<Shop> shopPageInfo;
 
     public ShopExecution() {
     }
@@ -32,10 +35,22 @@ public class ShopExecution {
     }
 
     /**
+     * 返回成功的构造器
+     *
+     * @param stateEnum    状态
+     * @param shopPageInfo 分页
+     */
+    public ShopExecution(ShopStateEnum stateEnum, PageInfo<Shop> shopPageInfo) {
+        this.shopPageInfo = shopPageInfo;
+        this.state = stateEnum.getState();
+        this.stateInfo = stateEnum.getStateInfo();
+    }
+
+    /**
      * 是成功的构造器
      *
-     * @param stateEnum
-     * @param shopList
+     * @param stateEnum 状态
+     * @param shopList  商铺列表
      */
     public ShopExecution(ShopStateEnum stateEnum, List<Shop> shopList) {
         this.shopList = shopList;
@@ -43,10 +58,18 @@ public class ShopExecution {
         this.stateInfo = stateEnum.getStateInfo();
     }
 
-    public ShopExecution(ShopStateEnum stateEnum,Shop shop) {
+    public ShopExecution(ShopStateEnum stateEnum, Shop shop) {
         this.shop = shop;
         this.state = stateEnum.getState();
         this.stateInfo = stateEnum.getStateInfo();
+    }
+
+    public PageInfo<Shop> getShopPageInfo() {
+        return shopPageInfo;
+    }
+
+    public void setShopPageInfo(PageInfo<Shop> shopPageInfo) {
+        this.shopPageInfo = shopPageInfo;
     }
 
     public int getState() {
@@ -88,5 +111,7 @@ public class ShopExecution {
     public void setShopList(List<Shop> shopList) {
         this.shopList = shopList;
     }
+
+
 
 }
