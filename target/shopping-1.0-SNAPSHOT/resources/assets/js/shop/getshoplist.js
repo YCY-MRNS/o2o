@@ -2,7 +2,7 @@ $(function () {
 
     var pageIndex = 1;
     var pageSize = 8;
-    var getShopList = "http://localhost:8080/o2o/shopadmin/getshoplist";
+    var getShopList = "/o2o/shopadmin/getshoplist";
 
     getList();
 

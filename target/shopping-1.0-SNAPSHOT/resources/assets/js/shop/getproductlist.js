@@ -3,9 +3,9 @@ $(function () {
     var pageIndex = 1;
     var pageSize = 8;
     var shopId = getQueryString("shopId");
-    var productPostUrl = 'http://localhost:8080/o2o/shopadmin/modifyproduct';
-    var productInfo = "http://localhost:8080/o2o/shopadmin/getproductlistbyshop";
-    var saveCurrentShop = 'http://localhost:8080/o2o/shopadmin/getshopmanagementinfo';
+    var productPostUrl = '/o2o/shopadmin/modifyproduct';
+    var productInfo = "/o2o/shopadmin/getproductlistbyshop";
+    var saveCurrentShop = '/o2o/shopadmin/getshopmanagementinfo';
 
 
     transferCurrentShop(shopId);
