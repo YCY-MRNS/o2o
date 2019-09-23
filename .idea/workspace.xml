@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="o2o:war" />
+      <artifact name="o2o:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8b85d4f-a13c-4f72-adfa-07a633482a7d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/img/null.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/shop/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/frontend/FrontendPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/frontend/FrontendPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/AreaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/AreaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/HeadLineServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/HeadLineServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopCategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopCategoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/frontend/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/frontend/MainPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/weichat/WechatLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/weichat/WechatLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/frontendshoplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/frontendshoplist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/productsearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/frontend/productsearch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/js/shop/getproductlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/js/shop/getproductlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/frontend/frontendshoplist.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/frontend/frontendshoplist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/assets/js/shop/getproductlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/assets/js/shop/getproductlist.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +71,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/changyue/o2o/util/weixin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -69,16 +85,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\o2o\src\main\webapp\WEB-INF\html\frontend" />
-      <recent name="C:\Users\Administrator\Desktop\o2o\src\main\java\com\ycy\shopping\util" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\o2o\src\main\webapp\resources\img" />
+      <recent name="C:\Users\Administrator\Desktop\o2o\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\Administrator\Desktop\o2o\src\main\java\com\changyue\o2o\util\weixin" />
       <recent name="C:\Users\Administrator\Desktop\o2o\src\main\java\com\changyue\o2o\web\weichat" />
       <recent name="C:\Users\Administrator\Desktop\o2o\src\main\resources" />
-      <recent name="C:\Users\Administrator\Desktop\o2o\src\main\java\com\changyue\o2o\cache" />
-      <recent name="C:\Users\Administrator\Desktop\o2o\src\main\resources\spring" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\o2o\src\main\webapp" />
+      <recent name="C:\Users\Administrator\Desktop\o2o\src\main\webapp\WEB-INF\html\frontend" />
+      <recent name="C:\Users\Administrator\Desktop\o2o\src\main\java\com\ycy\shopping\util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -105,22 +122,6 @@
       <option name="PACKAGE_NAME" value="com.changyue.o2o.dao" />
       <option name="MAIN_CLASS_NAME" value="com.changyue.o2o.dao.ShopDaoTest" />
       <option name="METHOD_NAME" value="queryShopListByPageHelper" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AreaServiceTest.getAreaList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="o2o" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.changyue.o2o.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.changyue.o2o.service" />
-      <option name="MAIN_CLASS_NAME" value="com.changyue.o2o.service.AreaServiceTest" />
-      <option name="METHOD_NAME" value="getAreaList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -173,6 +174,9 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/main/webapp/resources/js/shop/index.js" working-dir="$PROJECT_DIR$/src/main/webapp/resources/js/shop">
+      <method v="2" />
     </configuration>
     <configuration name="T9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="apache-tomcat-9.0.22" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/o2o/" />
@@ -265,19 +269,19 @@
     </configuration>
     <list>
       <item itemvalue="Android JUnit.ShopDaoTest.queryShopListByPageHelper" />
-      <item itemvalue="JUnit.AreaServiceTest.getAreaList" />
       <item itemvalue="JUnit.ShopDaoTest.queryShopListByPageHelper" />
       <item itemvalue="JUnit.ShopServiceTest.testGetShopList" />
       <item itemvalue="JUnit.ProduceServiceTest.testQueryProductList" />
       <item itemvalue="Tomcat Server.T9" />
+      <item itemvalue="Node.js.index.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.index.js" />
         <item itemvalue="JUnit.ProduceServiceTest.testQueryProductList" />
         <item itemvalue="JUnit.ShopServiceTest.testGetShopList" />
         <item itemvalue="JUnit.ShopDaoTest.queryShopListByPageHelper" />
         <item itemvalue="Android JUnit.ShopDaoTest.queryShopListByPageHelper" />
-        <item itemvalue="JUnit.AreaServiceTest.getAreaList" />
       </list>
     </recent_temporary>
   </component>
@@ -300,7 +304,9 @@
       <workItem from="1568704272405" duration="519000" />
       <workItem from="1568706508312" duration="22453000" />
       <workItem from="1568795604149" duration="6059000" />
-      <workItem from="1568978862070" duration="11063000" />
+      <workItem from="1568978862070" duration="11483000" />
+      <workItem from="1569222837252" duration="301000" />
+      <workItem from="1569223676095" duration="9549000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;2019/9/11&quot;">
       <created>1568189147195</created>
@@ -337,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568985682498</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="&quot;2019/9/20&quot;">
+      <created>1568991347272</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1568991347272</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

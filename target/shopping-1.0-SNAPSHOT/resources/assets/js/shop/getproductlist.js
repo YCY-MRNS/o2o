@@ -47,6 +47,8 @@ $(function () {
     }
 
     function handList(data) {
+
+        console.info(data);
         $(".product-table-body").empty();
 
         var productsHtml = "";

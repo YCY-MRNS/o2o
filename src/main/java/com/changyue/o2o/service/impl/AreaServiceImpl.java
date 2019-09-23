@@ -44,9 +44,8 @@ public class AreaServiceImpl implements AreaService {
      *
      * @return 区域信息
      */
-    @Override
     @Transactional
-    public List<Area> getAreaList() {
+    public List<Area> getAreaLists() {
         String key = AREA_LIST_KEY;
         List<Area> areaList = null;
         ObjectMapper mapper = new ObjectMapper();
@@ -80,4 +79,8 @@ public class AreaServiceImpl implements AreaService {
         return areaList;
     }
 
+    @Override
+    public List<Area> getAreaList() {
+        return areaDao.queryAll();
+    }
 }

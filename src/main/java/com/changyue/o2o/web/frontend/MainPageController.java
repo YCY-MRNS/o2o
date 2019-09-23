@@ -30,7 +30,6 @@ public class MainPageController {
     @Autowired
     private ShopCategoryService shopCategoryService;
 
-
     /**
      * 首页头条
      */

@@ -45,9 +45,8 @@ public class HeadLineServiceImpl implements HeadLineService {
      * @param headLine 携带条件headline
      * @return headlines 满足条件的headline的list
      */
-    @Override
     @Transactional
-    public List<HeadLine> getHeadLineList(HeadLine headLine) {
+    public List<HeadLine> getHeadLineLists(HeadLine headLine) {
         String key = HAED_LINE_KEK;
         List<HeadLine> headLines = null;
         ObjectMapper mapper = new ObjectMapper();
@@ -82,4 +81,8 @@ public class HeadLineServiceImpl implements HeadLineService {
         return headLines;
     }
 
+    @Override
+    public List<HeadLine> getHeadLineList(HeadLine headLine) {
+        return headLineMapper.selectAllHeadLine(headLine);
+    }
 }
