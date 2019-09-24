@@ -7,9 +7,12 @@ package com.changyue.o2o.emums;
  * @create: 2019-04-10 16:57
  */
 public enum ProductStateEnum {
+    /**
+     * 商品状态
+     */
     SUCCESS(1000, "创建成功"),
     INNER_ERROR(-1001, "操作失败"),
-    EMPTY(-1002,"");
+    EMPTY(-1002, "商品为空");
 
     private int state;
     private String stateInfo;

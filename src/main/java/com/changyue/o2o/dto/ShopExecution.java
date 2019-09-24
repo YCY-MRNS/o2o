@@ -14,6 +14,7 @@ import java.util.List;
  * @create: 2019-03-14 23:42
  */
 public class ShopExecution {
+
     private int state;
     private String stateInfo;
     private int count;

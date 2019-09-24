@@ -13,6 +13,7 @@ import java.util.List;
  * @create: 2019-04-10 16:52
  */
 public class ProductExecution {
+
     //结果状态
     private int state;
     //状态标识

@@ -2,6 +2,8 @@ package com.changyue.o2o.util.weixin;
 
 import com.changyue.o2o.dto.UserAccessToken;
 import com.changyue.o2o.dto.WechatUser;
+import com.changyue.o2o.entity.PersonInfo;
+import com.changyue.o2o.entity.WechatAuth;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -24,6 +26,22 @@ import java.net.URL;
  */
 public class WechatUtil {
     private static Logger log = LoggerFactory.getLogger(WechatUtil.class);
+
+
+    /**
+     * 将微信账号的信息转换为personInfo
+     *
+     * @param wechatUser
+     * @return
+     */
+    public static PersonInfo getPersonInfoFromRequest(WechatUser wechatUser) {
+        PersonInfo personInfo = new PersonInfo();
+        personInfo.setName(wechatUser.getNickName());
+        personInfo.setGender(wechatUser.getSex() + "");
+        personInfo.setProfileImg(wechatUser.getHeadimgurl());
+        personInfo.setEnableStatus(1);
+        return personInfo;
+    }
 
     /**
      * 获取UserAccessToken实体类
@@ -162,5 +180,6 @@ public class WechatUtil {
         }
         return buffer.toString();
     }
+
 
 }

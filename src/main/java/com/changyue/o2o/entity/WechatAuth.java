@@ -9,6 +9,7 @@ import java.util.Date;
  * @create: 2019-03-03 21:17
  */
 public class WechatAuth {
+
     private long wechatAuthId;
     private String openId;
     private Date createTime;
@@ -44,5 +45,15 @@ public class WechatAuth {
 
     public void setPersonInfo(PersonInfo personInfo) {
         this.personInfo = personInfo;
+    }
+
+    @Override
+    public String   toString() {
+        return "WechatAuth{" +
+                "wechatAuthId=" + wechatAuthId +
+                ", openId='" + openId + '\'' +
+                ", createTime=" + createTime +
+                ", personInfo=" + personInfo +
+                '}';
     }
 }
