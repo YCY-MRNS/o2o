@@ -25,6 +25,8 @@ public class CacheServiceImpl implements CacheService {
     @Override
     public void removeFromCache(String keyPer) {
         Set<String> keys = jedisKeys.keys(keyPer + "*");
-        keys.forEach(key -> jedisKeys.del(key));
+        for (String key : keys) {
+            jedisKeys.del(key);
+        }
     }
 }

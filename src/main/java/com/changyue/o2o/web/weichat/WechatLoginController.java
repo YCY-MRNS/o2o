@@ -3,7 +3,7 @@ package com.changyue.o2o.web.weichat;
 import com.changyue.o2o.dto.UserAccessToken;
 import com.changyue.o2o.dto.WechatAuthExecution;
 import com.changyue.o2o.dto.WechatUser;
-import com.changyue.o2o.emums.WechatAuthEnum;
+import com.changyue.o2o.emums.WechatAuthStateEnum;
 import com.changyue.o2o.entity.PersonInfo;
 import com.changyue.o2o.entity.WechatAuth;
 import com.changyue.o2o.service.PersonInfoService;
@@ -93,7 +93,7 @@ public class WechatLoginController {
             }
             auth.setPersonInfo(personInfoFromRequest);
             WechatAuthExecution wechatAuthExecution = wechatAuthService.registerWechat(auth);
-            if (wechatAuthExecution.getState() != WechatAuthEnum.WECHAT_AUTH_SUCCESS.getState()) {
+            if (wechatAuthExecution.getState() != WechatAuthStateEnum.WECHAT_AUTH_SUCCESS.getState()) {
                 return null;
             } else {
                 personInfoFromRequest = personInfoService.getPersonInfoById(auth.getPersonInfo().getUserId());
@@ -105,7 +105,7 @@ public class WechatLoginController {
             // 获取到微信验证的信息后返回到指定的路由（需要自己设定）
             return "/frontend/index";
         } else {
-            return "/shopadmin/shoplist";
+            return "/backstage/index";
         }
 
     }

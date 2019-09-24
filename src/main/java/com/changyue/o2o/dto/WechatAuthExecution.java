@@ -1,6 +1,6 @@
 package com.changyue.o2o.dto;
 
-import com.changyue.o2o.emums.WechatAuthEnum;
+import com.changyue.o2o.emums.WechatAuthStateEnum;
 import com.changyue.o2o.entity.WechatAuth;
 import com.github.pagehelper.PageInfo;
 
@@ -23,24 +23,24 @@ public class WechatAuthExecution {
     public WechatAuthExecution() {
     }
 
-    public WechatAuthExecution(WechatAuthEnum wechatAuthEnum) {
-        this.state = wechatAuthEnum.getState();
-        this.stateInfo = wechatAuthEnum.getStateInfo();
+    public WechatAuthExecution(WechatAuthStateEnum wechatAuthStateEnum) {
+        this.state = wechatAuthStateEnum.getState();
+        this.stateInfo = wechatAuthStateEnum.getStateInfo();
     }
 
-    public WechatAuthExecution(WechatAuthEnum stateEnum, WechatAuth wechatAuth) {
+    public WechatAuthExecution(WechatAuthStateEnum stateEnum, WechatAuth wechatAuth) {
         this.state = stateEnum.getState();
         this.stateInfo = stateEnum.getStateInfo();
         this.wechatAuth = wechatAuth;
     }
 
-    public WechatAuthExecution(WechatAuthEnum stateEnum, List<WechatAuth> wechatAuthList) {
+    public WechatAuthExecution(WechatAuthStateEnum stateEnum, List<WechatAuth> wechatAuthList) {
         this.state = stateEnum.getState();
         this.stateInfo = stateEnum.getStateInfo();
         this.wechatAuths = wechatAuthList;
     }
 
-    public WechatAuthExecution(WechatAuthEnum stateEnum, PageInfo<WechatAuth> wechatAuthPageInfo) {
+    public WechatAuthExecution(WechatAuthStateEnum stateEnum, PageInfo<WechatAuth> wechatAuthPageInfo) {
         this.state = stateEnum.getState();
         this.stateInfo = stateEnum.getStateInfo();
         this.wechatAuthPageInfo = wechatAuthPageInfo;

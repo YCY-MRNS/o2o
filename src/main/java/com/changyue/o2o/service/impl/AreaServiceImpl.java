@@ -44,8 +44,9 @@ public class AreaServiceImpl implements AreaService {
      *
      * @return 区域信息
      */
+    @Override
     @Transactional
-    public List<Area> getAreaLists() {
+    public List<Area> getAreaList() {
         String key = AREA_LIST_KEY;
         List<Area> areaList = null;
         ObjectMapper mapper = new ObjectMapper();
@@ -68,7 +69,7 @@ public class AreaServiceImpl implements AreaService {
             //需要将取出的String转换的类型
             JavaType javaType = mapper.getTypeFactory().constructParametricType(ArrayList.class, Area.class);
             try {
-                //进行转换a
+                //进行转换
                 areaList = mapper.readValue(jsonString, javaType);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -77,10 +78,5 @@ public class AreaServiceImpl implements AreaService {
             }
         }
         return areaList;
-    }
-
-    @Override
-    public List<Area> getAreaList() {
-        return areaDao.queryAll();
     }
 }

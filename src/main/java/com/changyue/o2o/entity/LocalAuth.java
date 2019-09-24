@@ -9,6 +9,7 @@ import java.util.Date;
  * @create: 2019-03-03 21:19
  */
 public class LocalAuth {
+
     private long localAuthId;
     private String username;
     private String password;
@@ -62,5 +63,17 @@ public class LocalAuth {
 
     public void setPersonInfo(PersonInfo personInfo) {
         this.personInfo = personInfo;
+    }
+
+    @Override
+    public String toString() {
+        return "LocalAuth{" +
+                "localAuthId=" + localAuthId +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", createTime=" + createTime +
+                ", lastEditTime=" + lastEditTime +
+                ", personInfo=" + personInfo +
+                '}';
     }
 }

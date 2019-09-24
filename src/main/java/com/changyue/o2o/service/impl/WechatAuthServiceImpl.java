@@ -3,7 +3,7 @@ package com.changyue.o2o.service.impl;
 import com.changyue.o2o.dao.PersonInfoDao;
 import com.changyue.o2o.dao.WechatAuthDao;
 import com.changyue.o2o.dto.WechatAuthExecution;
-import com.changyue.o2o.emums.WechatAuthEnum;
+import com.changyue.o2o.emums.WechatAuthStateEnum;
 import com.changyue.o2o.entity.PersonInfo;
 import com.changyue.o2o.entity.WechatAuth;
 import com.changyue.o2o.exceptions.WechtAuthOperationException;
@@ -42,7 +42,7 @@ public class WechatAuthServiceImpl implements WechatAuthService {
     @Transactional
     public WechatAuthExecution registerWechat(WechatAuth wechatAuth) throws WechtAuthOperationException {
         if (wechatAuth == null || wechatAuth.getOpenId() == null) {
-            return new WechatAuthExecution(WechatAuthEnum.WECHAT_AUTH_NULL);
+            return new WechatAuthExecution(WechatAuthStateEnum.WECHAT_AUTH_NULL);
         }
 
         try {
@@ -69,7 +69,7 @@ public class WechatAuthServiceImpl implements WechatAuthService {
             if (effect <= 0) {
                 throw new WechtAuthOperationException("微信账号创建失败");
             } else {
-                return new WechatAuthExecution(WechatAuthEnum.WECHAT_AUTH_SUCCESS, wechatAuth);
+                return new WechatAuthExecution(WechatAuthStateEnum.WECHAT_AUTH_SUCCESS, wechatAuth);
             }
         } catch (Exception e) {
             log.error("微信账号创建失败:" + e.getMessage());

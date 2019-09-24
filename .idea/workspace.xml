@@ -10,34 +10,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8b85d4f-a13c-4f72-adfa-07a633482a7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Test/java/com/changyue/o2o/dao/PersonInfoDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test/java/com/changyue/o2o/dao/WechatAuthDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dao/PersonInfoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dao/WechatAuthDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dto/WechatAuthExecution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/emums/WechatAuthEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/exceptions/WechtAuthOperationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/PersonInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/WechatAuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/PersonInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/WechatAuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/PersonInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/WechatAuthMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/java/com/changyue/o2o/dao/LocalAuthDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/java/com/changyue/o2o/service/CacheServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dao/LocalAuthDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dto/LocalAuthExecution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/emums/LocalAuthStateEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/exceptions/LocalAuthOperationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/LocalAuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/LocalAuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/util/MD5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/LocalAuthMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dto/ProductExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dto/ProductExecution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dto/ShopExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dto/ShopExecution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/emums/ProductCategoryStateEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/emums/ProductCategoryStateEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/emums/ProductStateEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/emums/ProductStateEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/emums/ShopStateEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/emums/ShopStateEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/entity/PersonInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/entity/PersonInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/entity/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/entity/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/entity/WechatAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/entity/WechatAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/util/weixin/WechatUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/util/weixin/WechatUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/java/com/changyue/o2o/service/AreaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/java/com/changyue/o2o/service/AreaServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dto/WechatAuthExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dto/WechatAuthExecution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/emums/WechatAuthEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/emums/WechatAuthStateEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/entity/LocalAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/entity/LocalAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/AreaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/AreaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/CacheServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/CacheServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/HeadLineServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/HeadLineServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopCategoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopCategoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/WechatAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/WechatAuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/frontend/FrontendPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/frontend/FrontendPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/weichat/WechatLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/weichat/WechatLoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/entity/LocalAuth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/entity/LocalAuth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/service/impl/AreaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/service/impl/AreaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/service/impl/CacheServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/service/impl/CacheServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/service/impl/HeadLineServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/service/impl/HeadLineServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/service/impl/ShopCategoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/service/impl/ShopCategoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/web/frontend/FrontendPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/web/frontend/FrontendPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/web/weichat/WechatLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/web/weichat/WechatLoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/service/impl/AreaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/service/impl/AreaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/service/impl/CacheServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/service/impl/CacheServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/service/impl/HeadLineServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/service/impl/HeadLineServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/service/impl/ShopCategoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/service/impl/ShopCategoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/web/frontend/FrontendPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/web/frontend/FrontendPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/web/weichat/WechatLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/web/weichat/WechatLoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/changyue/o2o/service/AreaServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/changyue/o2o/service/AreaServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +62,9 @@
       <list>
         <option value="Jsp File" />
         <option value="xml" />
-        <option value="mapper" />
         <option value="Interface" />
+        <option value="mapper" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -91,7 +101,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/changyue/o2o/util" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -111,11 +121,11 @@
       <recent name="C:\Users\Administrator\Desktop\o2o\src\main\java\com\ycy\shopping\util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\o2o\src\main\java\com\changyue\o2o\util" />
       <recent name="C:\Users\Administrator\Desktop\o2o\src\main\webapp\resources\img" />
       <recent name="C:\Users\Administrator\Desktop\o2o\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\Administrator\Desktop\o2o\src\main\java\com\changyue\o2o\util\weixin" />
       <recent name="C:\Users\Administrator\Desktop\o2o\src\main\java\com\changyue\o2o\web\weichat" />
-      <recent name="C:\Users\Administrator\Desktop\o2o\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -130,24 +140,40 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Remote.remote-aliyun">
-    <configuration name="PersonInfoDaoTest.testInsertPersonInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LocalAuthDaoTest">
+    <configuration name="AreaServiceTest.getAreaList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="o2o" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.changyue.o2o.dao.*" />
+          <option name="PATTERN" value="com.changyue.o2o.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.changyue.o2o.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.changyue.o2o.dao.PersonInfoDaoTest" />
-      <option name="METHOD_NAME" value="testInsertPersonInfo" />
+      <option name="PACKAGE_NAME" value="com.changyue.o2o.service" />
+      <option name="MAIN_CLASS_NAME" value="com.changyue.o2o.service.AreaServiceTest" />
+      <option name="METHOD_NAME" value="getAreaList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonInfoDaoTest.testQueryPersonInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CacheServiceTest.testCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="o2o" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.changyue.o2o.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.changyue.o2o.service" />
+      <option name="MAIN_CLASS_NAME" value="com.changyue.o2o.service.CacheServiceTest" />
+      <option name="METHOD_NAME" value="testCache" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocalAuthDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="o2o" />
       <extension name="coverage">
         <pattern>
@@ -156,9 +182,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.changyue.o2o.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.changyue.o2o.dao.PersonInfoDaoTest" />
-      <option name="METHOD_NAME" value="testQueryPersonInfo" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.changyue.o2o.dao.LocalAuthDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,22 +199,6 @@
       <option name="PACKAGE_NAME" value="com.changyue.o2o.dao" />
       <option name="MAIN_CLASS_NAME" value="com.changyue.o2o.dao.WechatAuthDaoTest" />
       <option name="METHOD_NAME" value="testInsert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WechatAuthDaoTest.testQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="o2o" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.changyue.o2o.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.changyue.o2o.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.changyue.o2o.dao.WechatAuthDaoTest" />
-      <option name="METHOD_NAME" value="testQuery" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -327,19 +336,19 @@
     <list>
       <item itemvalue="Remote.remote-aliyun" />
       <item itemvalue="Tomcat Server.T9" />
-      <item itemvalue="JUnit.PersonInfoDaoTest.testQueryPersonInfo" />
-      <item itemvalue="JUnit.PersonInfoDaoTest.testInsertPersonInfo" />
-      <item itemvalue="JUnit.WechatAuthDaoTest.testQuery" />
       <item itemvalue="JUnit.WechatAuthDaoTest.testInsert" />
       <item itemvalue="JUnit.WechatAuthServiceTest.testRegisterWecha" />
+      <item itemvalue="JUnit.AreaServiceTest.getAreaList" />
+      <item itemvalue="JUnit.CacheServiceTest.testCache" />
+      <item itemvalue="JUnit.LocalAuthDaoTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LocalAuthDaoTest" />
+        <item itemvalue="JUnit.CacheServiceTest.testCache" />
+        <item itemvalue="JUnit.AreaServiceTest.getAreaList" />
         <item itemvalue="JUnit.WechatAuthServiceTest.testRegisterWecha" />
         <item itemvalue="JUnit.WechatAuthDaoTest.testInsert" />
-        <item itemvalue="JUnit.WechatAuthDaoTest.testQuery" />
-        <item itemvalue="JUnit.PersonInfoDaoTest.testInsertPersonInfo" />
-        <item itemvalue="JUnit.PersonInfoDaoTest.testQueryPersonInfo" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +376,7 @@
       <workItem from="1569223676095" duration="10814000" />
       <workItem from="1569245098517" duration="6894000" />
       <workItem from="1569254989882" duration="578000" />
-      <workItem from="1569293110760" duration="19743000" />
+      <workItem from="1569293110760" duration="35312000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;2019/9/11&quot;">
       <created>1568189147195</created>
@@ -442,7 +451,8 @@
     <MESSAGE value="&quot;2019/9/12&quot;" />
     <MESSAGE value="&quot;2019/9/20&quot;" />
     <MESSAGE value="&quot;2019/9/23&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;2019/9/23&quot;" />
+    <MESSAGE value="&quot;2019/9/24&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;2019/9/24&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -461,6 +471,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopServiceImpl.java</url>
           <line>94</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/AreaServiceImpl.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Test/java/com/changyue/o2o/service/AreaServiceTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/weichat/WechatLoginController.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

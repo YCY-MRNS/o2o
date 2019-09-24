@@ -27,6 +27,5 @@ public class AreaServiceTest extends BaseTest {
         List<Area> areaList = areaService.getAreaList();
         Assert.assertEquals("和园一号", areaList.get(0).getAreaName());
         cacheService.removeFromCache(areaService.AREA_LIST_KEY);
-        areaService.getAreaList();
     }
 }

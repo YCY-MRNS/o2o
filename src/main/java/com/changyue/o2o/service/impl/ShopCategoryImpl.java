@@ -44,7 +44,8 @@ public class ShopCategoryImpl implements ShopCategoryService {
      * @param shopCategoryCondition 携带条件的shopCategory 进行查询
      * @return shopCategory 查询商铺类别的集合
      */
-    public List<ShopCategory> getShopCategoryLists(ShopCategory shopCategoryCondition) {
+    @Override
+    public List<ShopCategory> getShopCategoryList(ShopCategory shopCategoryCondition) {
         String key = SHOP_CATEGORY_KEY;
         ObjectMapper mapper = new ObjectMapper();
         List<ShopCategory> shopCategories = null;
@@ -87,8 +88,8 @@ public class ShopCategoryImpl implements ShopCategoryService {
     }
 
 
-    @Override
+/*    @Override
     public List<ShopCategory> getShopCategoryList(ShopCategory shopCategoryCondition) {
         return shopCategoryDao.queryShopCategory(shopCategoryCondition);
-    }
+    }*/
 }
