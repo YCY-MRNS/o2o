@@ -30,7 +30,7 @@ public interface LocalAuthService {
      * @param userId 用户id
      * @return 本地
      */
-    LocalAuth getLocalByUserId(long userId);
+    LocalAuth getLocalByUserId(Long userId);
 
 
     /**
@@ -50,11 +50,10 @@ public interface LocalAuthService {
      * @param username     用户名
      * @param password     密码
      * @param newPassword  新密码
-     * @param lastEditTime 最后的修改时间
      * @return 平台执行包装类
      * @throws LocalAuthOperationException 平台操作异常类
      */
-    LocalAuthExecution modifyLocalAuth(long userId, String username, String password,
-                                       String newPassword, Date lastEditTime) throws LocalAuthOperationException;
+    LocalAuthExecution modifyLocalAuth(Long userId, String username, String password,
+                                       String newPassword) throws LocalAuthOperationException;
 
 }

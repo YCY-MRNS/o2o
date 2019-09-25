@@ -27,7 +27,7 @@ public class WechatAuthDaoTest extends BaseTest {
     @Test
     public void testInsert() {
         PersonInfo personInfo = new PersonInfo();
-        personInfo.setUserId(8);
+        personInfo.setUserId(8L);
 
         WechatAuth wechatAuth = new WechatAuth();
         wechatAuth.setCreateTime(new Date());

@@ -36,6 +36,4 @@ public class FrontendPageController {
     public String productSearch() {
         return "frontend/productsearch";
     }
-
-
 }

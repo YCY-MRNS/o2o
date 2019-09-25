@@ -3,6 +3,7 @@ package com.changyue.o2o.dao;
 import com.changyue.o2o.BaseTest;
 import com.changyue.o2o.entity.LocalAuth;
 import com.changyue.o2o.entity.PersonInfo;
+import com.changyue.o2o.util.MD5;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -33,7 +34,7 @@ public class LocalAuthDaoTest extends BaseTest {
         localAuth.setCreateTime(new Date());
 
         PersonInfo personInfo = new PersonInfo();
-        personInfo.setUserId(14);
+        personInfo.setUserId(14L);
 
         localAuth.setPersonInfo(personInfo);
 
@@ -50,13 +51,13 @@ public class LocalAuthDaoTest extends BaseTest {
 
     @Test
     public void testBQueryLocalAuthByUserAndPw() {
-        LocalAuth localAuth = localAuthDao.queryLocalByUserNameAndPw("袁XX", "yuanchangyue");
-        Assert.assertEquals(14, localAuth.getPersonInfo().getUserId());
+        LocalAuth localAuth = localAuthDao.queryLocalByUserNameAndPw("袁XX", MD5.getMd5("yuanwu"));
+        System.out.println(localAuth.getPersonInfo().getUserId());
     }
 
     @Test
     public void testDUpdateLocalAuth() {
-        int effect = localAuthDao.updateLocalAuth(14, "袁XX", "yuanchangyue", "yuanwu", new Date());
+        int effect = localAuthDao.updateLocalAuth(14L, "袁XX", "yuanchangyue", "yuanwu", new Date());
         Assert.assertEquals(1, effect);
     }
 }

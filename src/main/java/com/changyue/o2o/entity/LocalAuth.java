@@ -10,18 +10,18 @@ import java.util.Date;
  */
 public class LocalAuth {
 
-    private long localAuthId;
+    private Long localAuthId;
     private String username;
     private String password;
     private Date createTime;
     private Date lastEditTime;
     private PersonInfo personInfo;
 
-    public long getLocalAuthId() {
+    public Long getLocalAuthId() {
         return localAuthId;
     }
 
-    public void setLocalAuthId(long localAuthId) {
+    public void setLocalAuthId(Long localAuthId) {
         this.localAuthId = localAuthId;
     }
 
