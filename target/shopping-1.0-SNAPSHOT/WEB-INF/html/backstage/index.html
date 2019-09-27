@@ -155,6 +155,8 @@
                             <a class="dropdown-item" href="profile.html">个人中心</a>
                             <a class="dropdown-item" href="profile.html" data-toggle="modal"
                                data-target="#bind-account">账号绑定</a>
+                            <a class="dropdown-item" id="reset" href="profile.html" data-toggle="modal"
+                               data-target="#reset-pw" data-usertype="2">修改密码</a>
                             <a class="dropdown-item" target="_blank">帮助&支持</a>
                             <div class="dropdown-divider"></div>
                             <a id="login-out" usertype="2" class="dropdown-item" href="sign-in.html">注销</a>
@@ -255,7 +257,7 @@
                     </div>
                     <div class="form-group">
                         <label for="pwInput">密码</label>
-                        <input type="text" class="form-control" id="pwInput"
+                        <input type="password" class="form-control" id="pwInput"
                                name="password" placeholder="请输入密码">
                     </div>
                     <div class="form-group">
@@ -277,6 +279,58 @@
     </div>
 </div>
 
+<!--修改账号密码modal-->
+<div class="modal fade" id="reset-pw" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header px-4">
+                <h5 class="modal-title" id="">重置密码</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="material-icons ">close</span>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <form class="bind-account-form">
+                    <div class="form-group">
+                        <label for="usernameInput">用户名</label>
+                        <input type="text" class="form-control" id="usernameInputReset"
+                               name="userName" placeholder="请输入用户名">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwInput">原密码</label>
+                        <input type="password" class="form-control" id="oldPwInputReset"
+                               name="password" placeholder="请输入旧密码">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwInput">新密码</label>
+                        <input type="password" class="form-control" id="newPwInputReset"
+                               name="password" placeholder="请输入新密码">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwInput">确认密码</label>
+                        <input type="password" class="form-control" id="confirmPwInputReset"
+                               name="password" placeholder="请重新输入新密码">
+                    </div>
+                    <div class="form-group">
+                        <label for="verifyInput">验证码</label>
+
+                        <input type="text" class="form-control" id="verifyInputReset"
+                               name="verifyCode" placeholder="请输入验证码">
+                        <br>
+                        <img id="captcha_img_reset" type="text" alt="点击更换" title="点击更换" onclick="changeVerityCode(this)"
+                             src="/o2o/Kaptcha">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer px-4">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="reset-btn">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="../resources/assets/js/chartjs/utils.js"></script>
 <script src="../resources/assets/js/lib/moment.min.js"></script>
 <script src="../resources/assets/js/lib/jquery.min.js"></script>
@@ -291,6 +345,59 @@
 <script src="../resources/assets/js/shop/getshoplist.js"></script>
 <script src="../resources/assets/js/shop/bindaccount.js"></script>
 <script src="../resources/assets/js/shop/loginout.js"></script>
+
+<script>
+    $(function () {
+
+        var changePasswordUrl = "/o2o/local/changelocalauthpw";
+        var userType = $("#reset").data("usertype");
+        $("#reset-btn").click(function () {
+            var username = $("#usernameInputReset").val();
+            var oldPassword = $("#oldPwInputReset").val();
+            var newPassword = $("#newPwInputReset").val();
+            var confirmPassword = $("#confirmPwInputReset").val();
+            var verifyCode = $("#verifyInputReset").val();
+
+            if (confirmPassword != newPassword) {
+                alert("两次密码不一致，请重新输入!");
+                return;
+            }
+
+            var formData = new FormData();
+            formData.append("userName", username);
+            formData.append("password", oldPassword);
+            formData.append("newPassword", newPassword);
+            if (!verifyCode) {
+                alert("请输入验证码！");
+                return;
+            }
+            formData.append("verifyCodeActual", verifyCode);
+
+            $.ajax({
+                url: changePasswordUrl,
+                type: "POST",
+                cache: false,
+                processData: false,
+                contentType: false,
+                data: formData,
+                success: function (data) {
+                    if (data.success) {
+                        alert("密码重置成功!");
+                        if (userType == 1) {
+                            window.location.href = "/o2o";
+                        } else {
+                            window.location.href = "/o2o/shopadmin/shoplist";
+                        }
+                    } else {
+                        alert("密码重置失败：" + data.errMsg);
+                        $("#captcha_img_reset").click();
+                    }
+                }
+            });
+        });
+
+    });
+</script>
 
 </body>
 

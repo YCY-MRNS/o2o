@@ -37,7 +37,7 @@ public class LocalAuthController {
         Map<String, Object> modelMap = new HashMap<>();
 
         //验证码
-        if (!CodeUtil.checkVerityCode(request)) {
+        if (CodeUtil.checkVerityCode(request)) {
             modelMap.put("success", false);
             modelMap.put("errMsg", "输入错误的验证码");
             return modelMap;
@@ -79,7 +79,7 @@ public class LocalAuthController {
         Map<String, Object> modelMap = new HashMap<>();
 
         //验证码
-        if (!CodeUtil.checkVerityCode(request)) {
+        if (CodeUtil.checkVerityCode(request)) {
             modelMap.put("success", false);
             modelMap.put("errMsg", "输入错误的验证码");
             return modelMap;
@@ -92,7 +92,6 @@ public class LocalAuthController {
 
         //微信登录的用户
         PersonInfo user = (PersonInfo) request.getSession().getAttribute("user");
-
 
         if (userName != null && password != null && user != null && user.getUserId() != null
                 && newPassword != null && !password.equals(newPassword)) {
@@ -139,7 +138,7 @@ public class LocalAuthController {
         boolean needVerify = HttpServletRequestUtil.getBoolean(request, "needVerify");
 
         //验证码
-        if (needVerify && !CodeUtil.checkVerityCode(request)) {
+        if (needVerify && CodeUtil.checkVerityCode(request)) {
             modelMap.put("success", false);
             modelMap.put("errMsg", "输入错误的验证码");
             return modelMap;
@@ -153,7 +152,7 @@ public class LocalAuthController {
             LocalAuth localByUserNameAndPw = localAuthService.getLocalByUserNameAndPw(userName, password);
             if (localByUserNameAndPw != null) {
                 modelMap.put("success", true);
-                request.getSession().setAttribute("user", localByUserNameAndPw);
+                request.getSession().setAttribute("user", localByUserNameAndPw.getPersonInfo());
             } else {
                 modelMap.put("success", false);
                 modelMap.put("errMsg", "用户名或者密码错误");
@@ -168,7 +167,6 @@ public class LocalAuthController {
         return modelMap;
     }
 
-
     @PostMapping("/loginout")
     @ResponseBody
     public Map<String, Object> loginOut(HttpServletRequest request) {
@@ -178,6 +176,5 @@ public class LocalAuthController {
         modelMap.put("success", true);
         return modelMap;
     }
-
 
 }

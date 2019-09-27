@@ -1,7 +1,7 @@
 $(function () {
 
     var binLocalAuthUrl = "/o2o/local/bindlocalauth";
-    var usertype = getQueryString("usertype");
+    var userType = getQueryString("usertype");
 
     $("#bind-btn").click(function () {
 
@@ -28,8 +28,8 @@ $(function () {
             success: function (data) {
                 if (data.success) {
                     alert("绑定成功!");
-                    if (1 === usertype) {
-                        window.location.href = "/o2o";
+                    if (userType == 1) {
+                        window.location.href = "/o2o/frontend/index";
                     } else {
                         window.location.href = "/o2o/shopadmin/shoplist";
                     }

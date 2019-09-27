@@ -58,7 +58,6 @@ public class ShopManagementController {
     public Map<String, Object> getShopManagementInfo(HttpServletRequest request) {
         Map<String, Object> modelMap = new HashMap<>();
         long shopId = HttpServletRequestUtil.getLong(request, "shopId");
-
         if (shopId <= 0) {
             Object currentShopObj = request.getSession().getAttribute("currentShop");
             if (currentShopObj == null) {
@@ -86,14 +85,7 @@ public class ShopManagementController {
     public Map<String, Object> getShopList(HttpServletRequest request) {
 
         Map<String, Object> modelMap = new HashMap<>();
-
-        //TODO
-        //用户
-        PersonInfo user = new PersonInfo();
-        user.setUserId(8L);
-        user.setName("test");
-        request.getSession().setAttribute("user", user);
-        user = (PersonInfo) request.getSession().getAttribute("user");
+        PersonInfo user = (PersonInfo) request.getSession().getAttribute("user");
 
         int pageIndex = HttpServletRequestUtil.getInt(request, "pageIndex");
         int pageSize = HttpServletRequestUtil.getInt(request, "pageSize");
@@ -102,6 +94,8 @@ public class ShopManagementController {
             Shop shopCondition = new Shop();
             shopCondition.setOwner(user);
             ShopExecution se = shopService.getShopList(shopCondition, pageIndex, pageSize);
+            //获得商铺列表后将它放进session中,方便权限操作
+            request.getSession().setAttribute("shopList", se.getShopList());
             modelMap.put("shopPageInfo", se.getShopPageInfo());
             modelMap.put("user", user);
             modelMap.put("success", true);
@@ -227,7 +221,6 @@ public class ShopManagementController {
                     }
                     shopList.add(shopExecution.getShop());
                     request.getSession().setAttribute("shopList", shopList);
-
                 } else {
                     modelMap.put("success", false);
                     modelMap.put("errMsg", shopExecution.getState());

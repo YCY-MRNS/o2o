@@ -15,15 +15,16 @@ import com.changyue.o2o.entity.Shop;
 
 public interface ShopService {
 
-
     /**
      * 获得Shop的分页数据
      */
     public ShopExecution getShopList(Shop shopCondition, int pageIndex, int pageSize);
 
     /**
-     * @param shopId
-     * @return
+     * 通过shopId获得商铺
+     *
+     * @param shopId shopId
+     * @return 商铺
      */
     Shop getByShopId(long shopId);
 
@@ -31,7 +32,6 @@ public interface ShopService {
      * 修改商铺信息
      */
     ShopExecution modifyShop(Shop shop, ImageHolder thumbnail) throws ShopOperationException;
-
 
     /**
      * 添加商铺

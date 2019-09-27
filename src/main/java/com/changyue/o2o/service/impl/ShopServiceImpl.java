@@ -37,41 +37,39 @@ public class ShopServiceImpl implements ShopService {
      * @param shopCondition 带条件的商铺信息
      * @param pageIndex     页码
      * @param pageSize      页数
-     * @return 商铺异常包装类
+     * @return 商铺执行包装类
      */
     @Override
     public ShopExecution getShopList(Shop shopCondition, int pageIndex, int pageSize) {
 
-        //int rowIndex = PageCalculator.calculator(pageIndex, pageSize);
-
-        //List<Shop> shopList = shopDao.queryShopList(shopCondition, pageIndex, pageSize);
-
         // 分页操作
         PageHelper.startPage(pageIndex, pageSize);
-
         List<Shop> shopList = shopDao.queryShopListByAll(shopCondition);
-
         PageInfo<Shop> shopPageInfo = new PageInfo<>(shopList, 5);
 
-        //总数
-        // int shopCount = shopDao.queryShopCount(shopCondition);
-
+        //存放包装类中
         ShopExecution shopExecution = new ShopExecution();
-
         if (shopList != null) {
+
             shopExecution.setShopPageInfo(shopPageInfo);
-            // shopExecution.setCount(shopCount);
+            shopExecution.setShopList(shopList);
+
         } else {
             shopExecution.setState(ShopStateEnum.INNER_ERROR.getState());
         }
         return shopExecution;
     }
 
+    /**
+     * 通过shopId获得商铺
+     *
+     * @param shopId shopId
+     * @return 商铺
+     */
     @Override
     public Shop getByShopId(long shopId) {
         return shopDao.queryById(shopId);
     }
-
 
     /**
      * 修改商铺信息

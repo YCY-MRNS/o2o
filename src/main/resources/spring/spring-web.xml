@@ -26,4 +26,36 @@
 
     <context:component-scan base-package="com.changyue.o2o.web"/>
 
+    <mvc:interceptors>
+
+        <!--是否登录账号，进入到商铺管理系统-->
+        <mvc:interceptor>
+            <mvc:mapping path="/shopadmin/**"/>
+            <bean id="shopInterceptor" class="com.changyue.o2o.interceptor.ShopLoginInterceptor"/>
+        </mvc:interceptor>
+
+        <!--验证是否对该商铺有操作权限-->
+        <mvc:interceptor>
+
+            <mvc:mapping path="/shopadmin/**"/>
+
+            <!--商铺列表-->
+            <mvc:exclude-mapping path="/shopadmin/shoplist"/>
+            <mvc:exclude-mapping path="/shopadmin/getshoplist"/>
+
+            <!--商铺注册-->
+            <mvc:exclude-mapping path="/shopadmin/getshopinitinfo"/>
+            <mvc:exclude-mapping path="/shopadmin/registershop"/>
+            <mvc:exclude-mapping path="/shopadmin/shopoperation"/>
+
+            <!--商铺管理-->
+            <mvc:exclude-mapping path="/shopadmin/shopmanagement"/>
+            <mvc:exclude-mapping path="/shopadmin/getshopmanagementinfo"/>
+
+            <bean id="shopPermissionInterceptor" class="com.changyue.o2o.interceptor.ShopPermissionInterceptor"/>
+
+        </mvc:interceptor>
+
+    </mvc:interceptors>
+
 </beans>

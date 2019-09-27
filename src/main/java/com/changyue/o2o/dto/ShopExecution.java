@@ -59,6 +59,19 @@ public class ShopExecution {
         this.stateInfo = stateEnum.getStateInfo();
     }
 
+    /**
+     * 是成功的构造器
+     *
+     * @param stateEnum 状态
+     * @param shopList  商铺列表
+     */
+    public ShopExecution(ShopStateEnum stateEnum, List<Shop> shopList, PageInfo<Shop> shopPageInfo) {
+        this.shopList = shopList;
+        this.state = stateEnum.getState();
+        this.stateInfo = stateEnum.getStateInfo();
+        this.stateInfo = stateEnum.getStateInfo();
+    }
+
     public ShopExecution(ShopStateEnum stateEnum, Shop shop) {
         this.shop = shop;
         this.state = stateEnum.getState();
@@ -112,7 +125,6 @@ public class ShopExecution {
     public void setShopList(List<Shop> shopList) {
         this.shopList = shopList;
     }
-
 
 
 }

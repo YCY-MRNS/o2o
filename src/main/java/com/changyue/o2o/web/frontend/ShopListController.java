@@ -80,7 +80,6 @@ public class ShopListController {
         return modelMap;
     }
 
-
     /**
      * 查询商铺的列表
      *

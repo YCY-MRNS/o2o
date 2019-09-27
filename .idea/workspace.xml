@@ -10,48 +10,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8b85d4f-a13c-4f72-adfa-07a633482a7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Test/java/com/changyue/o2o/service/LocalAuthServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/local/LocalAuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/local/LocalAuthPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/js/shop/bindaccount.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/js/shop/loginout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/interceptor/ShopLoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/interceptor/ShopPermissionInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/js/shop/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/java/com/changyue/o2o/dao/LocalAuthDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/java/com/changyue/o2o/dao/LocalAuthDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/java/com/changyue/o2o/dao/WechatAuthDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/java/com/changyue/o2o/dao/WechatAuthDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dao/LocalAuthDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dao/LocalAuthDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/emums/LocalAuthStateEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/emums/LocalAuthStateEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/entity/LocalAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/entity/LocalAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/entity/PersonInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/entity/PersonInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/LocalAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/LocalAuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/LocalAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/LocalAuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dto/ShopExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/dto/ShopExecution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/ShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/frontend/FrontendPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/frontend/FrontendPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/frontend/ShopListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/frontend/ShopListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/local/LocalAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/local/LocalAuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/shopadmin/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/changyue/o2o/web/shopadmin/ShopManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/backstage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/backstage/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/js/popper.min.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/js/popper.min.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/dto/WechatAuthExecution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/dto/WechatAuthExecution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/emums/WechatAuthEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/entity/LocalAuth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/entity/LocalAuth.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/entity/PersonInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/entity/PersonInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/service/impl/WechatAuthServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/service/impl/WechatAuthServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/web/shopadmin/ProductManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/web/shopadmin/ProductManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/js/shop/bindaccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/js/shop/bindaccount.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/dto/ShopExecution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/dto/ShopExecution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/service/impl/ShopServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/service/impl/ShopServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/web/frontend/FrontendPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/web/frontend/FrontendPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/web/frontend/ShopListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/web/frontend/ShopListController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/web/shopadmin/ShopManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/web/shopadmin/ShopManagementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/changyue/o2o/web/weichat/WechatLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/changyue/o2o/web/weichat/WechatLoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/dto/WechatAuthExecution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/dto/WechatAuthExecution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/emums/WechatAuthEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/entity/LocalAuth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/entity/LocalAuth.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/entity/PersonInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/entity/PersonInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/service/impl/WechatAuthServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/service/impl/WechatAuthServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/dto/ShopExecution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/dto/ShopExecution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/service/impl/ShopServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/service/impl/ShopServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/web/frontend/FrontendPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/web/frontend/FrontendPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/web/shopadmin/ProductManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/web/shopadmin/ProductManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/web/frontend/ShopListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/web/frontend/ShopListController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/web/shopadmin/ShopManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/web/shopadmin/ShopManagementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/web/weichat/WechatLoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/com/changyue/o2o/web/weichat/WechatLoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/classes/spring/spring-web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/backstage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/html/backstage/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/changyue/o2o/dao/ShopDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/changyue/o2o/dao/ShopDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/changyue/o2o/dao/WechatAuthDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/changyue/o2o/dao/WechatAuthDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/changyue/o2o/service/ShopServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/changyue/o2o/service/ShopServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/assets/js/popper.min.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-1.0-SNAPSHOT/resources/assets/js/popper.min.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,8 +57,8 @@
         <option value="Interface" />
         <option value="mapper" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -107,7 +94,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/local" />
+    <property name="last_opened_file_path" value="H:/javaee/实验/springwork_3" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -341,13 +328,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Remote.remote-aliyun" />
-      <item itemvalue="Tomcat Server.T9" />
       <item itemvalue="JUnit.LocalAuthServiceTest.testAInsertLocalAuth" />
       <item itemvalue="JUnit.LocalAuthServiceTest.testCQueryLocalAuth" />
       <item itemvalue="JUnit.LocalAuthServiceTest.testDUpdateLocalAuth" />
       <item itemvalue="JUnit.LocalAuthServiceTest.testBQueryLocalAuthByUserAndPw" />
       <item itemvalue="JUnit.LocalAuthDaoTest.testBQueryLocalAuthByUserAndPw" />
+      <item itemvalue="Remote.remote-aliyun" />
+      <item itemvalue="Tomcat Server.T9" />
     </list>
     <recent_temporary>
       <list>
@@ -384,7 +371,10 @@
       <workItem from="1569245098517" duration="6894000" />
       <workItem from="1569254989882" duration="578000" />
       <workItem from="1569293110760" duration="35950000" />
-      <workItem from="1569398655280" duration="15613000" />
+      <workItem from="1569398655280" duration="15797000" />
+      <workItem from="1569478574759" duration="193000" />
+      <workItem from="1569499677719" duration="14471000" />
+      <workItem from="1569553620867" duration="490000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;2019/9/11&quot;">
       <created>1568189147195</created>
@@ -442,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569337392247</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="&quot;2019/9/25&quot;">
+      <created>1569425194104</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1569425194104</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,31 +464,12 @@
     <MESSAGE value="&quot;2019/9/20&quot;" />
     <MESSAGE value="&quot;2019/9/23&quot;" />
     <MESSAGE value="&quot;2019/9/24&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;2019/9/24&quot;" />
+    <MESSAGE value="&quot;2019/9/25&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;2019/9/25&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopServiceImpl.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopServiceImpl.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/ShopServiceImpl.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/changyue/o2o/service/impl/AreaServiceImpl.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Test/java/com/changyue/o2o/service/AreaServiceTest.java</url>
           <line>26</line>
@@ -502,7 +480,20 @@
           <line>56</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/changyue/o2o/util/CodeUtil.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/changyue/o2o/util/CodeUtil.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" />
+    </watches-manager>
   </component>
 </project>

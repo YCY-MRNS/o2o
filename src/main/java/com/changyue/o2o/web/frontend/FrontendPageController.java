@@ -36,4 +36,9 @@ public class FrontendPageController {
     public String productSearch() {
         return "frontend/productsearch";
     }
+
+    @RequestMapping("/index")
+    public String index() {
+        return "frontend/index";
+    }
 }
