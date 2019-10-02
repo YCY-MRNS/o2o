@@ -4,8 +4,7 @@ $(function () {
     var initUrl = '/o2o/shopadmin/getshopinitinfo';
     var registerShopUrl = '/o2o/shopadmin/registershop';
     var updateShopUrl = "/o2o/shopadmin/modifyshop";
-    var saveCurrentShop = '/o2o/shopadmin/getshopmanagementinfo';
-    var shopoperationurl = "";
+    var shopOperationUrl = "";
 
     /**
      * 判断当前是注册还是编辑
@@ -18,8 +17,8 @@ $(function () {
             $(".form-des").text("请修改以下信息,点击保存进行商铺编辑！");
             $(".form-header").text("商铺编辑表单");
             $("#submit").text("保存");
-            transferCurrentShop(shopId);
-            shopoperationurl = updateShopUrl;
+            sendShopIdToServer(shopId);
+            shopOperationUrl = updateShopUrl;
             showEditShopInfo(shopId);
         } else {
             $("#page-title").text("o2o商铺管理后台 - 商铺注册");
@@ -27,31 +26,9 @@ $(function () {
             $(".form-des").text("请填写以下信息,点击注册进行商铺注册！");
             $(".form-header").text("商铺注册表单");
             $("#submit").text("注册");
-            shopoperationurl = registerShopUrl;
+            shopOperationUrl = registerShopUrl;
             getInfo();
         }
-    }
-
-    /**
-     * 将需要修改的shopId传递到后台
-     * @param shopId
-     */
-    function transferCurrentShop(shopId) {
-        console.info(shopId);
-        $.ajax({
-            url: saveCurrentShop,
-            type: 'POST',
-            xhrFields: {
-                withCredentials: true
-            },
-            crossDomain: true,
-            data: {
-                shopId: shopId
-            },
-            success: function (data) {
-                console.info("传递成功！");
-            }
-        });
     }
 
     /**
@@ -87,7 +64,9 @@ $(function () {
         });
     }
 
-//获得后台传来的JSON数据
+    /**
+     * 获得后台传来的JSON数据
+     */
     function getInfo() {
         $.getJSON(initUrl, function (data) {
             if (data.success) {
@@ -109,7 +88,9 @@ $(function () {
         });
     }
 
-//提交表单数据
+    /**
+     * 提交表单数据
+     */
     $('#submit').click(function () {
 
         var shop = {};
@@ -141,7 +122,7 @@ $(function () {
         formData.append("verifyCodeActual", verifyCodeActual);
 
         $.ajax({
-            url: shopoperationurl,
+            url: shopOperationUrl,
             type: 'POST',
             data: formData,
             contentType: false,
@@ -160,7 +141,6 @@ $(function () {
                 }
             }
         })
-
     });
 
     judgeOperation(shopId);

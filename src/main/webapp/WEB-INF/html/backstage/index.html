@@ -147,24 +147,21 @@
                         </div>
                     </li>
 
-                    <li class="nav-item ml-sm-3 user-logedin dropdown">
-                        <a href="#" id="userLogedinDropdown" data-toggle="dropdown"
-                           class="nav-link weight-400 dropdown-toggle"><img src="../resources/assets/images/user.png"
-                                                                            class="mr-2 rounded" width="28">Akshay kumar</a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userLogedinDropdown">
-                            <a class="dropdown-item" href="profile.html">个人中心</a>
-                            <a class="dropdown-item" href="profile.html" data-toggle="modal"
-                               data-target="#bind-account">账号绑定</a>
-                            <a class="dropdown-item" id="reset" href="profile.html" data-toggle="modal"
-                               data-target="#reset-pw" data-usertype="2">修改密码</a>
-                            <a class="dropdown-item" target="_blank">帮助&支持</a>
-                            <div class="dropdown-divider"></div>
-                            <a id="login-out" usertype="2" class="dropdown-item" href="sign-in.html">注销</a>
+                    <li class="nav-item ml-sm-3 dropdown">
+                        <a href="#" id="userLoginDropdown" data-toggle="dropdown"
+                           class="nav-link weight-400 dropdown-toggle"></a>
+                        <div class="dropdown-menu dropdown-menu-right"
+                             aria-labelledby="userLoginDropdown" id="dropdown-menu-personal">
+
                         </div>
                     </li>
                 </ul>
             </nav>
         </header>
+
+        <script>
+
+        </script>
 
         <div class="content-wrapper">
 
@@ -345,59 +342,7 @@
 <script src="../resources/assets/js/shop/getshoplist.js"></script>
 <script src="../resources/assets/js/shop/bindaccount.js"></script>
 <script src="../resources/assets/js/shop/loginout.js"></script>
-
-<script>
-    $(function () {
-
-        var changePasswordUrl = "/o2o/local/changelocalauthpw";
-        var userType = $("#reset").data("usertype");
-        $("#reset-btn").click(function () {
-            var username = $("#usernameInputReset").val();
-            var oldPassword = $("#oldPwInputReset").val();
-            var newPassword = $("#newPwInputReset").val();
-            var confirmPassword = $("#confirmPwInputReset").val();
-            var verifyCode = $("#verifyInputReset").val();
-
-            if (confirmPassword != newPassword) {
-                alert("两次密码不一致，请重新输入!");
-                return;
-            }
-
-            var formData = new FormData();
-            formData.append("userName", username);
-            formData.append("password", oldPassword);
-            formData.append("newPassword", newPassword);
-            if (!verifyCode) {
-                alert("请输入验证码！");
-                return;
-            }
-            formData.append("verifyCodeActual", verifyCode);
-
-            $.ajax({
-                url: changePasswordUrl,
-                type: "POST",
-                cache: false,
-                processData: false,
-                contentType: false,
-                data: formData,
-                success: function (data) {
-                    if (data.success) {
-                        alert("密码重置成功!");
-                        if (userType == 1) {
-                            window.location.href = "/o2o";
-                        } else {
-                            window.location.href = "/o2o/shopadmin/shoplist";
-                        }
-                    } else {
-                        alert("密码重置失败：" + data.errMsg);
-                        $("#captcha_img_reset").click();
-                    }
-                }
-            });
-        });
-
-    });
-</script>
+<script src="../resources/assets/js/shop/changepw.js"></script>
 
 </body>
 

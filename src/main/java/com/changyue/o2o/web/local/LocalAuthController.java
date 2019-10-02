@@ -31,6 +31,12 @@ public class LocalAuthController {
     @Autowired
     private LocalAuthService localAuthService;
 
+    /**
+     * 绑定到本地账号
+     *
+     * @param request 请求域g
+     * @return
+     */
     @PostMapping("/bindlocalauth")
     @ResponseBody
     public Map<String, Object> bindLocalAuth(HttpServletRequest request) {

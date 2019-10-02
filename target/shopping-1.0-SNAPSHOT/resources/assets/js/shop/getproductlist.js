@@ -2,34 +2,8 @@ $(function () {
 
     var pageIndex = 1;
     var pageSize = 8;
-    var shopId = getQueryString("shopId");
     var productPostUrl = '/o2o/shopadmin/modifyproduct';
     var productInfo = "/o2o/shopadmin/getproductlistbyshop";
-    var saveCurrentShop = '/o2o/shopadmin/getshopmanagementinfo';
-
-
-    transferCurrentShop(shopId);
-
-    /**
-     * 将需要修改的shopId传递到后台
-     * @param shopId
-     */
-    function transferCurrentShop(shopId) {
-        $.ajax({
-            url: saveCurrentShop,
-            type: 'POST',
-            xhrFields: {
-                withCredentials: true
-            },
-            crossDomain: true,
-            data: {
-                shopId: shopId
-            },
-            success: function (data) {
-                console.info("传递成功！");
-            }
-        });
-    }
 
     getAndShowProductList();
 
@@ -41,7 +15,9 @@ $(function () {
         var getProductListInfoUrl = productInfo + "?pageIndex=" + pageIndex + "&pageSize=" + pageSize;
 
         $.getJSON(getProductListInfoUrl, function (data) {
+            console.info(data);
             handList(data);
+            //handleUser(data.user);
         });
 
     }
@@ -74,7 +50,7 @@ $(function () {
         });
         $(".product-table-body").html(productsHtml);
 
-        handleUser(data.user);
+        //handleUser(data.user);
         showPagination(data.productPageInfo);
     }
 

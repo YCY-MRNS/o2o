@@ -6,6 +6,9 @@ $(function () {
 
     getList();
 
+    /**
+     * 请求后台获得商铺列表
+     */
     function getList() {
         $.ajax({
             url: getShopList + "?pageIndex=" + pageIndex + "&pageSize=" + pageSize,
@@ -15,12 +18,15 @@ $(function () {
                 console.info(data);
                 if (data.success) {
                     handleList(data.shopPageInfo);
-                    handleUser(data.user);
+                    //handleUser(data.user);
                 }
             }
         });
     }
 
+    /**
+     * 点击事件(分页操作)
+     */
     $(document).on("click", ".page-item", function () {
         pageIndex = $(this).data("id");
         $.ajax({
@@ -29,11 +35,15 @@ $(function () {
             dataType: "json",
             success: function (data) {
                 handleList(data.shopPageInfo);
-                handleUser(data.user);
+                //handleUser(data.user);
             }
         })
     });
 
+    /**
+     * 处理显示列表
+     * @param data
+     */
     function handleList(data) {
         $('.shop-table-body').empty();
         var html = "";
@@ -52,6 +62,11 @@ $(function () {
         showPagination(data);
     }
 
+    /**
+     * 处理商品状态
+     * @param status
+     * @returns {string}
+     */
     function shopStatus(status) {
         if (status === 0) {
             return '审核中';
@@ -64,8 +79,8 @@ $(function () {
 
     function goShop(status, id) {
         if (status === 1) {
-            return '<a href="shopoperation?shopId=' + id + '" class="btn btn-primary btn-sm shop-edit-btn">商铺编辑</a>&nbsp;&nbsp;' +
-                '<a href="#" class="btn btn-primary btn-sm" id="actionDropdown" data-toggle="dropdown" aria-expanded="false">商品管理' +
+            return '<a href="shopoperation?shopId=' + id + '" class="btn btn-primary btn-sm shop-edit-btn">编辑</a>&nbsp;&nbsp;' +
+                '<a href="#" class="btn btn-primary btn-sm more-btn" data-id="' + id + '" id="actionDropdown" data-toggle="dropdown" aria-expanded="false">' +
                 '<span class="material-icons align-middle" style="font-size: 15px;">arrow_drop_down</span></a>' +
                 '<div class="dropdown-menu dropdown-menu-right" aria-labelledby="actionDropdown" x-placement="left-start" style="position: absolute; transform: translate3d(24px, 13px, 0px); top: 0px; left: 0px; will-change: transform;">' +
                 '    <a class="dropdown-item" href="productlist?shopId=' + id + '" > 商品管理 </a>' +
@@ -75,5 +90,11 @@ $(function () {
             return "";
         }
     }
+
+    $(document).on("mouseover mouseout", ".more-btn", function () {
+        console.info("hover");
+        sendShopIdToServer($(this).data("id"));
+    });
+
 
 });

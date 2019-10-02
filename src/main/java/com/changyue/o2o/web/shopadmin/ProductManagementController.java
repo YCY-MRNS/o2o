@@ -59,15 +59,10 @@ public class ProductManagementController {
         int pageSize = HttpServletRequestUtil.getInt(request, "pageSize");
         Long shopId = HttpServletRequestUtil.getLong(request, "shopId");
 
-
-        PersonInfo user = new PersonInfo();
-        user.setUserId(8L);
-        user.setName("test");
-        request.getSession().setAttribute("user", user);
-        user = (PersonInfo) request.getSession().getAttribute("user");
-
-
+        //从登陆session中拿到用户信息
+        PersonInfo user = (PersonInfo) request.getSession().getAttribute("user");
         Shop currentShop = (Shop) request.getSession().getAttribute("currentShop");
+
         if (shopId > -1L) {
             currentShop.setShopId(shopId);
         }

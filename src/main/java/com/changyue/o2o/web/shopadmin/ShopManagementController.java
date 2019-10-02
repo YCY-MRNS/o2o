@@ -15,10 +15,8 @@ import com.changyue.o2o.dto.ImageHolder;
 import com.changyue.o2o.dto.ShopExecution;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
@@ -199,9 +197,6 @@ public class ShopManagementController {
 
         /*注册店铺*/
         if (shop != null && shopImg != null) {
-            PersonInfo personInfo = new PersonInfo();
-            personInfo.setUserId(8L);
-            request.getSession().setAttribute("user", personInfo);
 
             PersonInfo owner = (PersonInfo) request.getSession().getAttribute("user");
             shop.setOwner(owner);
@@ -313,4 +308,24 @@ public class ShopManagementController {
 
     }
 
+    /**
+     * 登陆后，获得用户信息
+     *
+     * @param request 请求域
+     * @return 用户信息Map
+     */
+    @GetMapping("/getuser")
+    @ResponseBody
+    private Map<String, Object> getUserInfo(HttpServletRequest request) {
+        Map<String, Object> modelMap = new HashMap<>();
+        PersonInfo user = (PersonInfo) request.getSession().getAttribute("user");
+        if (user != null || user.getUserId() != null) {
+            modelMap.put("success", true);
+            modelMap.put("user", user);
+        } else {
+            modelMap.put("success", false);
+            modelMap.put("errMsg", "尚未登陆");
+        }
+        return modelMap;
+    }
 }
