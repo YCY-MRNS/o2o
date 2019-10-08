@@ -87,10 +87,14 @@ public class ShopManagementController {
 
         int pageIndex = HttpServletRequestUtil.getInt(request, "pageIndex");
         int pageSize = HttpServletRequestUtil.getInt(request, "pageSize");
+        String shopName = HttpServletRequestUtil.getString(request, "shopName");
 
         try {
             Shop shopCondition = new Shop();
             shopCondition.setOwner(user);
+            if (shopName != null) {
+                shopCondition.setShopName(shopName);
+            }
             ShopExecution se = shopService.getShopList(shopCondition, pageIndex, pageSize);
             //获得商铺列表后将它放进session中,方便权限操作
             request.getSession().setAttribute("shopList", se.getShopList());

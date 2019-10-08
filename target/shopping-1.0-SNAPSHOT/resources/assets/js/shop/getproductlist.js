@@ -22,6 +22,24 @@ $(function () {
 
     }
 
+    /**
+     * 搜索
+     */
+    $(".btn-search").click(function () {
+        var productName = $("#input-search").val();
+        $.ajax({
+            url: productInfo + "?pageIndex=" + pageIndex + "&pageSize=" + pageSize + "&productName=" + productName,
+            type: "get",
+            dataType: "json",
+            success: function (data) {
+                if (data.success) {
+                    console.info(data);
+                    handList(data);
+                }
+            }
+        })
+    });
+
     function handList(data) {
 
         console.info(data);

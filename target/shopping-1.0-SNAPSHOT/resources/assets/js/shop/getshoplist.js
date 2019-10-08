@@ -2,6 +2,7 @@ $(function () {
 
     var pageIndex = 1;
     var pageSize = 8;
+    var shopName = "";
     var getShopList = "/o2o/shopadmin/getshoplist";
 
     getList();
@@ -23,6 +24,23 @@ $(function () {
             }
         });
     }
+
+    /**
+     * 搜索
+     */
+    $(".btn-search").click(function () {
+        var shopName = $("#input-search").val();
+        $.ajax({
+            url: getShopList + "?pageIndex=" + pageIndex + "&pageSize=" + pageSize + "&shopName=" + shopName,
+            type: "get",
+            dataType: "json",
+            success: function (data) {
+                if (data.success) {
+                    handleList(data.shopPageInfo);
+                }
+            }
+        })
+    });
 
     /**
      * 点击事件(分页操作)
@@ -57,7 +75,6 @@ $(function () {
                 + '<td class="data-label Actions" class="text-md-center dropdown dropleft"">' + goShop(value.enableStatus, value.shopId) + '</td>'
                 + '</tr>';
         });
-
         $('.shop-table-body').html(html);
         showPagination(data);
     }
