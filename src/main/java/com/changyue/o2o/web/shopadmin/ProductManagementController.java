@@ -29,7 +29,7 @@ import java.util.Map;
 
 /**
  * @program: shopping
- * @description:
+ * @description: 商品管理控制器
  * @author: ChangYue
  * @create: 2019-04-10 19:18
  */
@@ -198,13 +198,10 @@ public class ProductManagementController {
         CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver(request.getSession().getServletContext());
 
         try {
-
             if (!statusChange) {
                 //前端传递中是否存在文件流
                 if (multipartResolver.isMultipart(request)) {
-
                     thumbnail = handleImg((MultipartHttpServletRequest) request, productImgList);
-
                 } else {
                     modelMap.put("success", false);
                     modelMap.put("errMsg", "上传图片不能为空");

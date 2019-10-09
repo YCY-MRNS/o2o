@@ -23,10 +23,22 @@ public class Product implements Serializable {
     private Date lastEditTime;
     private Integer enableStatus;
 
+    /**
+     * 积分
+     */
+    private Integer point;
+
     private List<ProductImg> productImgList;
     private ProductCategory productCategory;
     private Shop shop;
 
+    public Integer getPoint() {
+        return point;
+    }
+
+    public void setPoint(Integer point) {
+        this.point = point;
+    }
 
     public Long getProductId() {
         return productId;

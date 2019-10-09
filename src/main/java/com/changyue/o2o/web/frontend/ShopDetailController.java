@@ -11,9 +11,7 @@ import com.changyue.o2o.dto.ProductExecution;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
@@ -71,6 +69,32 @@ public class ShopDetailController {
         return modelMap;
     }
 
+    /**
+     * 查询单个商品信息
+     *
+     * @param productId 商品Id
+     */
+    @RequestMapping(value = "/getproductbyid", method = RequestMethod.GET)
+    @ResponseBody
+    public Map<String, Object> getProductById(@RequestParam("productId") Long productId) {
+        Map<String, Object> modelMap = new HashMap<>();
+        if (productId > -1) {
+            Product product = productService.queryProductById(productId);
+            if (product != null) {
+                List<ProductCategory> productCategoryList = productCategoryService.getProductCategoryList(product.getShop().getShopId());
+                modelMap.put("success", true);
+                modelMap.put("product", product);
+                modelMap.put("productCategoryList", productCategoryList);
+            } else {
+                modelMap.put("success", false);
+                modelMap.put("errMsg", "没有该商品");
+            }
+        } else {
+            modelMap.put("success", false);
+            modelMap.put("errMsg", "商品Id为空");
+        }
+        return modelMap;
+    }
 
     /**
      * 查询该商铺下面的全部商品

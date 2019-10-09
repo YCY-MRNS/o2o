@@ -18,7 +18,7 @@ $(function () {
 
         getInfo(productId);
         isEdit = true;
-        
+
     } else {
 
         $("#page-title").text("o2o商品管理后台 - 商品注册");
@@ -37,10 +37,13 @@ $(function () {
             if (data.success) {
 
                 console.info(data);
+
                 var product = data.product;
                 $('#product-name').val(product.productName);
                 $('#product-desc').val(product.productDesc);
                 $('#priority').val(product.priority);
+                $('#point').val(product.point);
+                console.info("product.point" + product.point);
                 $('#normal-price').val(product.normalPrice);
                 $('#promotion-price').val(product.promotionPrice);
 
@@ -95,6 +98,7 @@ $(function () {
         product.productName = $('#product-name').val();
         product.productDesc = $('#product-desc').val();
         product.priority = $('#priority').val();
+        product.point = $('#point').val();
         product.normalPrice = $('#normal-price').val();
         product.promotionPrice = $('#promotion-price').val();
         product.productCategory = {
@@ -108,9 +112,6 @@ $(function () {
 
         $('.detail-img').map(
             function (value, index) {
-
-                console.log("v" + value);
-                console.log("i" + index);
 
                 if ($('.detail-img')[value].files.length > 0) {
                     formData.append("productImg" + value,
@@ -141,7 +142,7 @@ $(function () {
                     window.location.href = productInfo;
                     $('#captcha_img').click();
                 } else {
-                    alert("商品提交失败！");
+                    alert("商品提交失败！" + data.errMsg);
                     $('#captcha_img').click();
                 }
             }

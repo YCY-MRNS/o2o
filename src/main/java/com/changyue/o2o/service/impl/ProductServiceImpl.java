@@ -98,7 +98,6 @@ public class ProductServiceImpl implements ProductService {
         //==== 第一步：根据前端传递过来的值 分别处理 ====
         if (product != null && product.getProductId() != null && product.getShop() != null) {
             product.setLastEditTime(new Date());
-
             //==== 第二步：处理图  ====
 
             //如果存在图先删除图片再添加图片
@@ -184,10 +183,6 @@ public class ProductServiceImpl implements ProductService {
      */
     @Override
     public ProductExecution getProductList(Product productCondition, Integer pageIndex, Integer pageSize) {
-
-        //int rowIndex = PageCalculator.calculator(pageIndex, pageSize);
-        //int count = productDao.queryProductCount(productCondition);
-        //List<Product> productList = productDao.queryProductList(productCondition, 1, 999);
 
         // 分页
         PageHelper.startPage(pageIndex, pageSize);

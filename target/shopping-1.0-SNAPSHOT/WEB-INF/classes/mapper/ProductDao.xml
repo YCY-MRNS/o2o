@@ -12,6 +12,7 @@
         <result column="normal_price" property="normalPrice"/>
         <result column="promotion_price" property="promotionPrice"/>
         <result column="priority" property="priority"/>
+        <result column="point" property="point"/>
         <result column="create_time" property="createTime"/>
         <result column="last_edit_time" property="lastEditTime"/>
         <result column="enable_status" property="enableStatus"/>
@@ -37,6 +38,7 @@
         create_time,
         enable_status,
         priority,
+        point,
         last_edit_time,
         shop_id,
         product_category_id
@@ -69,6 +71,7 @@
         promotion_price,
         create_time,
         enable_status,
+        point,
         priority,
         last_edit_time,
         shop_id,
@@ -134,6 +137,7 @@
                p.normal_price,
                p.promotion_price,
                p.create_time,
+               p.point,
                p.enable_status,
                p.priority,
                p.last_edit_time,
@@ -162,6 +166,7 @@
                                 create_time,
                                 enable_status,
                                 priority,
+                                point,
                                 last_edit_time,
                                 product_category_id,
                                 shop_id)
@@ -173,6 +178,7 @@
                 #{createTime},
                 #{enableStatus},
                 #{priority},
+                #{point},
                 #{lastEditTime},
                 #{productCategory.productCategoryId},
                 #{shop.shopId})
@@ -193,6 +199,7 @@
             <if test="priority!=null">priority=#{priority},</if>
             <if test="enableStatus!=null">enable_status=#{enableStatus},</if>
             <if test="shop!=null">shop_id=#{shop.shopId},</if>
+            <if test="point!=null">point=#{point},</if>
             <if test="productCategory!=null and productCategory.productCategoryId!=null">
                 product_category_id=#{productCategory.productCategoryId},
             </if>

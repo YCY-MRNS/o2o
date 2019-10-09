@@ -41,4 +41,16 @@ public class FrontendPageController {
     public String index() {
         return "frontend/index";
     }
+
+    /**
+     * 商品详情页
+     *
+     * @return
+     */
+    @RequestMapping("/productdetail")
+    public String productDetail() {
+        return "frontend/productdetail";
+    }
+
+
 }

@@ -35,11 +35,14 @@
             <dt class="heading"></dt>
         </dl>
     </div>
+
+
 </div>
 
-<script src="../resources/js/commons/jQuery.min.js"></script>
-<script src="../resources/js/commons/common.js"></script>
-<script src="../resources/js/bootstrap.js"></script>
+<script src="../resources/assets/js/lib/jquery.min.js"></script>
+<script src="../resources/assets/js/shop/common.js"></script>
+<script src="../resources/assets/js/bootstrap/bootstrap.min.js"></script>
+
 
 <script>
 
@@ -79,7 +82,7 @@
 
                     $.map(data.productPageInfo.list, function (products, index) {
 
-                        tempHtml += '<dd class="proc-content">' +
+                        tempHtml += '<dd class="proc-content" data-id="' + products.productId + '" >' +
                             '    <div class="proc-root">' +
                             '        <img class="proc-img"' +
                             '             src="' + products.imgAddr + '"' +
@@ -124,6 +127,10 @@
 
         $(".fa-search").click(function () {
             window.location.href = "/o2o/frontend/productsearch?shopId=" + shopId;
+        });
+
+        $(document).on("click", ".proc-content", function () {
+            window.location.href = '/o2o/frontend/productdetail?productId=' + $(this).data("id");
         })
 
     });

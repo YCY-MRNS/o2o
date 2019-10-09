@@ -59,7 +59,7 @@ $(function () {
             productsHtml += '<tr>'
                 + '<th scope="row">' + (index + 1) + '</th>'
                 + '<td>' + value.productName + '</td>'
-                + '<td>' + value.priority + '</td>'
+                + '<td>' + value.point + '</td>'
                 + '<td>' +
                 '<a href="#" class="btn btn-primary btn-sm product-edit-btn" data-toggle="modal" data-target="#product-edit" data-id="' + value.productId + '">编辑</a>&nbsp;' +
                 '<a href="" class="btn btn-danger btn-sm product-status-btn" data-status="' + status + '" data-id="' + value.productId + '">' + textOp + '</a>&nbsp;' +
